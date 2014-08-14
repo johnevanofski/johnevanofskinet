@@ -11,8 +11,10 @@
     </div>
             
       <a href="#contact" class="popup-button"><div class="contact uicon mail-empty"></div></a>
-      <a href="#toTop"><div class="navup uicon arrow-up"></div></a>
+      
     <div class="copy"><?php echo kirbytext($site->copyright()) ?></div>  
+    
+    <a href="#toTop"><div class="navup uicon arrow-up"></div></a>
     
 </footer>
 

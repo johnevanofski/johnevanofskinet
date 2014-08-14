@@ -921,8 +921,8 @@ SHAPES
 *****************/
 /*! BASE !!*/
 /******************************************************************
-Site Name:
-Author:
+Site Name: johnevanofski.net
+Author: John Evanofski
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -1564,37 +1564,45 @@ footer .copy {
   padding-top: 2em;
   z-index: 9;
   color: #2d2d2d;
-  text-align: center;
+  text-align: left;
 }
 /* line 742, ../sass/_base.scss */
+footer .copy a {
+  color: silver;
+}
+/* line 744, ../sass/_base.scss */
+footer .copy a:hover {
+  color: lightseagreen;
+}
+/* line 750, ../sass/_base.scss */
 footer .socialNexus {
   margin: 2em auto;
   width: 100%;
   text-align: center;
 }
-/* line 748, ../sass/_base.scss */
+/* line 756, ../sass/_base.scss */
 footer .socialNexus a:hover {
   color: #2d2d2d;
 }
-/* line 750, ../sass/_base.scss */
+/* line 758, ../sass/_base.scss */
 footer .socialNexus .uicon {
   display: inline-block;
 }
-/* line 755, ../sass/_base.scss */
+/* line 763, ../sass/_base.scss */
 footer .socialNexus i {
   width: 47px;
   font-size: 1.4em;
   line-height: 52px;
 }
-/* line 776, ../sass/_base.scss */
+/* line 784, ../sass/_base.scss */
 footer .contact {
   margin: 0 auto 2em;
 }
-/* line 780, ../sass/_base.scss */
+/* line 788, ../sass/_base.scss */
 footer .navup {
   margin: 0 auto;
 }
-/* line 784, ../sass/_base.scss */
+/* line 792, ../sass/_base.scss */
 footer .navup {
   position: relative;
   bottom: -20px;
@@ -1603,23 +1611,23 @@ footer .navup {
   transition: all 0.5s ease-in-out;
   z-index: 8;
 }
-/* line 790, ../sass/_base.scss */
+/* line 798, ../sass/_base.scss */
 footer .navup:hover {
   bottom: 0;
 }
 
 /******CONTACT FORM*********/
-/* line 799, ../sass/_base.scss */
+/* line 807, ../sass/_base.scss */
 #contact label {
   display: block;
 }
-/* line 803, ../sass/_base.scss */
+/* line 811, ../sass/_base.scss */
 #contact input, #contact textarea {
   border: 2px solid #2d2d2d;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
-/* line 809, ../sass/_base.scss */
+/* line 817, ../sass/_base.scss */
 #contact input {
   height: 2em;
 }
@@ -2413,7 +2421,11 @@ img.mfp-img {
   nav.menu ul li.active {
     background-color: #2d2d2d;
   }
-  /* line 77, ../sass/_760up.scss */
+  /* line 76, ../sass/_760up.scss */
+  nav.menu ul li.active a {
+    color: white;
+  }
+  /* line 79, ../sass/_760up.scss */
   nav.menu ul li a {
     font-size: 1.5em;
     /*
@@ -2425,34 +2437,34 @@ img.mfp-img {
   /*********************
   CONTENT & POSTS
   *********************/
-  /* line 142, ../sass/_760up.scss */
+  /* line 144, ../sass/_760up.scss */
   #design .banner .title {
     width: 25%;
     padding: 1%;
   }
-  /* line 147, ../sass/_760up.scss */
+  /* line 149, ../sass/_760up.scss */
   #design .banner .logo {
     background-color: white;
     width: 25%;
     padding: 1%;
   }
-  /* line 153, ../sass/_760up.scss */
+  /* line 155, ../sass/_760up.scss */
   #design .banner .logo img {
     display: block;
     width: 100%;
   }
-  /* line 159, ../sass/_760up.scss */
+  /* line 161, ../sass/_760up.scss */
   #design .banner .taglist {
     display: block;
     position: absolute;
     bottom: 0;
     margin-left: 0.5em;
   }
-  /* line 165, ../sass/_760up.scss */
+  /* line 167, ../sass/_760up.scss */
   #design .banner .taglist ul {
     margin-bottom: 0;
   }
-  /* line 169, ../sass/_760up.scss */
+  /* line 171, ../sass/_760up.scss */
   #design .banner .taglist ul li {
     background-color: white;
     list-style: none;
@@ -2460,57 +2472,57 @@ img.mfp-img {
     padding: 0 0.5em;
     position: relative;
   }
-  /* line 177, ../sass/_760up.scss */
+  /* line 179, ../sass/_760up.scss */
   #design .banner .taglist ul li:hover {
     top: 2px;
   }
-  /* line 179, ../sass/_760up.scss */
+  /* line 181, ../sass/_760up.scss */
   #design .banner .taglist ul li a {
     color: #2d2d2d;
     text-decoration: none;
   }
-  /* line 189, ../sass/_760up.scss */
+  /* line 191, ../sass/_760up.scss */
   #design .banner .bannerimg {
     float: left;
     width: 75%;
   }
-  /* line 194, ../sass/_760up.scss */
+  /* line 196, ../sass/_760up.scss */
   #design .banner .bannerimg img {
     width: 100%;
   }
-  /* line 205, ../sass/_760up.scss */
+  /* line 207, ../sass/_760up.scss */
   #design .banner .bannertext.active {
     padding: 1%;
     left: 25%;
     min-width: 75%;
   }
-  /* line 211, ../sass/_760up.scss */
+  /* line 213, ../sass/_760up.scss */
   #design .banner .bannertext h2.inner-title {
     display: none;
   }
 
-  /* line 225, ../sass/_760up.scss */
+  /* line 227, ../sass/_760up.scss */
   #resume .col:not(:last-child) {
     border-bottom: none;
   }
-  /* line 230, ../sass/_760up.scss */
+  /* line 232, ../sass/_760up.scss */
   #resume .contact {
     width: 50%;
   }
-  /* line 234, ../sass/_760up.scss */
+  /* line 236, ../sass/_760up.scss */
   #resume .contact p {
     text-align: right;
     padding-right: 1em;
   }
-  /* line 243, ../sass/_760up.scss */
+  /* line 245, ../sass/_760up.scss */
   #resume .skills {
     padding-left: 2em;
   }
-  /* line 249, ../sass/_760up.scss */
+  /* line 251, ../sass/_760up.scss */
   #resume .edu {
     padding-left: 2em;
   }
-  /* line 253, ../sass/_760up.scss */
+  /* line 255, ../sass/_760up.scss */
   #resume .download {
     padding-left: 2em;
   }

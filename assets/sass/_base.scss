@@ -1,6 +1,6 @@
 /******************************************************************
-Site Name:
-Author:
+Site Name: johnevanofski.net
+Author: John Evanofski
 
 Stylesheet: Base Mobile Stylesheet
 
@@ -736,8 +736,16 @@ footer {
         padding-top: 2em;
         z-index: 9;
         color: $dark-grey;
-        text-align: center;
+        text-align: left;
+        
+        
+        a {
+          color: silver;
+            &:hover { color: $link-hover }
+        }
+        
     }
+
 
 .socialNexus {
     
@@ -745,7 +753,7 @@ footer {
     width: 100%;
     text-align: center;
     
-    a:hover { color: $dark-grey }
+    a:hover { color: $dark-grey; }
     
     .uicon {
         display: inline-block;

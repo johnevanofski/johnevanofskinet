@@ -80,7 +80,7 @@
         
         
         
-        <article data-type="none" class="web col span_4"> 
+        <article data-type="none" class="col span_4"> 
             <div class="banner clearfix" style="background-color:<?php echo $color; ?>">
                 <div class="title"><h4><?php echo $title ?></h4></div>
                 <div class="taglist">

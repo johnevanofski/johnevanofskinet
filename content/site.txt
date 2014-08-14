@@ -14,4 +14,4 @@ Keywords: mhm
 
 ----
 
-Copyright: © 2009-(date: Year) (link: http://johnevanofski.net text: John Evanofski)
+Copyright: ©(date: Year) (link: http://johnevanofski.net text: John Evanofski)

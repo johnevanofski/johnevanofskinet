@@ -72,6 +72,8 @@ nav {
                 
                 &.active {
                     background-color: $dark-grey;
+                    
+                     a { color: white; }
                 }
                 
 				a {
