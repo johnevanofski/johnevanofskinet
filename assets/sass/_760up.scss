@@ -156,6 +156,36 @@ CONTENT & POSTS
             }
         }
         
+        .taglist {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            margin-left: 0.5em;
+            
+            ul {
+                
+                margin-bottom: 0;
+                
+                li {
+                    
+                    background-color: white;
+                    list-style: none;
+                    display: inline-block;
+                    padding: 0 0.5em;
+                    position: relative;
+                    
+                    &:hover { top: 2px; }
+                                    
+                    a { 
+                        color: $dark-grey;
+                        text-decoration: none;
+                        
+                    }                
+                }
+            }
+            
+        }
+        
         .bannerimg {
             
             float: left;
@@ -192,7 +222,7 @@ CONTENT & POSTS
     p {}
     
     .col { 
-        border-bottom: none;
+        &:not(:last-child) { border-bottom: none; }
     }
     
     .name {}
@@ -219,6 +249,10 @@ CONTENT & POSTS
     .edu {
         padding-left: 2em;
     }
+    
+    .download {
+        padding-left: 2em;
+    }   
     
 } //end resume content
 

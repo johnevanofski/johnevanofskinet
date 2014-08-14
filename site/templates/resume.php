@@ -39,6 +39,9 @@
             <h2>Education</h2>
             <?php echo kirbytext($edu) ?>
         </div>
+        <div class="download col span_2">
+            <i class="fa fa-download"></i> <a href="<?php echo $page->documents()->first()->url();?>">Download Resume</a>
+        </div>
 
     </article>
 

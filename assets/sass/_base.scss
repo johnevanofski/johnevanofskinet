@@ -25,7 +25,7 @@ body {
 	font-family: $sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
-	color: #FFF;
+	color: white;
     background-color: black;
     height: 100%;
 }
@@ -71,7 +71,8 @@ LINK STYLES
 a, a:visited {
 	color: $link-color;
     @include transition(color 0.4s ease-in-out);
-
+    text-decoration: none;
+    
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
@@ -125,18 +126,16 @@ h2, .h2 {
 }
 
 h3, .h3 {
-	font-size: 1.125em;
+	font-size: 1.25em;
 }
 
 h4, .h4 {
-	font-size: 1.1em;
-	font-weight: 700;
+	font-size: 1.5em;
 }
 
 h5, .h5 {
 	font-size: 0.846em;
 	line-height: 2.09em;
-	text-transform: uppercase;
 	letter-spacing: 2px;
 }
 
@@ -407,6 +406,39 @@ article {
         }
     }
     
+    .tagcloud {
+        
+        display: block;
+        position: relative;
+        bottom: -21px;
+        padding-left: 0.5em;
+        
+        ul {
+            li {
+                list-style: none;
+                display: inline-block;
+                background-color: silver;
+                padding: 0 0.5em;
+                position: relative;
+                
+                
+                &.active {
+                    background-color: white;
+                }
+                
+                &:hover {
+                    top: 2px;
+                }
+                
+                a {
+                    text-decoration: none;
+                    color: $dark-grey;
+                }
+            }
+            
+        }
+    }
+    
     .banner {
         
         &:before { 
@@ -428,6 +460,10 @@ article {
             img {
                 display: none;    
             }
+        }
+        
+        .taglist {
+            display: none;
         }
         
         .bannerimg {
@@ -499,7 +535,12 @@ article {
             opacity: 1;
             }
         }
-    }
+        
+        &.dummy {
+            height: 1em;
+            background-color: black;
+        }
+    } //end .banner
 } //end design content
 
 #home {
@@ -630,7 +671,7 @@ article {
     }
     
     .col { 
-        border-bottom: 1px solid white;
+        &:not(:last-child) { border-bottom: 1px solid white; }
         margin-bottom: 1em;
     }
     
@@ -658,6 +699,8 @@ article {
     .exp {}
     
     .edu {}
+    
+    .download {}
     
 } //end resume content
 

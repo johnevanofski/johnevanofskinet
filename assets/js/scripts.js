@@ -94,7 +94,7 @@ var divs = $('.navdown, .nexus');
 
     /* design banners */
     
-    $('.banner').click(function(e){
+    $('.bannerinfo').click(function(e){
 
         $(this).find('.bannertext').toggleClass('active');
         

@@ -21,7 +21,7 @@ John Evanofski is a Bay Area web and graphic designer with a diverse technologic
 ----
 
 Skills: 
-**Web:** 
+###Web: 
 
 - Responsive Web
 - HTML5 & CSS3
@@ -29,7 +29,7 @@ Skills:
 - PHP 
 - WordPress CMS 
 
-**Adobe Creative Suite:** 
+###Adobe Creative Suite:
 
 - Photoshop 
 - Illustrator 
@@ -38,7 +38,7 @@ Skills:
 - Dreamweaver
 - Flash
 
-**Other:** 
+###Other: 
 
 - Final Cut Pro 
 - Ableton Live 
@@ -47,7 +47,7 @@ Skills:
 ----
 
 Experience:
-###Web and Graphic Design Lead
+###Web & Graphic Design Lead
 Clean LED Energy / Oakland CA / 2014-Present
 
 ###Web Designer and Video Tech Support Specialist
@@ -59,7 +59,7 @@ AcademyX / San Francisco CA / 2013-Present
 ###SEO Consultant
 Branditecture / San Francisco CA / 2013-Present
 
-###Independent Web and Graphic Design
+###Independent Web & Graphic Design
 David Kerr Designs / Oakland CA / 2012-Present
 Cindy Cleary Art / 2014
 Mission Creek Oakland Festival / Oakland CA / 2013
