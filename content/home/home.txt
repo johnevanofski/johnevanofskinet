@@ -1,0 +1,15 @@
+﻿Title: Home
+
+----
+
+Text: **Location:** Bay Area, Oakland, California USA
+
+**Type:** Human / Wizard
+
+**Skills:** Web (HTML5, CSS3, Responsive Web, jQuery, PHP), Graphic and Print Design, Photography, Audio and Video
+
+**Bio:**
+
+I’m a 27 year old living in the Bay Area. I started programming my computer when I was 13 using BASIC, I made music using MIDI generators and designed graphics in MS Paint. Now I use the Adobe Creative Suite, Ableton Live and FinalCut Pro professionally. I’m a web designer, technology educator and photo/video/audio editor. I have strong communication skills as well as an aptitude for new technology.
+
+I also like video games, puzzles, breakfast foods, synths, films, hiking, and sci-fi.

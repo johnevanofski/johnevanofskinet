@@ -1,0 +1,23 @@
+Title: Cindy Cleary Artist Website
+
+----
+
+Tags: web
+
+----
+
+Text: This website was built for local artist Cindy Cleary, with design help from local graphic designer (link: http://airielmulvaney.com/ text: Airiel Mulvaney popup: yes). This site was transfered from Photoshop files by the designer to a beautiful, highly customized WordPress.
+
+Features:
+
+- custom built responive image gallery
+- highly specialized navigation interactions
+- one-page site design
+
+Tools: _Illustrator, Photoshop, html & css, css3 animation, php, javascript (jquery), WordPress cms_
+
+Visit: (link: http://cindyclearyart.com text: cindyclearyart.com)
+
+----
+
+Color: rgba(153,134,117,1)

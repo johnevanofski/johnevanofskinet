@@ -1,0 +1,17 @@
+Title: Kirby Test
+
+----
+
+Author: John Evanofski
+
+----
+
+Description: It's kirby time
+
+----
+
+Keywords: mhm
+
+----
+
+Copyright: © 2009-(date: Year) (link: http://johnevanofski.net text: John Evanofski)

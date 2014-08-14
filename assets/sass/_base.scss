@@ -1,0 +1,770 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Base Mobile Stylesheet
+
+Be light and don't over style since everything here will be
+loaded by mobile devices. You want to keep it as minimal as
+possible. This is called at the top of the main stylsheet
+and will be used across all viewports.
+
+******************************************************************/
+
+/*********************
+DEBUG CSS
+*********************/
+
+// * { background-color: rgba(255,255,255,0.3); }
+
+/*********************
+GENERAL STYLES
+*********************/
+
+body {
+	font-family: $sans-serif;
+	font-size: 100%;
+	line-height: 1.5;
+	color: #FFF;
+    background-color: black;
+    height: 100%;
+}
+
+.mobile {
+    
+    body {  overflow: hidden; }
+
+    #wrapper {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    #scroller {
+      height: 3000px;
+    }
+}
+
+/*********************
+LAYOUT & GRID STYLES
+*********************/
+
+#wrap {
+    height: 100%;
+    overflow: hidden;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*********************
+LINK STYLES
+*********************/
+
+a, a:visited {
+	color: $link-color;
+    @include transition(color 0.4s ease-in-out);
+
+	/* on hover */
+	&:hover, &:focus {
+		color: $link-hover;
+	}
+
+	/* on click */
+	&:active {
+        
+	}
+
+	/* mobile tap color */
+	&:link {
+		/*
+		this highlights links on iPhones/iPads.
+		so it basically works like the :hover selector
+		for mobile devices.
+		*/
+		-webkit-tap-highlight-color : rgba( 0, 0, 0, 0.3 );
+	}
+}
+
+/******************************************************************
+H1, H2, H3, H4, H5 STYLES
+******************************************************************/
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+	font-family: 'Share Tech Mono', $sans-serif;
+	text-rendering: optimizelegibility;
+	font-weight: normal;
+    text-transform: uppercase;
+	/*
+	if you're going to use webfonts, be sure to check your weights
+	http://css-tricks.com/watch-your-font-weight/
+	*/
+
+	/* removing text decoration from all headline links */
+	a {
+		text-decoration: none;
+	}
+}
+
+h1, .h1 {
+	font-size: 2.5em;
+	line-height: 1.333em;
+}
+
+h2, .h2 {
+	font-size: 1.75em;
+	line-height: 1.4em;
+	margin-bottom: 0.375em;
+}
+
+h3, .h3 {
+	font-size: 1.125em;
+}
+
+h4, .h4 {
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+h5, .h5 {
+	font-size: 0.846em;
+	line-height: 2.09em;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+/*********************
+HEADER STYLES
+*********************/
+
+header {
+    //height: 5em;
+    width: 100%;
+
+    .abovenav {
+        position: relative;
+        background-color: black;
+        z-index: 10;
+        height: 5em;
+        width: 100%;
+    }
+    .contact {
+        display: block;
+        position: absolute;
+        top: 1em;
+        right: 2em;
+    }
+    
+    .menu-button {
+        display: block;
+        position: absolute;
+        top: 1em;
+        left: 2em;
+        
+        &.active {
+            @extend .menu-light-fill;
+        }
+        
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    
+    .logoWrap {
+    perspective: 1000;
+    position: absolute;
+    width: 45px;
+    height: 52px;
+    margin: 0 44%;
+    top: 1em;
+    
+    &:hover #logo {
+        transform-style: preserve-3d;
+        @include transition(all 0.5s linear);
+        transform: rotateY(360deg);
+    }
+    
+    #logo {
+        background: url('../images/logo.png');
+        background-image: url('../images/logo.svg'), none;        
+    }
+}
+
+}
+
+/*********************
+NAVIGATION STYLES
+*********************/
+
+/*
+all navs have a .nav class applied via
+the wp_menu function; this is so we can
+easily write one group of styles for
+the navs on the site so our css is cleaner
+and more scalable.
+*/
+
+
+nav {
+    
+    
+    position: relative;
+    z-index: 8;
+    @include transition(opacity 0.5s ease-in-out);
+    
+    &.off {
+        visibility: hidden; 
+        opacity: 0;
+    }
+    
+    &.on {
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    position: absolute;
+    z-index: 9;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(99,100,100,0.8);
+    
+        
+    li {
+        
+        
+        
+        list-style: none;
+        
+
+		a {
+            font-family: 'Share Tech Mono', sans-serif;
+            font-size: 2.2rem;
+            text-transform: uppercase;
+            display: block;
+			text-decoration: none;
+            line-height: 3.5rem;
+            
+
+			&:hover, &:focus {
+
+			}
+		}
+
+		&:first-child {}
+
+		&:last-child {}
+
+		/*
+		so you really have to rethink your dropdowns for mobile.
+		you don't want to have it expand too much because the
+		screen is so small. How you manage your menu should
+		depend on the project. Here's some great info on it:
+		http://www.alistapart.com/articles/organizing-mobile/
+		*/
+        ul.sub-menu
+            {
+            
+			li {
+                
+                display: none;
+				
+                a {
+
+					&:hover,
+					&:focus {}
+
+					&:link {}
+
+				}
+
+				&:first-child {}
+
+				&:last-child {}
+
+			}
+
+		}
+
+	} /* end .menu li */
+
+	/* highlight current page */
+	li.current-menu-item,
+	li.current_page_item,
+	li.current-page-ancestor {
+
+		a {}
+
+	}  /* end current highlighters */
+
+} /* end .nav */
+
+
+/*********************
+POSTS & CONTENT STYLES
+*********************/
+
+   .port {
+        height: 250px;
+        width: 100%;
+        background: url('../images/img-noise.png');
+        
+       
+       .content {
+           overflow: hidden;
+           width: 100%;
+
+           img {
+               position: relative;
+               display: block;
+               margin: 2em auto 0
+           }
+       }
+   }
+
+.content {
+    
+    p {
+    margin-bottom: 1em;
+    }
+    
+    h1,h2,h3,h4,h5,h6 {
+        text-transform: none;
+        //font-family: $sans-serif;
+    }
+    
+    ul {
+        list-style: square inside;
+        margin-bottom: 1em;
+        margin-top: -0.8em;
+    }
+      
+}
+
+article {
+}
+    
+.gallery {
+    
+    ul {
+        width: 100%;
+        
+        li {
+            list-style: none;
+            position: relative;
+            line-height: 0;
+            margin: 0 auto;
+            
+        }
+    }
+    
+    img { 
+        
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+        
+}
+
+.masonry {
+  overflow: hidden;
+  
+     ul {
+      width: 100%;
+     } li {
+      //float: left;
+      list-style: none;
+      width: 25%;
+      //margin-right: 20px;
+      //margin-bottom: 20px;
+      line-height: 0;
+    }
+}
+
+#design {
+    
+    .filters {
+        
+        position: relative;
+        top: -10px;
+        
+        .uicon { 
+            display: inline-block;
+            opacity: 0.7;
+            @include transition(opacity 0.3s);
+            
+            &:hover, &.active {
+                opacity: 1;
+                @include transition(opacity 0.3s);
+            }
+        }
+    }
+    
+    .banner {
+        
+        &:before { 
+            position: absolute;
+            width: 100%;
+            height: 10px;
+            content: '';
+            @include box-shadow(inset 0 5px 10px -5px rgba(0, 0, 0, 0.75)); 
+        }
+        
+        
+        position: relative;
+        
+        .logo, .title {
+            
+            float: left;
+            
+            
+            img {
+                display: none;    
+            }
+        }
+        
+        .bannerimg {
+            
+            float: left;
+            width: 100%;
+            margin-bottom: -7px;
+            
+            img {
+                width: 100%;
+            }
+        }
+        
+        .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            color: white;
+            &:hover { color: $light-grey; }
+        }
+        
+        .toggle {
+            position: absolute;
+            display: block;
+            opacity: 0.8;
+            z-index: 999;
+            right: 0;
+            
+            &.info {
+                top: 0;
+            }
+            
+            &.view {
+                top: 52px;
+            }
+            
+            @include transition(opacity 0.5s);
+            
+            &:hover {
+                opacity: 1;
+                cursor: pointer;
+                @include transition(opacity 0.5s);
+            }
+            
+            &.off {
+                opacity: 0;
+            }
+            
+            i {
+                font-size: 2em;
+                line-height: 52px;
+                text-align: center;
+                width: 46px;
+            }
+        }
+        
+        .bannertext{
+            position: absolute;
+            padding: 0;
+            overflow-y: auto;
+            height: 100%;
+            min-width: 100%;
+            left: 100%;
+            opacity: 0;
+            @include transition(all 0.5s);
+            
+            &.active {
+            left: 0;
+            opacity: 1;
+            }
+        }
+    }
+} //end design content
+
+#home {
+    .top {
+        background: url('../images/jellybg.png') no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        min-height: 800px;
+        
+        .nexus {
+            display: block;
+            position: absolute;
+            margin: auto;
+            top: 0; right: -2px; bottom: 0; left: 0;
+            width: 12em; 
+            height: 40%;
+
+            ul {
+                li {
+                    list-style: none;
+                    display: inline-block;
+                }
+
+            }
+        }
+        
+        .navdown {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+                .arrow-down {                
+                    margin: 0 auto;                    
+                    &:hover {
+                        @extend .bounce;
+                    }
+                }
+        }
+        
+        
+    }
+    
+    .content {
+        width: 95%;
+        margin: 0 auto 5em;
+        
+        
+        article {
+            
+            position: relative;
+        
+           .biopic {
+               
+               padding: 2.5em 0;
+
+                img {
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+    
+        }
+    }
+
+    .hello { 
+                position: relative;
+                width: 100%;
+                margin: 0 auto;
+
+                .h2 {
+                    position: relative;
+                    margin: 0 0;
+                    width: 100%;
+                    top: -80px;
+                    text-align: center;
+                    text-transform: none;
+                }
+    }
+} //end home content
+
+#audio {
+    
+    article {
+        
+        h1, h2 {
+            text-align: center;
+        }
+        
+        iframe {
+            width: 100%;
+            min-height: 4.5em;
+        }
+    }
+
+} //end audio content
+
+#resume {
+    
+    padding: 1em;
+    
+    background: url('../images/resume-bg.png') no-repeat center bottom fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    
+    h1, h2, h3 {
+        text-shadow: rgb(50, 50, 50) 1px 1px 0px;
+    }
+    
+    p {
+        margin-bottom: 1em;
+        -moz-hyphens: none;
+        -webkit-hyphens: none;
+        hyphens: none;
+    }
+    
+    ul {
+        
+        margin-bottom: 1em;
+        
+        li {
+            list-style: inside square none;
+            line-height: 1em;
+            width: 100%;
+        }
+    }
+    
+    .col { 
+        border-bottom: 1px solid white;
+        margin-bottom: 1em;
+    }
+    
+    .name {
+    }
+    
+    .contact {
+        
+        width: 100%;
+        
+        p { text-align: left; }
+        
+        a { text-decoration: none; }
+    
+    }    
+    
+    .bio {}
+    
+    .skills {
+        p {
+            margin-bottom: 0.2em;
+        }
+    }
+    
+    .exp {}
+    
+    .edu {}
+    
+} //end resume content
+
+/******************************************************************
+PAGE NAVI STYLES
+******************************************************************/
+
+
+/*********************
+SIDEBARS & ASIDES
+*********************/
+
+.sidebar {}
+
+/*********************
+FOOTER STYLES
+*********************/
+//iconwidth
+
+$width: 47px;
+
+footer {
+	
+    @extend .clearfix;
+    overflow: none;
+
+	.copy {
+        position: relative;
+        display: block;
+        background: black;
+        width: 100%;
+        height: 1.5em;
+        padding-top: 2em;
+        z-index: 9;
+        color: $dark-grey;
+        text-align: center;
+    }
+
+.socialNexus {
+    
+    margin: 2em auto;
+    width: 100%;
+    text-align: center;
+    
+    a:hover { color: $dark-grey }
+    
+    .uicon {
+        display: inline-block;
+        &:hover { @extend .bounce; }
+    }
+    
+    i {
+        width: $width;
+        font-size: 1.4em;
+        line-height: 52px;
+    }
+    
+    .twitter, {        
+    }
+    .soundcloud, {        
+    }
+    .tumblr, {        
+    }
+    .instagram, {
+        
+    }
+    .behance, {        
+    }
+    .linkedin, {        
+    }
+}
+    
+     .contact {
+        margin: 0 auto 2em;
+    }
+
+    .navup {
+        margin: 0 auto;
+    }
+
+    .navup {
+        position: relative;
+        bottom: -20px;
+        @include transition(all 0.5s ease-in-out);
+        z-index: 8;
+        
+        &:hover {
+            bottom: 0;
+        }
+    }
+} //end footer
+
+/******CONTACT FORM*********/
+#contact {
+    
+    label {
+        display: block;
+    }
+    
+    input, textarea {
+        border: 2px solid $dark-grey;
+        background-color: rgba(0,0,0,0.5);
+        color: white;
+    }
+    
+    input {
+        height: 2em;
+    }
+}
+

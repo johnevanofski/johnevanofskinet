@@ -1,0 +1,506 @@
+/******************************************************************
+Site Name:
+Author:
+
+Stylesheet: Mixins & Constants Stylesheet
+
+This is where you can take advantage of Sass' great features:
+Mixins & Constants. I won't go in-depth on how they work exactly,
+there are a few articles below that will help do that. What I will
+tell you is that this will help speed up simple changes like
+changing a color or adding CSS3 techniques gradients.
+
+A WORD OF WARNING: It's very easy to overdo it here. Be careful and
+remember less is more.
+
+******************************************************************/
+
+/*********************
+CLEARFIXIN'
+*********************/
+
+// Contain floats: nicolasgallagher.com/micro-clearfix-hack/
+.clearfix {
+  zoom: 1;
+	&:before, &:after { content: ""; display: table; }
+	&:after { clear: both; }
+}
+
+/*********************
+TOOLS
+*********************/
+
+// BORDER-BOX ALL THE THINGS! (http://paulirish.com/2012/box-sizing-border-box-ftw/)
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing:    border-box;
+	box-sizing:         border-box;
+}
+
+// http://www.zeldman.com/2012/03/01/replacing-the-9999px-hack-new-image-replacement/
+.image-replacement {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+
+/*********************
+COLORS
+Need help w/ choosing your colors? Try this site out:
+http://0to255.com/
+*********************/
+
+$dark-grey: #2D2D2D;
+$light-grey: #E8E7E7;
+
+$link-color: white;
+$link-hover: LightSeaGreen;
+
+/*
+Here's a great tutorial on how to
+use color variables properly:
+http://sachagreif.com/sass-color-variables/
+*/
+
+/********************
+HIGHTLIGHTS
+*********************/
+
+::selection {
+  background: GoldenRod; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: GoldenRod; /* Gecko Browsers */
+}
+
+/*********************
+TYPOGRAPHY
+*********************/
+
+$sans-serif:        "Ubuntu Mono", Courier New, sans-serif;
+$serif:             "Georgia", Cambria, Times New Roman, Times, serif;
+
+
+/* 	To embed your own fonts, use this syntax
+	and place your fonts inside the
+	library/fonts folder. For more information
+	on embedding fonts, go to:
+	http://www.fontsquirrel.com/
+	Be sure to remove the comment brackets.
+*/
+
+/*	@font-face {
+    	font-family: 'Font Name';
+    	src: url('library/fonts/font-name.eot');
+    	src: url('library/fonts/font-name.eot?#iefix') format('embedded-opentype'),
+             url('library/fonts/font-name.woff') format('woff'),
+             url('library/fonts/font-name.ttf') format('truetype'),
+             url('library/fonts/font-name.svg#font-name') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+	}
+*/
+
+/*
+use the best ampersand
+http://simplebits.com/notebook/2008/08/14/ampersands-2/
+*/
+span.amp {
+  font-family: Baskerville,'Goudy Old Style',Palatino,'Book Antiqua',serif !important;
+  font-style: italic;
+}
+
+// text alignment
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+
+
+/*********************
+TRANSITION
+*********************/
+
+/*
+I totally rewrote this to be cleaner and easier to use.
+You'll need to be using Sass 3.2+ for these to work.
+Thanks to @anthonyshort for the inspiration on these.
+USAGE: @include transition(all 0.2s ease-in-out);
+*/
+
+@mixin transition($transition...) {
+	// defining prefixes so we can use them in mixins below
+	$prefixes:      ("-webkit",  "");
+  @each $prefix in $prefixes {
+    #{$prefix}-transition: $transition;
+  }
+
+  transition: $transition;
+}
+
+/*********************
+ANIMATIONS
+*********************/
+
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+@keyframes fadeIn { 
+    0% {opacity: 0;} 
+    100% {opacity: 1;} 
+} 
+
+
+.fadeInEach li {
+    @extend .animated;
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn; 
+    
+    @for $i from 1 to 5 {
+    
+        &:nth-child(#{$i}) {
+            -webkit-animation-delay: 0.2s + $i/5;
+            animation-delay: 0.2s + $i/5;
+        }
+    }
+}
+
+.fadeIn {
+    @extend .animated;
+    -webkit-animation-name: fadeIn; 
+    animation-name: fadeIn;
+    
+    &.hello { 
+        -webkit-animation-delay: 1.5s;
+        animation-delay: 1.5s;
+    }
+    &.navdown {
+        -webkit-animation-delay: 1.8s;
+        animation-delay: 1.8s;
+    }
+}
+
+
+@-webkit-keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        -webkit-transform: translateY(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes fadeInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    } 
+    100% { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+
+.fadeInDown { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+    -webkit-animation-name: fadeInDown; 
+    animation-name: fadeInDown; 
+}
+
+@-webkit-keyframes bounce {
+    0%, 50%, 100%, {transform: translateY(0);}
+    25%, 75%, {transform: translateY(-5px);}
+} 
+
+@keyframes bounce { 
+    0%, 50%, 100%, {transform: translateY(0);}
+    25%, 75%, {transform: translateY(-5px);}
+} 
+
+.bounce { 
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-name: bounce;
+    -webkit-animation-fill-mode: both;
+    animation-duration: 2s; 
+    animation-fill-mode: both; 
+    animation-iteration-count:infinite; 
+    animation-name: bounce; 
+}
+
+
+/*********************
+CSS3 GRADIENTS
+Be careful with these since they can
+really slow down your CSS. Don't overdo it.
+*********************/
+
+/* @include css-gradient(#dfdfdf,#f8f8f8); */
+@mixin css-gradient($from: #dfdfdf, $to: #f8f8f8) {
+	background-color: $to;
+	background-image: -webkit-gradient(linear, left top, left bottom, from($from), to($to));
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(to bottom, $from, $to);
+}
+
+/*********************
+BOX SIZING
+*********************/
+
+/* @include box-sizing(border-box); */
+/* NOTE: value of "padding-box" is only supported in Gecko. So
+probably best not to use it. I mean, were you going to anyway? */
+@mixin box-sizing($type: border-box) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing:    $type;
+	-ms-box-sizing:     $type;
+	box-sizing:         $type;
+}
+
+/********************
+BOX SHADOW
+*********************/
+
+@mixin box-shadow($shadow) {
+-webkit-box-shadow: $shadow;
+-moz-box-shadow: $shadow;
+box-shadow: $shadow;
+}
+
+/*********************
+BUTTONS
+*********************/
+
+/*********************
+SPRITES
+*********************/
+.uicon {
+    background: url('../images/icons-ui.png');
+    background-image: url('../images/icons-ui.svg'), none;
+    background-size: 315px 156px;
+    width: 45px; height: 52px;
+
+    &.blank {
+        background-position: 0 0;
+        &:hover {
+            @extend .blank-fill;
+        }
+    }
+    &.blank-fill {
+        background-position: 0 -52px;
+    }
+    &.blank-dark {
+        background-position: 0 -104px;
+    }
+    &.menu-dark-empty {
+        background-position: -46px 0;
+        &:hover {
+            @extend .menu-dark-fill;
+        }
+    }
+    &.menu-light-empty {
+        background-position: -45px -52px;
+        &:hover {
+            @extend .menu-light-fill;
+        }
+    }
+    &.menu-dark-fill {
+        background-position: -90px 0;
+    }
+    &.menu-light-fill {
+        background-position: -90px -52px;
+    }
+    &.mail-dark {
+        background-position: -135px 0;
+    }
+    &.mail-empty {
+        background-position: -135px -52px;
+        &:hover {
+            @extend .mail-fill;            
+        }
+    }
+    &.mail-fill {
+        background-position: -135px -104px;
+    }
+    &.arrow-down {
+        background-position: -180px 0;
+    }
+    &.arrow-up {
+        background-position: -180px -52px;
+    }
+    &.draft {
+        background-position: -180px -104px;      
+    }
+    &.print {
+        background-position: -225px -104px;
+    }
+    &.web {
+        background-position: -270px -104px;
+    }
+    &.view {
+        background-position: -45px -104px;
+    }
+    &.info {
+        background-position: -90px -104px;
+    }
+}
+
+.nav-arrow {
+    background: url('../images/icons-ui.png');
+    background-image: url('../images/icons-ui.svg'), none;
+    width: 45px; height: 39px;
+    
+    &.left-fill {
+        background-position: -225px 0;
+    }
+    &.right-fill {
+        background-position: -225px -38px;
+    }
+    &.left-empty {
+        background-position: -270px -0;
+    }
+    &.right-empty {
+        background-position: -270px -38px;
+    }
+}
+
+.nexicon {
+    background: url('../images/nexus_.png');
+    background-image: url('../images/nexus_.svg'), none;
+    background-size: 360px 208px;
+    width: 90px; height: 104px;
+    z-index: 8;
+    
+    span {
+        background: url('../images/nexus.png');
+        background-image: url('../images/nexus_.svg'), none;
+        background-size: 360px 208px;
+        width: 90px; height: 104px;
+        z-index:9;
+        opacity: 0;
+        display: block;
+        @include transition(opacity 0.3s);
+    }
+
+    &.design {
+        background-position: 0 -104px;    
+        span {
+            background-position: 0 0;
+            &:hover  {
+                opacity: 1;
+            }        
+        }
+    }
+    
+    &.video {
+        background-position: -90px -104px;    
+        span { 
+            background-position: -90px 0;
+            &:hover {                
+                opacity: 1;       
+            }
+        }
+    }
+    
+    &.audio {
+        background-position: -180px -104px;    
+        span {
+            background-position: -180px 0;
+            &:hover  {            
+                opacity: 1;
+            }        
+        }
+    }
+    
+    &.photo {
+        background-position: -270px -104px;    
+        span {
+            background-position: -270px 0;
+            &:hover  {            
+                opacity: 1;
+            }        
+        }
+    }
+
+    
+
+}
+
+
+
+/*****************
+SHAPES
+*****************/
+
+@mixin hex($size: 100px, $color: $dark-grey) {
+    
+    $tt: 0.3s;
+    $hover-color: lighten($color, 20%);
+    
+        display: inline-block;
+        width: $size;
+        height: $size / 2 + 5;
+        background: $color;
+        position: relative;
+        transition: background-color $tt ease-in-out;
+    
+    &:before {
+        content: "";
+        position: absolute;
+        top: $size / -4;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: $size / 2 solid transparent;
+        border-right: $size / 2 solid transparent;
+        border-bottom: $size / 4 solid $color;
+        transition: border-bottom $tt ease-in-out;
+    }
+    
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: $size / -4;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-left: $size / 2 solid transparent;
+        border-right: $size / 2 solid transparent;
+        border-top: $size / 4 solid $color;
+        transition: border-top $tt ease-in-out;
+    }
+    
+    &:hover {
+    
+    background-color: $hover-color;
+    transition: background-color $tt ease-in-out;
+    
+    &:before{
+      border-bottom: $size / 4 solid $hover-color;
+      transition: border-bottom $tt ease-in-out;
+    }
+    &:after{
+      border-top: $size / 4 solid $hover-color;
+      transition: border-top $tt ease-in-out;
+    }    
+  }
+
+}
+
+
+

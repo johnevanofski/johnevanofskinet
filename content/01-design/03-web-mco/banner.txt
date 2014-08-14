@@ -1,0 +1,23 @@
+Title: Mission Creek Oakland Festival Website
+
+----
+
+Tags: web, draft
+
+----
+
+Text: I helped conceptualize, wireframe, create drafts, build and ultimately deploy the Mission Creek Oakland Festival website. Incorporating hand crafted designs and typefaces I helped get MCO a fully functional website that contained their monthly festival schedule, artist information and submission forms in one place.
+
+Features:
+
+- event calendar and custom built event slider for the homepage
+- social media coverage and feeds from instagram and twitter
+- zine style graphics
+
+Tools: _Photoshop, html & css, css3 animation, php, javascript (jquery), WordPress cms, Time.ly event calendar_
+
+Visit: (link: http://mcofest.org text: mcofest.org popup: yes)
+
+----
+
+Color: rgba(2,140,127,1)

@@ -1,0 +1,239 @@
+/******************************************************************
+Site Name: 
+Author: 
+
+Stylesheet: 720px and Up Stylesheet
+
+This stylesheet is loaded for larger devices. It's set to 
+481px because at 480px it would load on a landscaped iPhone.
+This isn't ideal because then you would be loading all those
+extra styles on that same mobile connection. 
+
+A word of warning. This size COULD be a larger mobile device,
+so you still want to keep it pretty light and simply expand
+upon your base.scss styles.
+
+******************************************************************/
+/**********************
+TWEAKS
+**********************/
+
+
+/*********************2
+NAVIGATION STYLES
+*********************/
+header {
+    
+    height: 5em;
+
+    .abovenav {
+        z-index: 0;
+    }
+    
+    .mobile-only { 
+        display: none;
+    }
+    
+    .logoWrap {
+        display: inline-block;
+        left: 2em;
+        margin: 0;
+    }
+    
+}
+
+nav {
+
+    @include transition(none);
+    top: 0;
+    
+    &.off {
+        height: auto;
+        visibility: visible;
+        opacity: 1;
+        display: inline-block;
+    }
+
+	/* .menu is clearfixed inside mixins.scss */
+	&.menu {
+        
+        position: absolute;
+        z-index: 9;
+        text-align: left;
+        width: auto;
+        background-color: rgba(0,0,0,0);
+        margin: 0.9em 5.5em;
+        
+		ul {
+			li {
+                
+                display: inline-block;
+                padding: 0 0.5em;
+                
+                &.active {
+                    background-color: $dark-grey;
+                }
+                
+				a {
+					
+                    font-size: 1.5em;
+                    
+					/*
+					you can use hover styles here even though this size
+					has the possibility of being a mobile device.
+					*/
+					&:hover, &:focus {
+					
+					}
+				}
+				
+				&:first-child {}
+				&:last-child {}
+				
+				/*
+				plan your menus and drop-downs wisely.
+				*/
+				ul.sub-menu {
+					
+                    li {
+						a {
+							&:hover,
+							&:focus {}
+							&:link {}
+						}
+						&:first-child {}
+						&:last-child {}
+					}
+				}
+			} /* end .menu ul li */
+			
+			/* highlight current page */
+			li.current-menu-item, 
+			li.current_page_item,
+			li.current-page-ancestor {
+				a {}
+			}  /* end current highlighters */
+		} /* end .menu ul */
+	} /* end .menu */
+    
+}
+
+/*********************
+CONTENT & POSTS
+*********************/
+
+#home {
+
+    .content {
+        
+        .nexus {
+
+            ul {
+                li {}
+            }
+        }
+    }
+}
+#design {
+
+    
+    .banner {
+        
+        .title {
+            width: 25%;
+            padding: 1%;
+        }        
+        
+        .logo {
+
+            background-color: white;
+            width: 25%;
+            padding: 1%;
+            
+            img {
+                display: block;
+                width: 100%;
+            }
+        }
+        
+        .bannerimg {
+            
+            float: left;
+            width: 75%;
+            
+            img {
+                width: 100%;
+            }
+        }
+        
+        .toggle {
+            //display: none;
+        }
+        
+        .bannertext{
+            
+            &.active {
+                padding: 1%;
+                left: 25%;
+                min-width: 75%;
+            }
+            
+            h2.inner-title {
+                display: none;
+            }
+        
+        }
+    }
+}
+
+#resume {
+    
+    
+    p {}
+    
+    .col { 
+        border-bottom: none;
+    }
+    
+    .name {}
+    
+    .contact {
+        
+        width: 50%;
+        
+        p { 
+            text-align: right; 
+            padding-right: 1em;
+        }
+        
+    }
+    
+    .bio {}
+    
+    .skills {
+        padding-left: 2em;
+    }
+    
+    .exp {}
+    
+    .edu {
+        padding-left: 2em;
+    }
+    
+} //end resume content
+
+
+/*********************
+FOOTER STYLES
+*********************/
+	
+/*
+check your menus here. do they look good?
+do they need tweaking?
+*/
+.footer-links {
+	ul {
+		li {}
+	}
+} /* end .footer-links */
+			

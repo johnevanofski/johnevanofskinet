@@ -1,0 +1,83 @@
+/**
+ * Gridpak Beta SCSS 
+ *
+ * Generator - http://gridpak.com/
+ * Created by @erskinedesign
+ */
+
+/* Reusable column setup */
+
+@mixin col {
+    border:0px solid rgba(0,0,0,0);
+    float:left;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    -moz-background-clip:padding-box !important;
+    -webkit-background-clip:padding-box !important;
+    background-clip:padding-box !important;
+}
+
+.col {
+   @include col;
+}
+
+@mixin span($num, $gutter_pc, $gutter_px, $padding, $max_columns) {
+    $one_col: (100% - ($gutter_pc * ($max_columns - 1))) / $max_columns;
+    width:($one_col * $num) + ($gutter_pc * ($num - 1));
+    border-left-width:$gutter_px;
+    padding:$padding;
+    margin-left:$gutter_pc;
+}
+
+@mixin span_first {
+    margin-left:0;
+}
+
+    /* 2. 4 Column Grid 760px - Infinity 
+    ----------------------------------------------------------------------------- 
+    
+    Span 1:    25.0%
+    Span 2:    50.0%
+    Span 3:    75.0%
+    Span 4:    100%
+    
+    ----------------------------------------------------------------------------- */	
+    
+	@media screen and (min-width: $big) {
+        
+        .col {
+            margin-left:0%;
+            padding:0 1px;
+        }
+        
+        /* --- Gridpak variables ---*/ 
+        $max_columns: 4;
+        $padding: 0 1px;
+        $gutter_px: 0;
+        $gutter_pc: 0%;
+        
+        .row {
+            clear: both;
+        }
+        
+        .row .col:first-child {
+            @include span_first;
+        }
+        
+        
+        .span_1 {
+            @include span(1, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_2 {
+            @include span(2, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_3 {
+            @include span(3, $gutter_pc, $gutter_px, $padding, $max_columns);
+        }
+        .span_4 {
+            @include span_first;
+            width:100%;
+        }
+    }
+ 

@@ -1,0 +1,10 @@
+.sass-cache/*
+kirby/*
+site/config/*
+site/cache/*
+site/panel/accounts/*
+panel/*
+index.php
+license.mdown
+readme.mdown
+.htaccess

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="360px" height="207.807px" viewBox="0 0 360 207.807" style="enable-background:new 0 0 360 207.807;" xml:space="preserve"
+	>
+<style type="text/css">
+<![CDATA[
+    text-rendering: geometricPrecision;
+]]>
+</style>
+<g id="Visual_1_">
+	<polygon style="fill:#2D2D2D;" points="0,129.879 45,103.904 90,129.879 90,181.831 45,207.807 0,181.831 	"/>
+	<path style="fill:#2D2D2D;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" d="M78.642,155.837
+		c-1.016,2.182-2.509,4.217-4.383,6.053c-5.881,5.741-15.559,9.486-26.5,9.486c-10.908,0-20.556-3.723-26.444-9.432
+		c-1.886-1.83-3.384-3.866-4.411-6.046c1.381-2.979,3.645-5.687,6.569-7.977c5.942-4.655,14.631-7.589,24.313-7.589
+		c9.694,0,18.394,2.945,24.341,7.61C75.019,150.212,77.261,152.892,78.642,155.837z"/>
+	<circle style="fill:#2D2D2D;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" cx="47.773" cy="155.855" r="10.705"/>
+</g>
+<g id="Audio_1_">
+	<polygon style="fill:#2D2D2D;" points="180,129.879 225,103.904 270,129.879 270,181.831 225,207.807 180,181.831 	"/>
+	<circle style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" cx="225" cy="155.855" r="12.386"/>
+	
+		<ellipse style="fill:none;stroke:#FFFFFF;stroke-width:1.5;stroke-miterlimit:10;" cx="225" cy="155.855" rx="23.088" ry="23.083"/>
+	<ellipse style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" cx="225" cy="155.855" rx="32.094" ry="32.087"/>
+</g>
+<g id="Video_1_">
+	<polygon style="fill:#2D2D2D;" points="90,129.879 135,103.904 180,129.879 180,181.831 135,207.807 90,181.831 	"/>
+	<path style="fill:#2D2D2D;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" d="M125.554,146.01v-9.407h35.819v26.077h-35.819
+		v-16.57 M105.409,134.379v23.36l10.115-5.84v-11.68L105.409,134.379z M128.747,162.68l-5.122,16.288l-2.538,2.338v1.146h14.878
+		l6.117-19.772H128.747z M161.373,140.896v5.098l3.218,1.857v-8.812L161.373,140.896z M115.524,139.04v14.041h4.489V139.04H115.524z
+		 M120.013,139.542v12.967h2.579v-12.967H120.013z M122.592,139.899v12.107h2.961v-12.107H122.592z"/>
+</g>
+<g id="Photography_1_">
+	<polygon style="fill:#2D2D2D;" points="270,129.879 315,103.904 360,129.879 360,181.831 315,207.807 270,181.831 	"/>
+	<g id="camera_1_">
+		
+			<rect x="289.756" y="136.403" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" width="51.22" height="41.341"/>
+		<path style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" d="M334.69,157.074
+			c0,10.675-8.649,19.331-19.324,19.331c-10.676,0-19.332-8.656-19.332-19.331c0-4.105,1.28-7.91,3.469-11.034
+			c3.489-5.013,9.293-8.291,15.863-8.291c6.571,0,12.373,3.278,15.855,8.291C333.41,149.164,334.69,152.968,334.69,157.074z"/>
+		
+			<rect x="304.287" y="128.112" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" width="22.153" height="8.294"/>
+		
+			<rect x="307.863" y="131.103" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" width="15" height="2.651"/>
+		<path style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" d="M331.222,146.04
+			c-3.482-5.013-9.284-8.291-15.855-8.291c-6.57,0-12.374,3.278-15.863,8.291c-2.188,3.124-3.469,6.929-3.469,11.034
+			c0,10.675,8.656,19.331,19.332,19.331c10.675,0,19.324-8.656,19.324-19.331C334.69,152.968,333.41,149.164,331.222,146.04z"/>
+		<path style="fill:none;stroke:#FFFFFF;stroke-miterlimit:10;" d="M315.366,173.478c-9.058,0-16.405-7.347-16.405-16.404
+			c0-4.244,1.618-8.123,4.28-11.034c2.994-3.293,7.317-5.364,12.125-5.364s9.124,2.071,12.124,5.364
+			c2.657,2.911,4.273,6.79,4.273,11.034C331.764,166.131,324.425,173.478,315.366,173.478z"/>
+		
+			<rect x="291.806" y="133.162" style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" width="5.305" height="3.244"/>
+		<path style="fill:none;stroke:#FFFFFF;stroke-width:2;stroke-miterlimit:10;" d="M340.976,136.403v9.637h-9.754
+			c-3.482-5.013-9.284-8.291-15.855-8.291c-6.57,0-12.374,3.278-15.863,8.291h-9.747v-9.637H340.976z"/>
+	</g>
+</g>
+<g id="design">
+	<polygon style="fill:#636464;" points="0,25.976 45,0 90,25.976 90,77.927 45,103.902 0,77.927 	"/>
+	<text transform="matrix(1 0 0 1 8.2534 58.9248)" style="fill:#FFFFFF; font-family:'Share Tech Mono'; font-size:22px">DESIGN</text>
+</g>
+<g id="photo">
+	<polygon style="fill:#636464;" points="270,25.975 315.002,-0.001 360,25.975 360,77.927 315.002,103.903 270,77.927 	"/>
+	
+		<text transform="matrix(1 0 0 1 284.3779 58.9268)" style="fill:#FFFFFF; font-family:'Share Tech Mono'; font-size:22px;">PHOTO</text>
+</g>
+<g id="audio">
+	<polygon style="fill:#636464;" points="180,25.976 225,0 270,25.976 270,77.927 225,103.902 180,77.927 	"/>
+	
+		<text transform="matrix(1 0 0 1 194.3779 58.9248)" style="fill:#FFFFFF; font-family:'Share Tech Mono'; font-size:22px;">AUDIO</text>
+</g>
+<g id="video">
+	<g id="blank_2_">
+		<polygon style="fill:#636464;" points="90,25.976 135,0 180,25.976 180,77.927 135,103.902 90,77.927 		"/>
+	</g>
+	
+		<text transform="matrix(1 0 0 1 104.3784 58.9258)" style="fill:#F1F2F2; font-family:'Share Tech Mono'; font-size:22px;">VIDEO</text>
+</g>
+</svg>

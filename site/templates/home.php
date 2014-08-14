@@ -1,0 +1,34 @@
+<?php snippet('header') ?>
+
+<div id="home">
+        <section class="top clearfix">
+            <div class="nexus fadeInEach">
+                <ul>
+                    <li class="nexicon design"><a href="design"><span></span></a></li>
+                    <li class="nexicon video"><a href="video"><span></span></a></li>
+                    <li class="nexicon audio"><a href="audio"><span></span></a></li>
+                    <li class="nexicon photo"><a href="photography"><span></span></a></li>
+                </ul>
+            </div>
+            <a href="#profiletop"><div class="navdown fadeIn"><div class="uicon arrow-down"></div></div></a>
+        </section>
+
+    <div id="wrapper">
+        <div id="scroller">
+        <section class="content">
+            
+            <div id="profiletop" class="hello fadeIn" data-stellar-offset-parent="true">
+                <div class="h2" data-stellar-ratio="0.5">Hello, my name is <br/>John Evanofski</div>
+            </div>
+
+            <article>
+                <div class="biopic clearfix"><img src="assets/images/biopic.png"></div>
+                <?php echo kirbytext($page->text()) ?>
+            </article>
+        </section>
+        </div>
+    </div>
+</div>    
+
+
+<?php snippet('footer') ?>
