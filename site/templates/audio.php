@@ -3,7 +3,7 @@
 <div id="audio">
     
     <section class="port">
-        <div class="content"><img width="150" src="assets/images/audio-anim.gif" alt="<?php echo html($page->title())?>"></div>
+        <div class="content"><img width="150" src="assets/images/anim-audio.gif" alt="<?php echo html($page->title())?>"></div>
     </section>
     
     <section class="content clearfix">

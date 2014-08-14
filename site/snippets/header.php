@@ -13,12 +13,14 @@
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     
     
-  <?php echo js('assets/js/jquery.stellar.js');
-        echo js('assets/js/iscroll.js');
-        echo js('assets/js/magpop.js');
-        echo js('assets/js/masonry.min.js');
-        echo js('assets/js/scripts.js'); 
+  <?php echo js('assets/js/min/jquery.stellar.min.js');
+        echo js('assets/js/min/iscroll.min.js');
+        echo js('assets/js/min/magpop.min.js');
+        echo js('assets/js/min/masonry.min.js');
+        //echo js('assets/js/min/scripts.min.js'); //production js
+        echo js('assets/js/scripts.js');
         
+        //echo css('assets/style/styles.min.css'); //production css
         echo css('assets/styles/styles.css'); 
     
     //css files with template name will be added to template

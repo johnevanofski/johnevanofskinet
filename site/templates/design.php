@@ -3,7 +3,7 @@
 <div id="design">
     
     <section class="port">
-        <div class="content"><img width="150" src="<?php echo u(); ?>assets/images/vis-anim.gif" alt="<?php echo html($page->title())?>"></div>
+        <div class="content"><img width="150" src="<?php echo u(); ?>assets/images/anim-vis.gif" alt="<?php echo html($page->title())?>"></div>
         
             
        <?php 

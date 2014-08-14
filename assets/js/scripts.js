@@ -91,6 +91,9 @@ var divs = $('.navdown, .nexus');
        }
 });
     
+    /*test */
+    
+    //$('.logoWrap').css('border','1px solid red');
 
     /* design banners */
     
