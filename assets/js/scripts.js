@@ -58,6 +58,12 @@ jQuery(document).ready(function($) {
         mainClass: 'mfp-zoom-in',
         removalDelay: 300,
     });
+    
+    $('.ajax-popup').magnificPopup({
+        type: 'ajax',
+        items: { src:'../../site/snippets/contact.php' }
+    });
+
 
 /*Init Masonry*/
 
@@ -80,7 +86,7 @@ jQuery(document).ready(function($) {
       });
     });
     
-
+//Animation triggers
 //homepage fadeOuts
 var divs = $('.navdown, .nexus');
     $(window).scroll(function(){
@@ -90,12 +96,12 @@ var divs = $('.navdown, .nexus');
              divs.removeClass('fadeInEach fadeIn').fadeOut();
        }
 });
+//sending 
     
-    /*test */
-    
-    //$('.logoWrap').css('border','1px solid red');
-
-    /* design banners */
+    $('#send-button').hover(function(){
+        $('.ufo').toggleClass('sending');
+    });
+/* design banners */
     
     $('.bannerinfo').click(function(e){
 
@@ -107,16 +113,16 @@ var divs = $('.navdown, .nexus');
         
     });
     
-    /* menu button functions */
-        $('.menu-button').click(function(e){
-            $(this).toggleClass('active');
-            $('nav').toggleClass('off on');
-            e.preventDefault();                
-        });
+/* menu button functions */
+    $('.menu-button').click(function(e){
+        $(this).toggleClass('active');
+        $('nav').toggleClass('off on');
+        e.preventDefault();                
+    });
 
-        $('nav li').click(function(e){
-            $('nav').addClass('off'); 
-        }); //end menu button fucntions
+    $('nav li').click(function(e){
+        $('nav').addClass('off'); 
+    }); //end menu button fucntions
 	
 	
     

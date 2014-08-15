@@ -15,7 +15,8 @@
     
   <?php echo js('assets/js/min/jquery.stellar.min.js');
         echo js('assets/js/min/iscroll.min.js');
-        echo js('assets/js/min/magpop.min.js');
+        //echo js('assets/js/min/magpop.min.js'); //production js
+        echo js('assets/js/magpop.js');
         echo js('assets/js/min/masonry.min.js');
         //echo js('assets/js/min/scripts.min.js'); //production js
         echo js('assets/js/scripts.js');
@@ -39,7 +40,7 @@
         <div class="abovenav">
             <div class="mobile-only uicon menu-light-empty menu-button"></div>     
             <div class="logoWrap"><a href="<?php echo url() ?>"><div style="width: 45px; height: 52px" id="logo"></div></a></div>
-            <a href="#contact" class="popup-button"><div class="uicon mail-empty contact"></div></a>  
+            <a href="<?php echo u();?>site/snippets/contact.php" class="ajax-popup"><div class="uicon mail-empty contact"></div></a>  
         </div>
         
         <nav class="menu off"><?php snippet('menu') ?></nav>

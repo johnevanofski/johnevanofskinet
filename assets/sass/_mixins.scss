@@ -307,21 +307,13 @@ SPRITES
     &.blank-dark {
         background-position: 0 -104px;
     }
-    &.menu-dark-empty {
-        background-position: -46px 0;
-        &:hover {
-            @extend .menu-dark-fill;
-        }
-    }
     &.menu-light-empty {
         background-position: -45px -52px;
         &:hover {
             @extend .menu-light-fill;
         }
     }
-    &.menu-dark-fill {
-        background-position: -90px 0;
-    }
+
     &.menu-light-fill {
         background-position: -90px -52px;
     }
@@ -342,6 +334,9 @@ SPRITES
     }
     &.arrow-up {
         background-position: -180px -52px;
+    }
+    &.ufo {
+        background-position: -90px 0;
     }
     &.draft {
         background-position: -180px -104px;      

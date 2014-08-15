@@ -10,28 +10,18 @@
         <a href="http://linkedin.com/evanofski" target="_blank"><div class="uicon blank linkedin"><i class="fa fa-linkedin"></i></div></a>
     </div>
             
-      <a href="#contact" class="popup-button"><div class="contact uicon mail-empty"></div></a>
+      <a href="<?php echo u();?>site/snippets/contact.php" class="ajax-popup"><div class="contact uicon mail-empty"></div></a>
       
+    <a href="#toTop"><div class="navup uicon arrow-up"></div></a>
+    
     <div class="copy"><?php echo kirbytext($site->copyright()) ?></div>  
     
-    <a href="#toTop"><div class="navup uicon arrow-up"></div></a>
+    
     
 </footer>
 
 </div> <!--close wrap-->
 
-<!-- contact form -->
-
-<div id="contact" class="zoom dark-popup mfp-hide">
-<h1>Contact</h1>
-<form action="MAILTO:contact@johnevanofski.net" method="post" enctype="text/plain">
-<label for"name">Name*</label><input type="text" name="name" required><br>
-<label for="email">E-mail*</label><input type="email" name="email" required><br>
-<label for="phone">Phone Number</label><input type="tel" name="phone-number"><br>
-<label for="message">Message*</label><textarea name="message" required></textarea><br>
-<input type="submit" value="Send">
-</form>
-</div>
 </body>
 
 </html>
