@@ -184,13 +184,13 @@ header {
     margin: 0 44%;
     top: 1em;
     
-    &:hover #logo {
+    &:hover .jelogo {
         transform-style: preserve-3d;
         @include transition(all 0.5s linear);
         transform: rotateY(360deg);
     }
     
-    #logo {
+    .jelogo {
         background: url('../images/logo.png');
         background-image: url('../images/logo.svg'), none;        
     }
@@ -736,7 +736,7 @@ footer {
     overflow: none;
 
 	.copy {
-        position: relative;;
+        position: relative;
         display: block;
         width: 100%;
         z-index: 0;
@@ -795,18 +795,20 @@ footer {
 
     .navup {
         position: relative;
-        bottom: -20px;
-        @include transition(all 0.5s ease-in-out);
         z-index: 8;
         
         &:hover {
-            bottom: 0;
+            @extend .bounce;
         }
     }
 } //end footer
 
 /******CONTACT FORM*********/
-#contact {
+#contactform {
+    
+    background-color: $dark-grey;
+    width: 100%;
+    padding: 1em;
     
     .ufo {
         @include transition (all 0.8s ease-in-out);
@@ -816,6 +818,10 @@ footer {
         &.sending {
             transform: rotate(360deg);
         }
+    }
+    
+    .error {
+        @extend .shake;
     }
     
     h1 { 
@@ -863,7 +869,7 @@ footer {
     
     textarea {
         width: 100%;
-        min-height: 9em;
+        min-height: 15em;
     }
     
     

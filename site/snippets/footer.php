@@ -10,17 +10,17 @@
         <a href="http://linkedin.com/evanofski" target="_blank"><div class="uicon blank linkedin"><i class="fa fa-linkedin"></i></div></a>
     </div>
             
-      <a href="<?php echo u();?>site/snippets/contact.php" class="ajax-popup"><div class="contact uicon mail-empty"></div></a>
+      <a href="#contact" class="popup-button"><div class="contact uicon mail-empty"></div></a>
       
     <a href="#toTop"><div class="navup uicon arrow-up"></div></a>
     
-    <div class="copy"><?php echo kirbytext($site->copyright()) ?></div>  
-    
-    
+    <div class="copy"><?php echo kirbytext($site->copyright()) ?></div>     
     
 </footer>
 
 </div> <!--close wrap-->
+
+<!--<div id="contact" class="zoom dark-popup mfp-hide"></div>-->
 
 </body>
 

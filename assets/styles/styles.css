@@ -270,7 +270,7 @@ USAGE: @include transition(all 0.2s ease-in-out);
 ANIMATIONS
 *********************/
 /* line 145, ../sass/_mixins.scss */
-.animated, .fadeInEach li, .fadeIn { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
+.animated, .fadeInEach li, .fadeIn, .shake, #contactform .error { -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-fill-mode: both; animation-fill-mode: both; }
 
 @-webkit-keyframes fadeIn { /* line 153, ../sass/_mixins.scss */
   0% { opacity: 0; }
@@ -324,7 +324,24 @@ ANIMATIONS
   25%, 75% { transform: translateY(-5px); } }
 
 /* line 233, ../sass/_mixins.scss */
-.bounce, #home .top .navdown .arrow-down:hover, footer .socialNexus .uicon:hover { -webkit-animation-duration: 2s; -webkit-animation-iteration-count: infinite; -webkit-animation-name: bounce; -webkit-animation-fill-mode: both; animation-duration: 2s; animation-fill-mode: both; animation-iteration-count: infinite; animation-name: bounce; }
+.bounce, #home .top .navdown .arrow-down:hover, footer .socialNexus .uicon:hover, footer .navup:hover { -webkit-animation-duration: 2s; -webkit-animation-iteration-count: infinite; -webkit-animation-name: bounce; -webkit-animation-fill-mode: both; animation-duration: 2s; animation-fill-mode: both; animation-iteration-count: infinite; animation-name: bounce; }
+
+@-webkit-keyframes shake { /* line 246, ../sass/_mixins.scss */
+  0%, 100% { -webkit-transform: translateX(0); }
+  /* line 247, ../sass/_mixins.scss */
+  10%, 30%, 50%, 70%, 90% { -webkit-transform: translateX(-10px); }
+  /* line 248, ../sass/_mixins.scss */
+  20%, 40%, 60%, 80% { -webkit-transform: translateX(10px); } }
+
+@keyframes shake { /* line 251, ../sass/_mixins.scss */
+  0%, 100% { transform: translateX(0); }
+  /* line 252, ../sass/_mixins.scss */
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
+  /* line 253, ../sass/_mixins.scss */
+  20%, 40%, 60%, 80% { transform: translateX(10px); } }
+
+/* line 256, ../sass/_mixins.scss */
+.shake, #contactform .error { -webkit-animation-name: shake; animation-name: shake; }
 
 /*********************
 CSS3 GRADIENTS
@@ -347,79 +364,79 @@ BUTTONS
 /*********************
 SPRITES
 *********************/
-/* line 292, ../sass/_mixins.scss */
-.uicon { background: url("../images/icons-ui.png"); background-image: url("../images/icons-ui.svg"), none; background-size: 315px 156px; width: 45px; height: 52px; }
-/* line 298, ../sass/_mixins.scss */
-.uicon.blank { background-position: 0 0; }
-/* line 304, ../sass/_mixins.scss */
-.uicon.blank-fill, .uicon.blank:hover { background-position: 0 -52px; }
-/* line 307, ../sass/_mixins.scss */
-.uicon.blank-dark { background-position: 0 -104px; }
 /* line 310, ../sass/_mixins.scss */
+.uicon { background: url("../images/icons-ui.png"); background-image: url("../images/icons-ui.svg"), none; background-size: 315px 156px; width: 45px; height: 52px; }
+/* line 316, ../sass/_mixins.scss */
+.uicon.blank { background-position: 0 0; }
+/* line 322, ../sass/_mixins.scss */
+.uicon.blank-fill, .uicon.blank:hover { background-position: 0 -52px; }
+/* line 325, ../sass/_mixins.scss */
+.uicon.blank-dark { background-position: 0 -104px; }
+/* line 328, ../sass/_mixins.scss */
 .uicon.menu-light-empty { background-position: -45px -52px; }
-/* line 317, ../sass/_mixins.scss */
-.uicon.menu-light-fill, .uicon.menu-light-empty:hover, header .uicon.menu-button.active { background-position: -90px -52px; }
-/* line 320, ../sass/_mixins.scss */
-.uicon.mail-dark { background-position: -135px 0; }
-/* line 323, ../sass/_mixins.scss */
-.uicon.mail-empty { background-position: -135px -52px; }
-/* line 329, ../sass/_mixins.scss */
-.uicon.mail-fill, .uicon.mail-empty:hover { background-position: -135px -104px; }
-/* line 332, ../sass/_mixins.scss */
-.uicon.arrow-down { background-position: -180px 0; }
 /* line 335, ../sass/_mixins.scss */
-.uicon.arrow-up { background-position: -180px -52px; }
+.uicon.menu-light-fill, .uicon.menu-light-empty:hover, header .uicon.menu-button.active { background-position: -90px -52px; }
 /* line 338, ../sass/_mixins.scss */
-.uicon.ufo { background-position: -90px 0; }
+.uicon.mail-dark { background-position: -135px 0; }
 /* line 341, ../sass/_mixins.scss */
-.uicon.draft { background-position: -180px -104px; }
-/* line 344, ../sass/_mixins.scss */
-.uicon.print { background-position: -225px -104px; }
+.uicon.mail-empty { background-position: -135px -52px; }
 /* line 347, ../sass/_mixins.scss */
-.uicon.web { background-position: -270px -104px; }
+.uicon.mail-fill, .uicon.mail-empty:hover { background-position: -135px -104px; }
 /* line 350, ../sass/_mixins.scss */
-.uicon.view { background-position: -45px -104px; }
+.uicon.arrow-down { background-position: -180px 0; }
 /* line 353, ../sass/_mixins.scss */
+.uicon.arrow-up { background-position: -180px -52px; }
+/* line 356, ../sass/_mixins.scss */
+.uicon.ufo { background-position: -90px 0; }
+/* line 359, ../sass/_mixins.scss */
+.uicon.draft { background-position: -180px -104px; }
+/* line 362, ../sass/_mixins.scss */
+.uicon.print { background-position: -225px -104px; }
+/* line 365, ../sass/_mixins.scss */
+.uicon.web { background-position: -270px -104px; }
+/* line 368, ../sass/_mixins.scss */
+.uicon.view { background-position: -45px -104px; }
+/* line 371, ../sass/_mixins.scss */
 .uicon.info { background-position: -90px -104px; }
 
-/* line 358, ../sass/_mixins.scss */
+/* line 376, ../sass/_mixins.scss */
 .nav-arrow { background: url("../images/icons-ui.png"); background-image: url("../images/icons-ui.svg"), none; width: 45px; height: 39px; }
-/* line 363, ../sass/_mixins.scss */
+/* line 381, ../sass/_mixins.scss */
 .nav-arrow.left-fill { background-position: -225px 0; }
-/* line 366, ../sass/_mixins.scss */
+/* line 384, ../sass/_mixins.scss */
 .nav-arrow.right-fill { background-position: -225px -38px; }
-/* line 369, ../sass/_mixins.scss */
+/* line 387, ../sass/_mixins.scss */
 .nav-arrow.left-empty { background-position: -270px 0; }
-/* line 372, ../sass/_mixins.scss */
+/* line 390, ../sass/_mixins.scss */
 .nav-arrow.right-empty { background-position: -270px -38px; }
 
-/* line 377, ../sass/_mixins.scss */
-.nexicon { background: url("../images/nexus_.png"); background-image: url("../images/nexus_.svg"), none; background-size: 360px 208px; width: 90px; height: 104px; z-index: 8; }
-/* line 384, ../sass/_mixins.scss */
-.nexicon span { background: url("../images/nexus.png"); background-image: url("../images/nexus_.svg"), none; background-size: 360px 208px; width: 90px; height: 104px; z-index: 9; opacity: 0; display: block; -webkit-transition: opacity 0.3s; -transition: opacity 0.3s; transition: opacity 0.3s; }
 /* line 395, ../sass/_mixins.scss */
+.nexicon { background: url("../images/nexus_.png"); background-image: url("../images/nexus_.svg"), none; background-size: 360px 208px; width: 90px; height: 104px; z-index: 8; }
+/* line 402, ../sass/_mixins.scss */
+.nexicon span { background: url("../images/nexus.png"); background-image: url("../images/nexus_.svg"), none; background-size: 360px 208px; width: 90px; height: 104px; z-index: 9; opacity: 0; display: block; -webkit-transition: opacity 0.3s; -transition: opacity 0.3s; transition: opacity 0.3s; }
+/* line 413, ../sass/_mixins.scss */
 .nexicon.design { background-position: 0 -104px; }
-/* line 397, ../sass/_mixins.scss */
-.nexicon.design span { background-position: 0 0; }
-/* line 399, ../sass/_mixins.scss */
-.nexicon.design span:hover { opacity: 1; }
-/* line 405, ../sass/_mixins.scss */
-.nexicon.video { background-position: -90px -104px; }
-/* line 407, ../sass/_mixins.scss */
-.nexicon.video span { background-position: -90px 0; }
-/* line 409, ../sass/_mixins.scss */
-.nexicon.video span:hover { opacity: 1; }
 /* line 415, ../sass/_mixins.scss */
-.nexicon.audio { background-position: -180px -104px; }
+.nexicon.design span { background-position: 0 0; }
 /* line 417, ../sass/_mixins.scss */
-.nexicon.audio span { background-position: -180px 0; }
-/* line 419, ../sass/_mixins.scss */
-.nexicon.audio span:hover { opacity: 1; }
+.nexicon.design span:hover { opacity: 1; }
+/* line 423, ../sass/_mixins.scss */
+.nexicon.video { background-position: -90px -104px; }
 /* line 425, ../sass/_mixins.scss */
-.nexicon.photo { background-position: -270px -104px; }
+.nexicon.video span { background-position: -90px 0; }
 /* line 427, ../sass/_mixins.scss */
+.nexicon.video span:hover { opacity: 1; }
+/* line 433, ../sass/_mixins.scss */
+.nexicon.audio { background-position: -180px -104px; }
+/* line 435, ../sass/_mixins.scss */
+.nexicon.audio span { background-position: -180px 0; }
+/* line 437, ../sass/_mixins.scss */
+.nexicon.audio span:hover { opacity: 1; }
+/* line 443, ../sass/_mixins.scss */
+.nexicon.photo { background-position: -270px -104px; }
+/* line 445, ../sass/_mixins.scss */
 .nexicon.photo span { background-position: -270px 0; }
-/* line 429, ../sass/_mixins.scss */
+/* line 447, ../sass/_mixins.scss */
 .nexicon.photo span:hover { opacity: 1; }
 
 /*****************
@@ -522,9 +539,9 @@ header .menu-button:hover { cursor: pointer; }
 /* line 179, ../sass/_base.scss */
 header .logoWrap { perspective: 1000; position: absolute; width: 45px; height: 52px; margin: 0 44%; top: 1em; }
 /* line 187, ../sass/_base.scss */
-header .logoWrap:hover #logo { transform-style: preserve-3d; -webkit-transition: all 0.5s linear; -transition: all 0.5s linear; transition: all 0.5s linear; transform: rotateY(360deg); }
+header .logoWrap:hover .jelogo { transform-style: preserve-3d; -webkit-transition: all 0.5s linear; -transition: all 0.5s linear; transition: all 0.5s linear; transform: rotateY(360deg); }
 /* line 193, ../sass/_base.scss */
-header .logoWrap #logo { background: url("../images/logo.png"); background-image: url("../images/logo.svg"), none; }
+header .logoWrap .jelogo { background: url("../images/logo.png"); background-image: url("../images/logo.svg"), none; }
 
 /*********************
 NAVIGATION STYLES
@@ -724,31 +741,31 @@ footer .contact { margin: 0 auto 2em; }
 /* line 792, ../sass/_base.scss */
 footer .navup { margin: 0 auto; }
 /* line 796, ../sass/_base.scss */
-footer .navup { position: relative; bottom: -20px; -webkit-transition: all 0.5s ease-in-out; -transition: all 0.5s ease-in-out; transition: all 0.5s ease-in-out; z-index: 8; }
-/* line 802, ../sass/_base.scss */
-footer .navup:hover { bottom: 0; }
+footer .navup { position: relative; z-index: 8; }
 
 /******CONTACT FORM*********/
-/* line 811, ../sass/_base.scss */
-#contact .ufo { -webkit-transition: all 0.8s ease-in-out; -transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; float: left; margin-right: 1em; }
-/* line 816, ../sass/_base.scss */
-#contact .ufo.sending { transform: rotate(360deg); }
-/* line 821, ../sass/_base.scss */
-#contact h1 { display: inline-block; margin: 0; }
-/* line 826, ../sass/_base.scss */
-#contact label { display: block; margin-top: 0.5em; font-family: "Share Tech Mono", "Ubuntu Mono", Courier New, sans-serif; }
+/* line 807, ../sass/_base.scss */
+#contactform { background-color: #2d2d2d; width: 100%; padding: 1em; }
+/* line 813, ../sass/_base.scss */
+#contactform .ufo { -webkit-transition: all 0.8s ease-in-out; -transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; float: left; margin-right: 1em; }
+/* line 818, ../sass/_base.scss */
+#contactform .ufo.sending { transform: rotate(360deg); }
+/* line 827, ../sass/_base.scss */
+#contactform h1 { display: inline-block; margin: 0; }
 /* line 832, ../sass/_base.scss */
-#contact input, #contact textarea { border: 1px solid silver; background-color: rgba(0, 0, 0, 0.5); color: white; }
+#contactform label { display: block; margin-top: 0.5em; font-family: "Share Tech Mono", "Ubuntu Mono", Courier New, sans-serif; }
 /* line 838, ../sass/_base.scss */
-#contact input { height: 2em; }
-/* line 839, ../sass/_base.scss */
-#contact input:not([type="submit"]) { width: 100%; }
-/* line 846, ../sass/_base.scss */
-#contact input[type="submit"] { background-color: GoldenRod; padding: 0 2em; margin: 1em 0; border: none; box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.8); font-family: "Share Tech Mono", "Ubuntu Mono", Courier New, sans-serif; position: relative; color: #e8e7e7; }
-/* line 857, ../sass/_base.scss */
-#contact input[type="submit"]:hover { box-shadow: none; top: 2px; color: white; }
-/* line 864, ../sass/_base.scss */
-#contact textarea { width: 100%; min-height: 9em; }
+#contactform input, #contactform textarea { border: 1px solid silver; background-color: rgba(0, 0, 0, 0.5); color: white; }
+/* line 844, ../sass/_base.scss */
+#contactform input { height: 2em; }
+/* line 845, ../sass/_base.scss */
+#contactform input:not([type="submit"]) { width: 100%; }
+/* line 852, ../sass/_base.scss */
+#contactform input[type="submit"] { background-color: GoldenRod; padding: 0 2em; margin: 1em 0; border: none; box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.8); font-family: "Share Tech Mono", "Ubuntu Mono", Courier New, sans-serif; position: relative; color: #e8e7e7; }
+/* line 863, ../sass/_base.scss */
+#contactform input[type="submit"]:hover { box-shadow: none; top: 2px; color: white; }
+/* line 870, ../sass/_base.scss */
+#contactform textarea { width: 100%; min-height: 15em; }
 
 /*! MAGPOP !!*/
 /* Magnific Popup CSS */

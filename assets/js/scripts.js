@@ -59,13 +59,13 @@ jQuery(document).ready(function($) {
         removalDelay: 300,
     });
     
+    //$('#send-button').magnificPopup('open');
+    
     $('.ajax-popup').magnificPopup({
-        type: 'ajax',
-        items: { src:'../../site/snippets/contact.php' }
+        type: 'ajax' 
     });
 
 
-/*Init Masonry*/
 
 
     
@@ -192,15 +192,17 @@ var divs = $('.navdown, .nexus');
                 itemSelector: '.col',
                 columnWidth: '.col'
             });
+            
+            //console.log('width >= 720px');
 
-        } /* end larger than 481px */
+        } /* end larger than 760px */
 
         /* off the bat large screen actions */
         if (responsive_viewport > 1030) {
 
         }
         
-        console.log('width: ' + $(window).width());
+        //console.log('width checked: ' + $(window).width());
         
     } /*end checkWidth */
     

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title><?php echo html($site->title()) ?> - <?php echo html($page->title()) ?></title>
+    <title><?php echo html($site->title()) ?> |  <?php echo html($page->title()) ?></title>
     <meta charset="utf-8" />
     <meta name="description" content="<?php echo html($site->description()) ?>" />
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
@@ -39,8 +39,8 @@
     <header>
         <div class="abovenav">
             <div class="mobile-only uicon menu-light-empty menu-button"></div>     
-            <div class="logoWrap"><a href="<?php echo url() ?>"><div style="width: 45px; height: 52px" id="logo"></div></a></div>
-            <a href="<?php echo u();?>site/snippets/contact.php" class="ajax-popup"><div class="uicon mail-empty contact"></div></a>  
+            <div class="logoWrap"><a href="<?php echo url() ?>"><div style="width: 45px; height: 52px" class="jelogo"></div></a></div>
+            <a href="<?php echo u() ?>contact"><div class="uicon mail-empty contact"></div></a>  
         </div>
         
         <nav class="menu off"><?php snippet('menu') ?></nav>
