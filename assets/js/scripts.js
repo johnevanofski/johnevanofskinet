@@ -61,8 +61,36 @@ jQuery(document).ready(function($) {
     
     //$('#send-button').magnificPopup('open');
     
-    $('.ajax-popup').magnificPopup({
-        type: 'ajax' 
+    $('.gallery').magnificPopup({
+        type: 'image',
+        delegate: 'a',
+        tLoading: '<i class="fa fa-spin fa-circle-o-notch"></i>',
+        navigateByImgClick: true,
+        
+        image: {
+			verticalFit: true
+		},
+		
+        zoom: {
+			enabled: true,
+			duration: 300 // don't foget to change the duration also in CSS
+		},
+
+        gallery: { 
+
+        enabled: true,
+        
+        
+        preload: [1,3], // read about this option in next Lazy-loading section
+
+          navigateByImgClick: true,
+
+          arrowMarkup: '<div title="%title%" type="button" class="nav-arrow %dir%-empty"></button>', // markup of an arrow button
+
+          tPrev: 'Previous', // title for left button
+          tNext: 'Next', // title for right button
+          tCounter: '' // markup of counter
+        }
     });
 
 
@@ -192,6 +220,7 @@ var divs = $('.navdown, .nexus');
                 itemSelector: '.col',
                 columnWidth: '.col'
             });
+
             
             //console.log('width >= 720px');
 

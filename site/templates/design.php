@@ -70,7 +70,7 @@
         
         ?>
         
-        <div id="gallery-<?php echo $id; ?>" class="clearfix gallery zoom light-popup mfp-hide">
+        <div id="gallery-<?php echo $id; ?>" class="clearfix gallery-d zoom light-popup mfp-hide">
             <ul>
             <?php foreach ($article->images()->not('banner.png') as $pic): ?>
                  <li><img src="<?php echo $pic->url(); ?>"></li>

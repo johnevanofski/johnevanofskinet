@@ -1,6 +1,4 @@
-Hey,
-
-your contact form has been submitted
+Contact from johnevanofski.net: 
 
 Name: {name}
 ---------

@@ -10,7 +10,7 @@
         <a href="http://linkedin.com/evanofski" target="_blank"><div class="uicon blank linkedin"><i class="fa fa-linkedin"></i></div></a>
     </div>
             
-      <a href="#contact" class="popup-button"><div class="contact uicon mail-empty"></div></a>
+      <a href="<?php echo $site->url() ?>/contact"><div class="contact uicon mail-empty"></div></a>
       
     <a href="#toTop"><div class="navup uicon arrow-up"></div></a>
     

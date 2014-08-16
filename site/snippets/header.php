@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   
-    <title><?php echo html($site->title()) ?> |  <?php echo html($page->title()) ?></title>
+    <title><?php if($page->isHomepage()): echo html($site->title()); else: echo html($site->title()) . ' | ' . html($page->title()); endif;?></title>
     <meta charset="utf-8" />
     <meta name="description" content="<?php echo html($site->description()) ?>" />
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
@@ -29,7 +29,14 @@
     $cssRoot = c::get('root') . '/' . $cssURI;
     if(file_exists($cssRoot)) echo css($cssURI);
     
-    ?>    
+    //cache flushing 
+    if(param('flush-cache') == 'flushit') {
+
+      cache::flush();
+
+    }
+    
+    ?>
 
 </head>
     
@@ -39,8 +46,8 @@
     <header>
         <div class="abovenav">
             <div class="mobile-only uicon menu-light-empty menu-button"></div>     
-            <div class="logoWrap"><a href="<?php echo url() ?>"><div style="width: 45px; height: 52px" class="jelogo"></div></a></div>
-            <a href="<?php echo u() ?>contact"><div class="uicon mail-empty contact"></div></a>  
+            <div class="logoWrap"><a href="<?php echo $site->url() ?>"><div style="width: 45px; height: 52px" class="jelogo"></div></a></div>
+            <a href="<?php echo $site->url() ?>/contact"><div class="uicon mail-empty contact"></div></a>  
         </div>
         
         <nav class="menu off"><?php snippet('menu') ?></nav>

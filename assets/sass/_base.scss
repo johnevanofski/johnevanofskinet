@@ -349,28 +349,7 @@ POSTS & CONTENT STYLES
 article {
 }
     
-.gallery {
-    
-    ul {
-        width: 100%;
-        
-        li {
-            list-style: none;
-            position: relative;
-            line-height: 0;
-            margin: 0 auto;
-            
-        }
-    }
-    
-    img { 
-        
-        display: block;
-        max-width: 100%;
-        margin: 0 auto;
-    }
-        
-}
+
 
 .masonry {
   overflow: hidden;
@@ -387,7 +366,32 @@ article {
     }
 }
 
+.gallery-d {
+
+    ul {
+        width: 100%;
+
+        li {
+            list-style: none;
+            position: relative;
+            line-height: 0;
+            margin: 0 auto;
+
+        }
+    }
+
+    img { 
+
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
 #design {
+    
+
     
     .filters {
         
@@ -541,6 +545,7 @@ article {
             background-color: black;
         }
     } //end .banner
+    
 } //end design content
 
 #home {
@@ -638,6 +643,7 @@ article {
 
 } //end audio content
 
+
 #resume {
     
     padding: 1em;
@@ -711,6 +717,30 @@ article {
     }
     
 } //end video content
+
+#photo {
+    
+    .gallery {
+    
+    width: 100%;
+    
+    .gallery-item {         
+        width: 33.3%;
+        float: left;
+        
+        img {
+            width: 100%;   
+            float: left;
+        }
+    }
+        
+}
+    
+    .uhoh {
+       border-bottom: 1px solid white;
+        margin: 2em 0;
+    }
+} //end photography content
 
 /******************************************************************
 PAGE NAVI STYLES

@@ -241,6 +241,45 @@ ANIMATIONS
     animation-name: bounce; 
 }
 
+@-webkit-keyframes bounceRight {
+    0%, 50%, 100%, {transform: translateX(0);}
+    25%, 75%, {transform: translateX(-5px);}
+} 
+
+@keyframes bounceRight { 
+    0%, 50%, 100%, {transform: translateX(0);}
+    25%, 75%, {transform: translateX(-5px);}
+} 
+
+@-webkit-keyframes bounceLeft {
+    0%, 50%, 100%, {transform: translateX(0);}
+    25%, 75%, {transform: translateX(5px);}
+} 
+
+@keyframes bounceLeft { 
+    0%, 50%, 100%, {transform: translateX(0);}
+    25%, 75%, {transform: translateX(5px);}
+} 
+
+.bounceRight, .bounceLeft {
+    -webkit-animation-duration: 2s; 
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-fill-mode: both;
+    animation-duration: 2s; 
+    animation-fill-mode: both; 
+    animation-iteration-count:infinite; 
+    
+}
+
+.bounceLeft {
+    -webkit-animation-name: bounceLeft;
+    animation-name: bounceLeft; 
+}
+
+.bounceRight {
+    -webkit-animation-name: bounceRight;
+    animation-name: bounceRight; 
+}
 
 @-webkit-keyframes shake { 
     0%, 100% {-webkit-transform: translateX(0);} 
@@ -374,21 +413,36 @@ SPRITES
 }
 
 .nav-arrow {
+    position: absolute;
+    z-index: 999;
+    display: block;
+    top: 50%;
     background: url('../images/icons-ui.png');
     background-image: url('../images/icons-ui.svg'), none;
     width: 45px; height: 39px;
     
     &.left-fill {
-        background-position: -225px 0;
+        background-position: -225px -2px;
     }
     &.right-fill {
-        background-position: -225px -38px;
+        background-position: -225px -41px;
     }
     &.left-empty {
-        background-position: -270px -0;
+        left: 0;
+        background-position: -270px -2px;
+        &:hover {
+            cursor: pointer;
+            @extend .bounceLeft;
+        }
     }
     &.right-empty {
-        background-position: -270px -38px;
+        right: 0;
+        background-position: -270px -41px;
+         &:hover {
+             cursor: pointer;
+             @extend .bounceRight;
+             background-position: -270px -40px; //pixel jump fix
+         }
     }
 }
 
