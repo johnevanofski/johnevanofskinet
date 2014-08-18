@@ -259,8 +259,14 @@ CONTENT & POSTS
 } //end resume content
 
 #photo {
-    .uhoh {
-        padding: 1em;
+    .photo-gallery, .royalSlider {
+        
+        width: 100%;
+        
+        &:not(:first-child) {
+            width: 50%;
+            float: left;
+        }
     }
 }
 

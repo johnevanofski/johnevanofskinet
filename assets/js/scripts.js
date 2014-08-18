@@ -94,7 +94,22 @@ jQuery(document).ready(function($) {
     });
 
 
+/*ROYAL SLIDER*/
 
+$('.royalSlider').royalSlider({
+    autoScaleSlider: true,
+    keyboardNavEnabled: true,
+    controlsInside: true,
+    imageScalePadding: 0,
+    imageScaleMode: 'fill',
+    
+    fullscreen: {
+    		// fullscreen options go gere
+    		enabled: true,
+    		nativeFS: false
+    	},
+    
+});  
 
     
 /*SMOOTH SCROLLING*/

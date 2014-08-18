@@ -2,12 +2,11 @@
     
     <div class="socialNexus">
         
-        <a href="http://twitter.com/johnevanofski" target="_blank"><div class="uicon blank twitter"><i class="fa fa-twitter"></i></div></a>
-        <a href="http://soundcloud.com/popdrone" target="_blank"><div class="uicon blank soundcloud"><i class="fa fa-soundcloud"></i></div></a>
-        <a href="http://tumblr.com/adventurejohnee" target="_blank"><div class="uicon blank tumblr"><i class="fa fa-tumblr"></i></div></a>
-        <a href="http://instagram.com/evanofski_" target="_blank"><div class="uicon blank instagram"><i class="fa fa-instagram"></i></div></a>
-        <a href="http://behance.net/evanofski" target="_blank"><div class="uicon blank behance"><i class="fa fa-behance "></i></div></a>
-        <a href="http://linkedin.com/evanofski" target="_blank"><div class="uicon blank linkedin"><i class="fa fa-linkedin"></i></div></a>
+        <a href="<?php echo $site->twitter(); ?>" target="_blank"><div class="uicon blank twitter"><i class="fa fa-twitter"></i></div></a>
+        <a href="<?php echo $site->soundcloud(); ?>" target="_blank"><div class="uicon blank soundcloud"><i class="fa fa-soundcloud"></i></div></a>
+        <a href="<?php echo $site->tumblr(); ?>" target="_blank"><div class="uicon blank tumblr"><i class="fa fa-tumblr"></i></div></a>
+        <a href="<?php echo $site->behance(); ?>" target="_blank"><div class="uicon blank behance"><i class="fa fa-behance "></i></div></a>
+        <a href="<?php echo $site->linkedin(); ?>" target="_blank"><div class="uicon blank linkedin"><i class="fa fa-linkedin"></i></div></a>
     </div>
             
       <a href="<?php echo $site->url() ?>/contact"><div class="contact uicon mail-empty"></div></a>

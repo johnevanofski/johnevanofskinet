@@ -736,9 +736,8 @@ article {
         
 }
     
-    .uhoh {
-       border-bottom: 1px solid white;
-        margin: 2em 0;
+    .photo-gallery, .royalSlider {
+        width: 100%;
     }
 } //end photography content
 
@@ -746,6 +745,10 @@ article {
 PAGE NAVI STYLES
 ******************************************************************/
 
+.pagination {
+    .on { display: block; }
+    .off { display: none; }
+}
 
 /*********************
 SIDEBARS & ASIDES

@@ -9,9 +9,11 @@ site/config/*
 site/cache/*
 site/panel/accounts/*
 panel/*
+thumbs/*
 index.php
 license.mdown
 readme.mdown
+**/modules
 **/_archive
 **/_backup
 

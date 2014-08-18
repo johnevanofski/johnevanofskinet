@@ -751,62 +751,67 @@ POSTS & CONTENT STYLES
 /* line 731, ../sass/_base.scss */
 #photo .gallery .gallery-item img { width: 100%; float: left; }
 /* line 739, ../sass/_base.scss */
-#photo .uhoh { border-bottom: 1px solid white; margin: 2em 0; }
+#photo .photo-gallery, #photo .royalSlider { width: 100%; }
 
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
+/* line 749, ../sass/_base.scss */
+.pagination .on { display: block; }
+/* line 750, ../sass/_base.scss */
+.pagination .off { display: none; }
+
 /*********************
 SIDEBARS & ASIDES
 *********************/
 /*********************
 FOOTER STYLES
 *********************/
-/* line 763, ../sass/_base.scss */
+/* line 766, ../sass/_base.scss */
 footer { overflow: none; }
-/* line 768, ../sass/_base.scss */
+/* line 771, ../sass/_base.scss */
 footer .copy { position: relative; display: block; width: 100%; z-index: 0; color: #2d2d2d; text-align: left; }
-/* line 776, ../sass/_base.scss */
+/* line 779, ../sass/_base.scss */
 footer .copy a { color: silver; }
-/* line 778, ../sass/_base.scss */
+/* line 781, ../sass/_base.scss */
 footer .copy a:hover { color: lightseagreen; }
-/* line 784, ../sass/_base.scss */
+/* line 787, ../sass/_base.scss */
 footer .socialNexus { margin: 2em auto; width: 100%; text-align: center; }
-/* line 790, ../sass/_base.scss */
+/* line 793, ../sass/_base.scss */
 footer .socialNexus a:hover { color: #2d2d2d; }
-/* line 792, ../sass/_base.scss */
+/* line 795, ../sass/_base.scss */
 footer .socialNexus .uicon { display: inline-block; }
-/* line 797, ../sass/_base.scss */
+/* line 800, ../sass/_base.scss */
 footer .socialNexus i { width: 47px; font-size: 1.4em; line-height: 52px; }
-/* line 818, ../sass/_base.scss */
+/* line 821, ../sass/_base.scss */
 footer .contact { margin: 0 auto 2em; }
-/* line 822, ../sass/_base.scss */
+/* line 825, ../sass/_base.scss */
 footer .navup { margin: 0 auto; }
-/* line 826, ../sass/_base.scss */
+/* line 829, ../sass/_base.scss */
 footer .navup { position: relative; z-index: 8; }
 
 /******CONTACT FORM*********/
-/* line 837, ../sass/_base.scss */
+/* line 840, ../sass/_base.scss */
 #contactform { background-color: #2d2d2d; width: 100%; padding: 1em; }
-/* line 843, ../sass/_base.scss */
+/* line 846, ../sass/_base.scss */
 #contactform .ufo { -webkit-transition: all 0.8s ease-in-out; -transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; float: left; margin-right: 1em; }
-/* line 848, ../sass/_base.scss */
+/* line 851, ../sass/_base.scss */
 #contactform .ufo.sending { transform: rotate(360deg); }
-/* line 857, ../sass/_base.scss */
+/* line 860, ../sass/_base.scss */
 #contactform h1 { display: inline-block; margin: 0; }
-/* line 862, ../sass/_base.scss */
+/* line 865, ../sass/_base.scss */
 #contactform label { display: block; margin-top: 0.5em; font-family: "Share Tech Mono", "Ubuntu Mono", Courier New, sans-serif; }
-/* line 868, ../sass/_base.scss */
+/* line 871, ../sass/_base.scss */
 #contactform input, #contactform textarea { border: 1px solid silver; background-color: rgba(0, 0, 0, 0.5); color: white; }
-/* line 874, ../sass/_base.scss */
+/* line 877, ../sass/_base.scss */
 #contactform input { height: 2em; }
-/* line 875, ../sass/_base.scss */
+/* line 878, ../sass/_base.scss */
 #contactform input:not([type="submit"]) { width: 100%; }
-/* line 882, ../sass/_base.scss */
+/* line 885, ../sass/_base.scss */
 #contactform input[type="submit"] { background-color: GoldenRod; padding: 0 2em; margin: 1em 0; border: none; box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.8); font-family: "Share Tech Mono", "Ubuntu Mono", Courier New, sans-serif; position: relative; color: #e8e7e7; }
-/* line 893, ../sass/_base.scss */
+/* line 896, ../sass/_base.scss */
 #contactform input[type="submit"]:hover { box-shadow: none; top: 2px; color: white; }
-/* line 900, ../sass/_base.scss */
+/* line 903, ../sass/_base.scss */
 #contactform textarea { width: 100%; min-height: 15em; }
 
 /*! MAGPOP !!*/
@@ -1127,7 +1132,9 @@ has the possibility of being a mobile device.
   /* line 255, ../sass/_760up.scss */
   #resume .download { padding-left: 2em; }
   /* line 262, ../sass/_760up.scss */
-  #photo .uhoh { padding: 1em; }
+  #photo .photo-gallery, #photo .royalSlider { width: 100%; }
+  /* line 266, ../sass/_760up.scss */
+  #photo .photo-gallery:not(:first-child), #photo .royalSlider:not(:first-child) { width: 50%; float: left; }
   /********************* FOOTER STYLES ********************/
   /* check your menus here. do they look good? do they need tweaking? */
   /* end .footer-links */ }
