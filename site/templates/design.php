@@ -68,16 +68,7 @@
         $color = $article->color() ?  $article->color() : 'rgba(101,101,101,1)';
          
         
-        ?>
-        
-        <div id="gallery-<?php echo $id; ?>" class="clearfix gallery-d zoom light-popup mfp-hide">
-            <ul>
-            <?php foreach ($article->images()->not('banner.png') as $pic): ?>
-                 <li><img src="<?php echo $pic->url(); ?>"></li>
-            <?php endforeach ?>
-            </ul>
-        </div>
-        
+        ?>     
         
         
         <article data-type="none" class="col span_4"> 
@@ -92,12 +83,27 @@
                 </div>
                 <div class="bannerinfo">
                     <div class="bannerimg"><img src="<?php echo $banner->url(); ?>"></div>
-                    <div class="uicon info toggle"></div><a href="#gallery-<?php echo $id; ?>" class="popup-button"><div class="uicon view toggle"></div></a>
-                    <div class="bannertext" style="background-color:<?php echo opacitychange($color, 0.8); ?>"><div class="close"><i class="fa fa-times"></i></div>
-                    <h2 class="inner-title"><?php // echo $title; ?></h2>        
-                    <?php echo kirbytext($text); ?>
-                    <p><a href="#gallery-<?php echo $id; ?>" class="popup-button"><strong>see more</strong></a></p>
-                    </div>   
+                    <div class="uicon info toggle"></div>
+                    <div class="bannertext" style="background-color:<?php echo opacitychange($color, 0.8); ?>">
+                    <div class="copy">    
+                        <div class="close"><i class="fa fa-times"></i></div>       
+                        <?php echo kirbytext($text); ?>         
+                    </div>
+                    <br>
+                    <div id="gallery-<?php echo $id; ?>" class="clearfix gallery-d">
+                        <ul>
+                            <?php foreach ($article->images()->not('banner.png') as $pic): ?>
+                                <li>
+                                     <img src="<?php echo $pic->url(); ?>">
+                                    <?php if ( strlen($pic->caption()) > 0 ): ?>
+                                    <p class="caption" style="background-color: <?php echo $color ?>"><?php echo $pic->caption(); ?></p>
+                                    <?php endif; ?>
+                                </li>
+                                    
+                            <?php endforeach ?>
+                        </ul>
+                    </div>
+                    </div>
                 </div>
             </div>            
         </article>

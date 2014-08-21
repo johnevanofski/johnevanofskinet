@@ -41,6 +41,9 @@ jQuery(document).ready(function($) {
 	that works for you best.
 	*/
     
+/* check JS */
+    
+    $('body').addClass('jsOK');
 
 /*PARALLAX*/
     
@@ -147,11 +150,14 @@ var divs = $('.navdown, .nexus');
     $('#send-button').hover(function(){
         $('.ufo').toggleClass('sending');
     });
+
 /* design banners */
     
     $('.bannerinfo').click(function(e){
-
+        
         $(this).find('.bannertext').toggleClass('active');
+        
+        $(this).find('.bannerimg').toggleClass('off');
         
         $(this).find('.toggle').toggleClass('off');
         
