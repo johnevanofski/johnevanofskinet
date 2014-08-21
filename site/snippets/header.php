@@ -47,7 +47,7 @@
 
 </head>
     
-<body>
+<body class="nojs">
 <div id="toTop"></div>
 <div id="wrap">
     <header>

@@ -204,10 +204,11 @@ CONTENT & POSTS
         
         .bannertext{
             
+            left: 25%;
+            width: 75%;
+            
             &.active {
-                padding: 1%;
-                left: 25%;
-                min-width: 75%;
+                .copy { padding: 1em 0 0 0; }
             }
             
             h2.inner-title {
@@ -216,7 +217,7 @@ CONTENT & POSTS
         
         }
     }
-}
+} //end #design content
 
 #resume {
     
