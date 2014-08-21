@@ -12,7 +12,7 @@
                     ->children()
                     ->visible()
                     ->flip()
-                    ->paginate(3);
+                    ->paginate(5);
         
         $id = 0;
 
@@ -27,8 +27,8 @@
         ?>
     <article class="photo-gallery gallery-<?php echo $id ?>">
     
-        <h1><?php echo h($name) ?></h1>
-        <p><?php echo kirbytext($info) ?></p>
+        <div class="info"><h4><?php echo h($name) ?></h4>
+        <p><?php echo kirbytext($info) ?></p></div>
         <div class="royalSlider rsDefault">
             <?php foreach ($item->images() as $image): ?> 
 

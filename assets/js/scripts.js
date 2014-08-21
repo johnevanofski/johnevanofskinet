@@ -99,14 +99,17 @@ jQuery(document).ready(function($) {
 $('.royalSlider').royalSlider({
     autoScaleSlider: true,
     keyboardNavEnabled: true,
-    controlsInside: true,
+    //arrowsNavAutoHide: false,
+    //controlsInside: true,
+    arrowsNavHideOnTouch: true,
     imageScalePadding: 0,
     imageScaleMode: 'fill',
     
     fullscreen: {
     		// fullscreen options go gere
     		enabled: true,
-    		nativeFS: false
+            buttonFS: true,
+    		nativeFS: true
     	},
     
 });  

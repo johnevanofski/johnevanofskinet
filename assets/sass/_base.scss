@@ -623,6 +623,7 @@ article {
                     top: -80px;
                     text-align: center;
                     text-transform: none;
+                    text-shadow: 1px 1px 0 #000;
                 }
     }
 } //end home content
@@ -739,6 +740,11 @@ article {
     .photo-gallery, .royalSlider {
         width: 100%;
     }
+    
+    .info {
+        visibility: hidden;
+        display: none;
+    }
 } //end photography content
 
 /******************************************************************
@@ -746,8 +752,31 @@ PAGE NAVI STYLES
 ******************************************************************/
 
 .pagination {
-    .on { display: block; }
+    .on { display: inline-block; }
     .off { display: none; }
+
+        
+        .first, .previous {
+            float: left;
+            margin-right: 5px;
+        }
+        
+        .last, .next {
+            float: right;
+            margin-left: 5px;
+        }
+        
+    .page {
+        padding: 0.2em;
+        color: $dark-grey;
+        background-color: $light-grey;
+        
+        &:hover {
+            background-color: white;
+            color: $dark-grey;  
+            
+        }
+    }
 }
 
 /*********************

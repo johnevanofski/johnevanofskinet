@@ -259,13 +259,40 @@ CONTENT & POSTS
 } //end resume content
 
 #photo {
-    .photo-gallery, .royalSlider {
+    .photo-gallery {
         
         width: 100%;
         
         &:not(:first-child) {
             width: 50%;
             float: left;
+            
+            .info { width: 50% }
+        }
+        
+        &:hover .info {
+            transition-delay: 1s;
+            opacity: 0;
+        }
+    }
+    
+    .rsArrow {
+        z-index: 3;
+    }
+
+    .info {
+                      
+        visibility: visible;
+        opacity: 1;
+        position: absolute;
+        display: block;
+        z-index: 2;
+        padding: 1em;
+        text-shadow: 1px 1px 0 #000;
+        @include transition(all 1s ease-in-out);
+        
+        p, h4 {
+            position: relative;
         }
     }
 }

@@ -711,55 +711,65 @@ POSTS & CONTENT STYLES
 /* line 614, ../sass/_base.scss */
 #home .hello { position: relative; width: 100%; margin: 0 auto; }
 /* line 619, ../sass/_base.scss */
-#home .hello .h2 { position: relative; margin: 0 0; width: 100%; top: -80px; text-align: center; text-transform: none; }
+#home .hello .h2 { position: relative; margin: 0 0; width: 100%; top: -80px; text-align: center; text-transform: none; text-shadow: 1px 1px 0 #000; }
 
-/* line 634, ../sass/_base.scss */
+/* line 635, ../sass/_base.scss */
 #audio article h1, #audio article h2 { text-align: center; }
-/* line 638, ../sass/_base.scss */
+/* line 639, ../sass/_base.scss */
 #audio article iframe { width: 100%; min-height: 4.5em; }
 
-/* line 647, ../sass/_base.scss */
+/* line 648, ../sass/_base.scss */
 #resume { padding: 1em; background: url("../images/resume-bg.png") no-repeat center bottom fixed; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover; }
-/* line 657, ../sass/_base.scss */
+/* line 658, ../sass/_base.scss */
 #resume h1, #resume h2, #resume h3 { text-shadow: #323232 1px 1px 0px; }
-/* line 661, ../sass/_base.scss */
+/* line 662, ../sass/_base.scss */
 #resume p { margin-bottom: 1em; -moz-hyphens: none; -webkit-hyphens: none; hyphens: none; }
-/* line 668, ../sass/_base.scss */
+/* line 669, ../sass/_base.scss */
 #resume ul { margin-bottom: 1em; }
-/* line 672, ../sass/_base.scss */
+/* line 673, ../sass/_base.scss */
 #resume ul li { list-style: inside square none; line-height: 1em; width: 100%; }
-/* line 679, ../sass/_base.scss */
-#resume .col { margin-bottom: 1em; }
 /* line 680, ../sass/_base.scss */
+#resume .col { margin-bottom: 1em; }
+/* line 681, ../sass/_base.scss */
 #resume .col:not(:last-child) { border-bottom: 1px solid white; }
-/* line 687, ../sass/_base.scss */
+/* line 688, ../sass/_base.scss */
 #resume .contact { width: 100%; }
-/* line 691, ../sass/_base.scss */
+/* line 692, ../sass/_base.scss */
 #resume .contact p { text-align: left; }
-/* line 693, ../sass/_base.scss */
+/* line 694, ../sass/_base.scss */
 #resume .contact a { text-decoration: none; }
-/* line 700, ../sass/_base.scss */
+/* line 701, ../sass/_base.scss */
 #resume .skills p { margin-bottom: 0.2em; }
 
-/* line 715, ../sass/_base.scss */
+/* line 716, ../sass/_base.scss */
 #video iframe { width: 100% !important; }
 
-/* line 723, ../sass/_base.scss */
+/* line 724, ../sass/_base.scss */
 #photo .gallery { width: 100%; }
-/* line 727, ../sass/_base.scss */
+/* line 728, ../sass/_base.scss */
 #photo .gallery .gallery-item { width: 33.3%; float: left; }
-/* line 731, ../sass/_base.scss */
+/* line 732, ../sass/_base.scss */
 #photo .gallery .gallery-item img { width: 100%; float: left; }
-/* line 739, ../sass/_base.scss */
+/* line 740, ../sass/_base.scss */
 #photo .photo-gallery, #photo .royalSlider { width: 100%; }
+/* line 744, ../sass/_base.scss */
+#photo .info { visibility: hidden; display: none; }
 
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/
-/* line 749, ../sass/_base.scss */
-.pagination .on { display: block; }
-/* line 750, ../sass/_base.scss */
+/* line 755, ../sass/_base.scss */
+.pagination .on { display: inline-block; }
+/* line 756, ../sass/_base.scss */
 .pagination .off { display: none; }
+/* line 759, ../sass/_base.scss */
+.pagination .first, .pagination .previous { float: left; margin-right: 5px; }
+/* line 764, ../sass/_base.scss */
+.pagination .last, .pagination .next { float: right; margin-left: 5px; }
+/* line 769, ../sass/_base.scss */
+.pagination .page { padding: 0.2em; color: #2d2d2d; background-color: #e8e7e7; }
+/* line 774, ../sass/_base.scss */
+.pagination .page:hover { background-color: white; color: #2d2d2d; }
 
 /*********************
 SIDEBARS & ASIDES
@@ -767,51 +777,51 @@ SIDEBARS & ASIDES
 /*********************
 FOOTER STYLES
 *********************/
-/* line 766, ../sass/_base.scss */
-footer { overflow: none; }
-/* line 771, ../sass/_base.scss */
-footer .copy { position: relative; display: block; width: 100%; z-index: 0; color: #2d2d2d; text-align: left; }
-/* line 779, ../sass/_base.scss */
-footer .copy a { color: silver; }
-/* line 781, ../sass/_base.scss */
-footer .copy a:hover { color: lightseagreen; }
-/* line 787, ../sass/_base.scss */
-footer .socialNexus { margin: 2em auto; width: 100%; text-align: center; }
-/* line 793, ../sass/_base.scss */
-footer .socialNexus a:hover { color: #2d2d2d; }
 /* line 795, ../sass/_base.scss */
-footer .socialNexus .uicon { display: inline-block; }
+footer { overflow: none; }
 /* line 800, ../sass/_base.scss */
-footer .socialNexus i { width: 47px; font-size: 1.4em; line-height: 52px; }
-/* line 821, ../sass/_base.scss */
-footer .contact { margin: 0 auto 2em; }
-/* line 825, ../sass/_base.scss */
-footer .navup { margin: 0 auto; }
+footer .copy { position: relative; display: block; width: 100%; z-index: 0; color: #2d2d2d; text-align: left; }
+/* line 808, ../sass/_base.scss */
+footer .copy a { color: silver; }
+/* line 810, ../sass/_base.scss */
+footer .copy a:hover { color: lightseagreen; }
+/* line 816, ../sass/_base.scss */
+footer .socialNexus { margin: 2em auto; width: 100%; text-align: center; }
+/* line 822, ../sass/_base.scss */
+footer .socialNexus a:hover { color: #2d2d2d; }
+/* line 824, ../sass/_base.scss */
+footer .socialNexus .uicon { display: inline-block; }
 /* line 829, ../sass/_base.scss */
+footer .socialNexus i { width: 47px; font-size: 1.4em; line-height: 52px; }
+/* line 850, ../sass/_base.scss */
+footer .contact { margin: 0 auto 2em; }
+/* line 854, ../sass/_base.scss */
+footer .navup { margin: 0 auto; }
+/* line 858, ../sass/_base.scss */
 footer .navup { position: relative; z-index: 8; }
 
 /******CONTACT FORM*********/
-/* line 840, ../sass/_base.scss */
+/* line 869, ../sass/_base.scss */
 #contactform { background-color: #2d2d2d; width: 100%; padding: 1em; }
-/* line 846, ../sass/_base.scss */
+/* line 875, ../sass/_base.scss */
 #contactform .ufo { -webkit-transition: all 0.8s ease-in-out; -transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; float: left; margin-right: 1em; }
-/* line 851, ../sass/_base.scss */
+/* line 880, ../sass/_base.scss */
 #contactform .ufo.sending { transform: rotate(360deg); }
-/* line 860, ../sass/_base.scss */
+/* line 889, ../sass/_base.scss */
 #contactform h1 { display: inline-block; margin: 0; }
-/* line 865, ../sass/_base.scss */
+/* line 894, ../sass/_base.scss */
 #contactform label { display: block; margin-top: 0.5em; font-family: "Share Tech Mono", "Ubuntu Mono", Courier New, sans-serif; }
-/* line 871, ../sass/_base.scss */
+/* line 900, ../sass/_base.scss */
 #contactform input, #contactform textarea { border: 1px solid silver; background-color: rgba(0, 0, 0, 0.5); color: white; }
-/* line 877, ../sass/_base.scss */
+/* line 906, ../sass/_base.scss */
 #contactform input { height: 2em; }
-/* line 878, ../sass/_base.scss */
+/* line 907, ../sass/_base.scss */
 #contactform input:not([type="submit"]) { width: 100%; }
-/* line 885, ../sass/_base.scss */
+/* line 914, ../sass/_base.scss */
 #contactform input[type="submit"] { background-color: GoldenRod; padding: 0 2em; margin: 1em 0; border: none; box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.8); font-family: "Share Tech Mono", "Ubuntu Mono", Courier New, sans-serif; position: relative; color: #e8e7e7; }
-/* line 896, ../sass/_base.scss */
+/* line 925, ../sass/_base.scss */
 #contactform input[type="submit"]:hover { box-shadow: none; top: 2px; color: white; }
-/* line 903, ../sass/_base.scss */
+/* line 932, ../sass/_base.scss */
 #contactform textarea { width: 100%; min-height: 15em; }
 
 /*! MAGPOP !!*/
@@ -1132,9 +1142,19 @@ has the possibility of being a mobile device.
   /* line 255, ../sass/_760up.scss */
   #resume .download { padding-left: 2em; }
   /* line 262, ../sass/_760up.scss */
-  #photo .photo-gallery, #photo .royalSlider { width: 100%; }
+  #photo .photo-gallery { width: 100%; }
   /* line 266, ../sass/_760up.scss */
-  #photo .photo-gallery:not(:first-child), #photo .royalSlider:not(:first-child) { width: 50%; float: left; }
+  #photo .photo-gallery:not(:first-child) { width: 50%; float: left; }
+  /* line 270, ../sass/_760up.scss */
+  #photo .photo-gallery:not(:first-child) .info { width: 50%; }
+  /* line 273, ../sass/_760up.scss */
+  #photo .photo-gallery:hover .info { transition-delay: 1s; opacity: 0; }
+  /* line 279, ../sass/_760up.scss */
+  #photo .rsArrow { z-index: 3; }
+  /* line 283, ../sass/_760up.scss */
+  #photo .info { visibility: visible; opacity: 1; position: absolute; display: block; z-index: 2; padding: 1em; text-shadow: 1px 1px 0 #000; -webkit-transition: all 1s ease-in-out; -transition: all 1s ease-in-out; transition: all 1s ease-in-out; }
+  /* line 294, ../sass/_760up.scss */
+  #photo .info p, #photo .info h4 { position: relative; }
   /********************* FOOTER STYLES ********************/
   /* check your menus here. do they look good? do they need tweaking? */
   /* end .footer-links */ }

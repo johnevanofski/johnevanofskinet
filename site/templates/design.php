@@ -96,6 +96,7 @@
                     <div class="bannertext" style="background-color:<?php echo opacitychange($color, 0.8); ?>"><div class="close"><i class="fa fa-times"></i></div>
                     <h2 class="inner-title"><?php // echo $title; ?></h2>        
                     <?php echo kirbytext($text); ?>
+                    <p><a href="#gallery-<?php echo $id; ?>" class="popup-button"><strong>see more</strong></a></p>
                     </div>   
                 </div>
             </div>            

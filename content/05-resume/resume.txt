@@ -7,7 +7,7 @@ Name: John Evanofski
 ----
 
 Contact: 
-(link: http://mailto:contact@johnevanofski.net text: contact@johnevanofski.net)
+(link: http://johnevanofski.net/contact text: contact@johnevanofski.net)
 (link: http://tel:7209384999 text: 720 938 4999)
 Oakland & San Francisco, CA
 (link: http://johnevanofski.net text: johnevanofski.net)
@@ -36,7 +36,6 @@ Skills:
 - InDesign 
 - Fireworks
 - Dreamweaver
-- Flash
 
 ###Other: 
 
