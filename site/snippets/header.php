@@ -7,6 +7,8 @@
     <meta name="description" content="<?php echo html($site->description()) ?>" />
     <meta name="keywords" content="<?php echo html($site->keywords()) ?>" />
     <meta name="robots" content="index, follow" />
+
+<link rel="icon" type="image/png" href="assets/images/favicon.png">
     
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">    
 <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic|Share+Tech+Mono' rel='stylesheet' type='text/css'>
@@ -17,19 +19,17 @@
         /*JS FILES*/
         echo js('assets/js/min/jquery.stellar.min.js');
         echo js('assets/js/min/iscroll.min.js');
-        //echo js('assets/js/min/magpop.min.js'); //production js
-        //echo js('assets/js/magpop.js'); //dev
         echo js('assets/js/min/masonry.min.js');
         echo js('assets/js/min/jquery.royalslider.custom.min.js'); //production js
         //echo js('assets/js/dev/jquery.royalslider.js'); //dev
-        //echo js('assets/js/min/scripts.min.js'); //production js
-        echo js('assets/js/scripts.js'); //dev
+        echo js('assets/js/min/scripts.min.js'); //production js
+        //echo js('assets/js/scripts.js'); //dev
         
         /*CSS FILES*/
-        //echo css('assets/style/styles.min.css'); //production css
-        echo css('assets/styles/styles.css'); //dev
         echo css('assets/styles/royalslider/royalslider.css');
         echo css('assets/styles/royalslider/skins/custom/rs-custom.css');
+        echo css('assets/styles/styles.min.css'); //production css
+        //echo css('assets/styles/styles.css'); //dev
         
     //css files with template name will be added to template
     $cssURI  = 'assets/css/' . $page->template() . '.css';
@@ -47,7 +47,7 @@
 
 </head>
     
-<body class="nojs">
+<body>
 <div id="toTop"></div>
 <div id="wrap">
     <header>

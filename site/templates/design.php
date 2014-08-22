@@ -84,7 +84,7 @@
                 <div class="bannerinfo">
                     <div class="bannerimg"><img src="<?php echo $banner->url(); ?>"></div>
                     <div class="uicon info toggle"></div>
-                    <div class="bannertext" style="background-color:<?php echo opacitychange($color, 0.8); ?>">
+                    <div class="bannertext">
                     <div class="copy">    
                         <div class="close"><i class="fa fa-times"></i></div>       
                         <?php echo kirbytext($text); ?>         
