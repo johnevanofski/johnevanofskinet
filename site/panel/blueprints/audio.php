@@ -1,8 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-# default blueprint
+# Audio blueprint
 
-title: Default Page
+title: Audio Page
 pages: true
 files: true
 fields:

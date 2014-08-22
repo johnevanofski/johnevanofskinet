@@ -18,12 +18,12 @@
         echo js('assets/js/min/jquery.stellar.min.js');
         echo js('assets/js/min/iscroll.min.js');
         //echo js('assets/js/min/magpop.min.js'); //production js
-        echo js('assets/js/magpop.js'); //dev
+        //echo js('assets/js/magpop.js'); //dev
         echo js('assets/js/min/masonry.min.js');
-        //echo js('assets/js/min/scripts.min.js'); //production js
-        echo js('assets/js/scripts.js'); //dev
         echo js('assets/js/min/jquery.royalslider.custom.min.js'); //production js
         //echo js('assets/js/dev/jquery.royalslider.js'); //dev
+        //echo js('assets/js/min/scripts.min.js'); //production js
+        echo js('assets/js/scripts.js'); //dev
         
         /*CSS FILES*/
         //echo css('assets/style/styles.min.css'); //production css

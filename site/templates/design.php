@@ -61,7 +61,7 @@
         
         $id += 1;
         
-        $logo = $article->images()->find('logo.png');
+        //$logo = $article->images()->find('logo.png');
         $banner = $article->images()->find('banner.png');
         $title = $article->title();
         $text = $article->text();

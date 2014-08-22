@@ -1,5 +1,13 @@
-Title: Design
+﻿Title: Design
 
 ----
 
 Text: This is an edit to the about page
+
+----
+
+Tags: 
+
+----
+
+Color: rgba(2,2,233,1)

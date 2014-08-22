@@ -11,11 +11,9 @@
         
         <?php 
     
-        foreach ($page->children() as $article):?>
+        foreach ($page->children()->visible() as $article):?>
         
-        <article class="col span_2">
-            
-        <h2><?php echo h($article->title()); ?></h2>
+        <article class="col span_4">
             
         <?php echo kirbytext($article->text()); ?>
             

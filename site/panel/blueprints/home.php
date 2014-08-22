@@ -1,9 +1,9 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-# default blueprint
+# home blueprint
 
-title: Default Page
-pages: true
+title: Home Page
+pages: false
 files: true
 fields:
   title: 

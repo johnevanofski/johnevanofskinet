@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
     });
 
     
-/*MAG POP*/
+/*MAG POP
     $('.popup-button').magnificPopup({
         type: 'inline',
         overflowY: 'auto',
@@ -95,7 +95,7 @@ jQuery(document).ready(function($) {
           tCounter: '' // markup of counter
         }
     });
-
+*/
 
 /*ROYAL SLIDER*/
 

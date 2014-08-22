@@ -1,8 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-# default blueprint
+# photography blueprint
 
-title: Default Page
+title: Photography Page
 pages: true
 files: true
 fields:

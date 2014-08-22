@@ -1,8 +1,8 @@
 <?php if(!defined('KIRBY')) exit ?>
 
-# default blueprint
+# video blueprint
 
-title: Default Page
+title: Video Page
 pages: true
 files: true
 fields:
