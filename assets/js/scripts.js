@@ -155,6 +155,8 @@ var divs = $('.navdown, .nexus');
     
     $('.bannerinfo').click(function(e){
         
+        //turn on
+        
         $(this).find('.bannertext').toggleClass('active');
         
         $(this).find('.bannerimg').toggleClass('off');

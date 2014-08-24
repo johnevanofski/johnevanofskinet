@@ -1,0 +1,23 @@
+﻿Title: Cider Week Website Rebuild
+
+----
+
+Text: This WordPress theme was designed to match an old Drupal site for Cider Week. The new site carries all the latest web technologies.
+
+Features:
+
+- flexible PHP post driven event calendar
+- multi-filter organization modules built with jquery
+- 100% responsive
+
+Tools: _Illustrator, html & css, css3 animation, php, javascript (jquery), WordPress cms_
+
+Visit: (link: http://ciderweeknyc.com text: ciderweeknyc.com popup: yes)
+
+----
+
+Tags: web
+
+----
+
+Color: rgba(248,156,27,1)

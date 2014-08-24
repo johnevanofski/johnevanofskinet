@@ -780,6 +780,24 @@ article {
     }
 } //end photography content
 
+#error {
+    article {
+        background: url('../images/error.png') no-repeat center bottom fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        
+        text-align: center;
+        
+        h1 {
+            text-shadow: rgb(50, 50, 50) 1px 1px 0px;
+            font-size: 8em;
+        }
+        
+    }
+} //end of error page content
+
 /******************************************************************
 PAGE NAVI STYLES
 ******************************************************************/

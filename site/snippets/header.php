@@ -22,14 +22,14 @@
         echo js('assets/js/min/masonry.min.js');
         echo js('assets/js/min/jquery.royalslider.custom.min.js'); //production js
         //echo js('assets/js/dev/jquery.royalslider.js'); //dev
-        echo js('assets/js/min/scripts.min.js'); //production js
-        //echo js('assets/js/scripts.js'); //dev
+        //echo js('assets/js/min/scripts.min.js'); //production js
+        echo js('assets/js/scripts.js'); //dev
         
         /*CSS FILES*/
         echo css('assets/styles/royalslider/royalslider.css');
         echo css('assets/styles/royalslider/skins/custom/rs-custom.css');
-        echo css('assets/styles/styles.min.css'); //production css
-        //echo css('assets/styles/styles.css'); //dev
+        //echo css('assets/styles/styles.min.css'); //production css
+        echo css('assets/styles/styles.css'); //dev
         
     //css files with template name will be added to template
     $cssURI  = 'assets/css/' . $page->template() . '.css';
