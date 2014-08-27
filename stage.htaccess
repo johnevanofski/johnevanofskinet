@@ -18,6 +18,10 @@ RewriteEngine on
 # 
 RewriteBase /
 
+# connect to stage subdomain
+RewriteCond %{HTTP_HOST} ^stage\.mysite\.com
+RewriteRule ^(.*)$ /stage/$1 [L]
+
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ error [R=301,L]
 
