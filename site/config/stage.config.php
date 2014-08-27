@@ -71,7 +71,7 @@ RewriteBase /subfolder
  
 */
 
-c::set('subfolder', 'stage');
+//c::set('subfolder', 'stage');
 
 
 /* 

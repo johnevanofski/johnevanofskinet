@@ -1109,90 +1109,90 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
   .col { border: 0px solid rgba(0, 0, 0, 0); float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -moz-background-clip: padding-box !important; -webkit-background-clip: padding-box !important; background-clip: padding-box !important; }
   /* 2. 4 Column Grid 760px - Infinity  -----------------------------------------------------------------------------   Span 1:    25.0% Span 2:    50.0% Span 3:    75.0% Span 4:    100%  ----------------------------------------------------------------------------- */
   /*! 760 UP !!*/
-  /****************************************************************** Site Name: johnevanofski.net Author: John Evanofski  Stylesheet: 720px and Up Stylesheet  This stylesheet is loaded for larger devices. It's set to  481px because at 480px it would load on a landscaped iPhone. This isn't ideal because then you would be loading all those extra styles on that same mobile connection.   A word of warning. This size COULD be a larger mobile device, so you still want to keep it pretty light and simply expand upon your base.scss styles.  *****************************************************************/
+  /****************************************************************** Site Name: johnevanofski.net Author: John Evanofski  Stylesheet: 720px and Up Stylesheet  *****************************************************************/
   /********************** TWEAKS *********************/
   /*********************2 NAVIGATION STYLES ********************/
-  /* line 25, ../sass/_760up.scss */
+  /* line 16, ../sass/_760up.scss */
   header { height: 5em; }
-  /* line 29, ../sass/_760up.scss */
+  /* line 20, ../sass/_760up.scss */
   header .abovenav { z-index: 0; }
-  /* line 33, ../sass/_760up.scss */
+  /* line 24, ../sass/_760up.scss */
   header .mobile-only { display: none; }
-  /* line 37, ../sass/_760up.scss */
+  /* line 28, ../sass/_760up.scss */
   header .logoWrap { display: inline-block; left: 2em; margin: 0; }
-  /* line 45, ../sass/_760up.scss */
+  /* line 36, ../sass/_760up.scss */
   nav { -webkit-transition: none; -transition: none; transition: none; top: 0; /* .menu is clearfixed inside mixins.scss */ /* end .menu */ }
-  /* line 50, ../sass/_760up.scss */
+  /* line 41, ../sass/_760up.scss */
   nav.off { height: auto; visibility: visible; opacity: 1; display: inline-block; }
-  /* line 58, ../sass/_760up.scss */
+  /* line 49, ../sass/_760up.scss */
   nav.menu { position: absolute; z-index: 9; text-align: left; width: auto; background-color: rgba(0, 0, 0, 0); margin: 0.9em 5.5em; /* end .menu ul */ }
-  /* line 67, ../sass/_760up.scss */
+  /* line 58, ../sass/_760up.scss */
   nav.menu ul { /* end .menu ul li */ /* highlight current page */ /* end current highlighters */ }
-  /* line 68, ../sass/_760up.scss */
+  /* line 59, ../sass/_760up.scss */
   nav.menu ul li { display: inline-block; padding: 0 0.5em; /*
 plan your menus and drop-downs wisely.
 */ }
-  /* line 73, ../sass/_760up.scss */
+  /* line 64, ../sass/_760up.scss */
   nav.menu ul li.active { background-color: #2d2d2d; }
-  /* line 76, ../sass/_760up.scss */
+  /* line 67, ../sass/_760up.scss */
   nav.menu ul li.active a { color: white; }
-  /* line 79, ../sass/_760up.scss */
+  /* line 70, ../sass/_760up.scss */
   nav.menu ul li a { font-size: 1.5em; /*
 you can use hover styles here even though this size
 has the possibility of being a mobile device.
 */ }
   /********************* CONTENT & POSTS ********************/
-  /* line 131, ../sass/_760up.scss */
+  /* line 122, ../sass/_760up.scss */
   #home .content p { font-size: 1.2em; }
-  /* line 148, ../sass/_760up.scss */
+  /* line 139, ../sass/_760up.scss */
   #design .banner .title { width: 25%; padding: 1%; }
-  /* line 153, ../sass/_760up.scss */
+  /* line 144, ../sass/_760up.scss */
   #design .banner .logo { background-color: white; width: 25%; padding: 1%; }
-  /* line 159, ../sass/_760up.scss */
+  /* line 150, ../sass/_760up.scss */
   #design .banner .logo img { display: block; width: 100%; }
-  /* line 165, ../sass/_760up.scss */
+  /* line 156, ../sass/_760up.scss */
   #design .banner .taglist { display: block; position: absolute; bottom: 0; margin-left: 0.5em; }
-  /* line 171, ../sass/_760up.scss */
+  /* line 162, ../sass/_760up.scss */
   #design .banner .taglist ul { margin-bottom: 0; }
-  /* line 175, ../sass/_760up.scss */
+  /* line 166, ../sass/_760up.scss */
   #design .banner .taglist ul li { background-color: silver; list-style: none; display: inline-block; padding: 0 0.5em; position: relative; }
-  /* line 183, ../sass/_760up.scss */
+  /* line 174, ../sass/_760up.scss */
   #design .banner .taglist ul li:hover { top: 2px; background-color: white; }
-  /* line 185, ../sass/_760up.scss */
+  /* line 176, ../sass/_760up.scss */
   #design .banner .taglist ul li a { color: #2d2d2d; text-decoration: none; }
-  /* line 195, ../sass/_760up.scss */
+  /* line 186, ../sass/_760up.scss */
   #design .banner .bannerimg { float: left; width: 75%; }
-  /* line 200, ../sass/_760up.scss */
+  /* line 191, ../sass/_760up.scss */
   #design .banner .bannerimg img { width: 100%; }
-  /* line 209, ../sass/_760up.scss */
+  /* line 200, ../sass/_760up.scss */
   #design .banner .bannertext { left: 25%; width: 75%; }
-  /* line 215, ../sass/_760up.scss */
+  /* line 206, ../sass/_760up.scss */
   #design .banner .bannertext.active .copy { padding: 2em 0 0 0; }
-  /* line 218, ../sass/_760up.scss */
+  /* line 209, ../sass/_760up.scss */
   #design .banner .bannertext h2.inner-title { display: none; }
-  /* line 232, ../sass/_760up.scss */
+  /* line 223, ../sass/_760up.scss */
   #resume .col:not(:last-child) { border-bottom: none; }
-  /* line 237, ../sass/_760up.scss */
+  /* line 228, ../sass/_760up.scss */
   #resume .contact { width: 50%; }
-  /* line 241, ../sass/_760up.scss */
+  /* line 232, ../sass/_760up.scss */
   #resume .contact p { text-align: right; padding-right: 1em; }
-  /* line 250, ../sass/_760up.scss */
+  /* line 241, ../sass/_760up.scss */
   #resume .skills { padding-left: 2em; }
-  /* line 256, ../sass/_760up.scss */
+  /* line 247, ../sass/_760up.scss */
   #resume .edu { padding-left: 2em; }
-  /* line 260, ../sass/_760up.scss */
+  /* line 251, ../sass/_760up.scss */
   #resume .download { padding-left: 2em; }
-  /* line 267, ../sass/_760up.scss */
+  /* line 258, ../sass/_760up.scss */
   #photo .photo-gallery { width: 100%; }
-  /* line 271, ../sass/_760up.scss */
+  /* line 262, ../sass/_760up.scss */
   #photo .photo-gallery:hover .info { transition-delay: 3s; opacity: 0; }
-  /* line 277, ../sass/_760up.scss */
+  /* line 268, ../sass/_760up.scss */
   #photo .rsArrow { z-index: 3; }
-  /* line 281, ../sass/_760up.scss */
+  /* line 272, ../sass/_760up.scss */
   #photo .info { visibility: visible; opacity: 1; position: absolute; display: block; z-index: 2; padding: 1em; text-shadow: 1px 1px 0 #000; -webkit-transition: all 1s ease-in-out; -transition: all 1s ease-in-out; transition: all 1s ease-in-out; }
-  /* line 292, ../sass/_760up.scss */
+  /* line 283, ../sass/_760up.scss */
   #photo .info p, #photo .info h4 { position: relative; }
-  /* line 299, ../sass/_760up.scss */
+  /* line 290, ../sass/_760up.scss */
   #video article p { padding: 0.2em 1em; }
   /********************* FOOTER STYLES ********************/
   /* check your menus here. do they look good? do they need tweaking? */
