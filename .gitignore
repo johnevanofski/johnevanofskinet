@@ -1,7 +1,5 @@
 .htaccess
 
-.gitignore
-
 .sass-cache/*
 
 site/config/config.php
