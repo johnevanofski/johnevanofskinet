@@ -174,13 +174,13 @@ CONTENT & POSTS
                 
                 li {
                     
-                    background-color: white;
+                    background-color: silver;
                     list-style: none;
                     display: inline-block;
                     padding: 0 0.5em;
                     position: relative;
                     
-                    &:hover { top: 2px; }
+                    &:hover { top: 2px; background-color: white; }
                                     
                     a { 
                         color: $dark-grey;
