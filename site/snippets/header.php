@@ -11,25 +11,15 @@
 <link rel="icon" type="image/png" href="assets/images/favicon.png">
     
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">    
-<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic|Share+Tech+Mono' rel='stylesheet' type='text/css'>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic|Share+Tech+Mono' rel='stylesheet' type='text/css'>   
     
   <?php 
-        /*JS FILES*/
-        echo js('assets/js/min/jquery.stellar.min.js');
-        echo js('assets/js/min/iscroll.min.js');
-        echo js('assets/js/min/masonry.min.js');
-        echo js('assets/js/min/jquery.royalslider.custom.min.js'); //production js
-        //echo js('assets/js/dev/jquery.royalslider.js'); //dev
-        //echo js('assets/js/min/scripts.min.js'); //production js
-        echo js('assets/js/scripts.js'); //dev
-        
-        /*CSS FILES*/
-        echo css('assets/styles/royalslider/royalslider.css');
-        echo css('assets/styles/royalslider/skins/custom/rs-custom.css');
-        //echo css('assets/styles/styles.min.css'); //production css
-        echo css('assets/styles/styles.css'); //dev
+    
+    /*CSS FILES*/
+    echo css('assets/styles/royalslider/royalslider.css');
+    echo css('assets/styles/royalslider/skins/custom/rs-custom.css');
+    echo css('assets/styles/styles.min.css'); //production css
+    //echo css('assets/styles/styles.css'); //dev
         
     //css files with template name will be added to template
     $cssURI  = 'assets/css/' . $page->template() . '.css';
@@ -53,7 +43,7 @@
     <header>
         <div class="abovenav">
             <div class="mobile-only uicon menu-light-empty menu-button"></div>     
-            <div class="logoWrap"><a href="<?php echo $site->url() ?>"><div style="width: 45px; height: 52px" class="jelogo"></div></a></div>
+            <div class="logoWrap"><a href="<?php echo $site->url() ?>"><div style="width: 44px; height: 52px" class="jelogo"></div></a></div>
             <a href="<?php echo $site->url() ?>/contact"><div class="uicon mail-empty contact"></div></a>  
         </div>
         

@@ -1,0 +1,24 @@
+﻿Title: YogaKula Website Rebuild
+
+----
+
+Text: YogaKula was my first big web project. I rebuilt their old, outdated website into a beautiful, clean, magazine-style site. 
+
+Features:
+
+- custom built gallery with video and photo feed from flickr
+- blog style event calendar and event slider
+- live stream video casting portal
+- social network feed for facebook and twitter
+
+Tools: _WordPress, HTML & CSS3, PHP, Javascript (jquery), Time.ly event calendar_
+
+Visit: (link: http://mcofest.org text: mcofest.org popup: yes)
+
+----
+
+Tags: web
+
+----
+
+Color: rgba(17,110,130,1)

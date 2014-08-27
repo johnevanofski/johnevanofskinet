@@ -6,10 +6,22 @@
 </section>
 
 <section class="content clearfix">
+    
+    <?php $videos = $pages
+                            ->find('video')
+                            ->children()
+                            ->visible()
+                            ->flip();
 
-  <article>
-    <?php echo kirbytext($page->text()) ?>
-  </article>
+    foreach ($videos as $video): ?>
+  
+    <article class="col span_2">
+        
+        <?php echo kirbytext($video->text()) ?>
+  
+    </article>
+    
+    <?php endforeach ?>
 
 </section>
 </div>

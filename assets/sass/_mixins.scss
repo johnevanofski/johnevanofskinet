@@ -412,6 +412,24 @@ SPRITES
     }
 }
 
+.smallicon {
+    background: url('../images/icons-ui.png');
+    background-image: url('../images/icons-ui.svg'), none;
+    background-size: 315px 156px;
+    width: 19px; height: 23px;
+    
+    &.close {
+        background-position: -283px -81px;
+        opacity: 0.8;        
+        
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+        }
+    }
+    
+}
+
 .nav-arrow {
     position: absolute;
     z-index: 999;
@@ -445,6 +463,8 @@ SPRITES
          }
     }
 }
+
+
 
 .nexicon {
     background: url('../images/nexus_.png');

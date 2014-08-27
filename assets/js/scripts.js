@@ -135,16 +135,18 @@ $('.royalSlider').royalSlider({
       });
     });
     
-//Animation triggers
-//homepage fadeOuts
-var divs = $('.navdown, .nexus');
-    $(window).scroll(function(){
-       if($(window).scrollTop() < 150 ){
-             divs.fadeIn();
-       } else {
-             divs.removeClass('fadeInEach fadeIn').fadeOut();
-       }
-});
+/*Animation triggers*/
+    //homepage fadeOuts
+    var divs = $('.navdown, .nexus');
+        $(window).scroll(function(){
+           if($(window).scrollTop() < 150 ){
+                 divs.fadeIn();
+           } else {
+                 divs.removeClass('fadeInEach fadeInDown').fadeOut();
+           }
+    });
+    
+    
 //sending 
     
     $('#send-button').hover(function(){
@@ -153,9 +155,25 @@ var divs = $('.navdown, .nexus');
 
 /* design banners */
     
-    $('.bannerinfo').click(function(e){
+    //banner link color
+    
+    $('.bannerinfo').each(function(){
+    
+    var color = $(this).attr('data-color');
+        
+        $(this).find('a').hover(function(){
+            $(this).css('color', color );
+            }, function(){
+                $(this).css('color', 'white');
+            });
+    
+   });
+    
+    $('.bannerinfo').click(function(){
         
         //turn on
+        
+        $(this).toggleClass('active');
         
         $(this).find('.bannertext').toggleClass('active');
         
@@ -163,7 +181,7 @@ var divs = $('.navdown, .nexus');
         
         $(this).find('.toggle').toggleClass('off');
         
-        e.preventDefault();
+        //e.preventDefault();
         
     });
     

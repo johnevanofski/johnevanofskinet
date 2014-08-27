@@ -81,15 +81,16 @@
                         <?php endforeach ?>
                     </ul>
                 </div>
-                <div class="bannerinfo">
+                <div class="bannerinfo" data-color="<?php echo $color ?>">
                     <div class="bannerimg"><img src="<?php echo $banner->url(); ?>"></div>
                     <div class="uicon info toggle"></div>
                     <div class="bannertext">
                     <div class="copy">    
-                        <div class="close"><i class="fa fa-times"></i></div>       
+                        <div class="close smallicon"></div>       
                         <?php echo kirbytext($text); ?>         
                     </div>
-                    <br>
+                        <div class="close-message"><p>click or tap anywhere to close</p></div>
+                        
                     <div id="gallery-<?php echo $id; ?>" class="clearfix gallery-d">
                         <ul>
                             <?php foreach ($article->images()->not('banner.png') as $pic): ?>

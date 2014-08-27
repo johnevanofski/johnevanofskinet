@@ -1,7 +1,0 @@
-﻿Title: Website Icons
-
-----
-
-Text: This is part of the UI created for this site. I wanted to use hexagons to represent the multi-dimensionality of my work. They can be seen as either flat shapes or cube profiles. I used flat graphic design and line art, all of which is completely original work.
-
-Tools: _Photoshop, Illustrator_

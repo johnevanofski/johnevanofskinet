@@ -128,6 +128,10 @@ CONTENT & POSTS
 
     .content {
         
+        p {
+            font-size: 1.2em;
+        }
+        
         .nexus {
 
             ul {
@@ -208,7 +212,7 @@ CONTENT & POSTS
             width: 75%;
             
             &.active {
-                .copy { padding: 1em 0 0 0; }
+                .copy { padding: 2em 0 0 0; }
             }
             
             h2.inner-title {
@@ -264,15 +268,8 @@ CONTENT & POSTS
         
         width: 100%;
         
-        &:not(:first-child) {
-            width: 50%;
-            float: left;
-            
-            .info { width: 50% }
-        }
-        
         &:hover .info {
-            transition-delay: 1s;
+            transition-delay: 3s;
             opacity: 0;
         }
     }
@@ -294,6 +291,13 @@ CONTENT & POSTS
         
         p, h4 {
             position: relative;
+        }
+    }
+}
+#video {
+    article {
+        p {
+            padding: 0.2em 1em;
         }
     }
 }

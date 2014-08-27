@@ -10,7 +10,7 @@
                     <li class="nexicon photo"><a href="photography"><span></span></a></li>
                 </ul>
             </div>
-            <a href="#profiletop"><div class="navdown fadeIn"><div class="uicon arrow-down"></div></div></a>
+            <a href="#profiletop"><div class="navdown fadeInDown"><div class="uicon arrow-down"></div></div></a>
         </section>
 
     <div id="wrapper">

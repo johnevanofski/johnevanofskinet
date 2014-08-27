@@ -10,7 +10,7 @@ Features:
 - multi-filter organization modules built with jquery
 - 100% responsive
 
-Tools: _Illustrator, html & css, css3 animation, php, javascript (jquery), WordPress cms_
+Tools: _(link: http://themble.com/bones/ text: Bones HTML5 Starter popup: yes), WordPress, HTML5, CSS3 animation, PHP, Javascript (jQuery), Illustrator_
 
 Visit: (link: http://ciderweeknyc.com text: ciderweeknyc.com popup: yes)
 

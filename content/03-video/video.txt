@@ -1,7 +1,5 @@
-Title: Video
+﻿Title: Video
 
 ----
 
 Text: 
-(vimeo: http://vimeo.com/31924298)
-(vimeo: http://vimeo.com/33818466)

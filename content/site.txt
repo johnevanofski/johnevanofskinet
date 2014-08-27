@@ -1,4 +1,4 @@
-﻿Title: Kirby
+﻿Title: John Evanofski
 
 ----
 
@@ -6,7 +6,7 @@ Author: John Evanofski
 
 ----
 
-Description: It's kirby time
+Description: John Evanofski is a Bay Area web developer and designer. He also loves to take pictures and occasional makes experimental house music.
 
 ----
 

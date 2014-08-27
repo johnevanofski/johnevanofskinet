@@ -179,7 +179,7 @@ header {
     .logoWrap {
     perspective: 1000;
     position: absolute;
-    width: 45px;
+    width: 44px;
     height: 52px;
     margin: 0 44%;
     top: 1em;
@@ -390,8 +390,7 @@ article {
 
 }
 
-#design {
-    
+#design { 
 
     
     .filters {
@@ -474,6 +473,7 @@ article {
         .bannerimg {
             
             float: left;
+            z-index: 2;
             width: 100%;
             margin-bottom: -7px;
             
@@ -490,8 +490,6 @@ article {
             position: absolute;
             right: 0;
             top: 0;
-            color: white;
-            &:hover { color: $light-grey; }
         }
         
         .toggle {
@@ -532,22 +530,31 @@ article {
         .bannertext {
             position: relative;
             padding: 0;
-            margin: 0;            
+            margin: 0;
             width: 100%;
-            top: -1em;
+            z-index: 0;
             @include transition(top 0.4s);
             
             &.active {
                 top: 0;
-                .copy { padding: 1em 0.2em; }
+                .copy { padding: 2em 0.2em; }
                 height: auto;
                 opacity: 1;
                 display: inline-block;
                 
             }
             
-            a:hover {
-                color: $light-grey;
+            a {
+                @include transition (all 0.5s);
+                
+                border-bottom: 1px solid white;
+                padding: 3px;
+                color: white;
+                
+                &:hover {
+                    background-color: white;
+                    color: $dark-grey;
+                }
             }
         }
         
@@ -565,6 +572,13 @@ article {
             height: 1em;
             background-color: black;
         }
+        
+        .close-message {
+            background-color: white;
+            color: $dark-grey;
+            text-align: center;
+            font-size: 0.8em;
+        }
     } //end .banner
     
 } 
@@ -573,7 +587,15 @@ article {
     .bannertext {
         height: 0;
         opacity: 0;
+        top: -6px;
+         .close-message {
+            display: block;
+            }
+        .close {
+            display: block;
+        }
     }
+   
 }
 
 //end design content
@@ -609,10 +631,10 @@ article {
             bottom: 0;
             width: 100%;
                 .arrow-down {                
-                    margin: 0 auto;                    
-                    &:hover {
-                        @extend .bounce;
-                    }
+                    margin: 0 auto;              
+                    
+                       &:hover { @extend .bounce; }
+                    
                 }
         }
         
@@ -622,6 +644,19 @@ article {
     .content {
         width: 95%;
         margin: 0 auto 5em;
+        
+        a {
+                @include transition (all 0.5s);
+                
+                border-bottom: 1px solid white;
+                padding: 3px;
+                color: white;
+                
+                &:hover {
+                    background-color: white;
+                    color: black;
+                }
+        }
         
         
         article {

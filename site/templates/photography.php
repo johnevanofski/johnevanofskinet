@@ -12,7 +12,7 @@
                     ->children()
                     ->visible()
                     ->flip()
-                    ->paginate(5);
+                    ->paginate(4);
         
         $id = 0;
 

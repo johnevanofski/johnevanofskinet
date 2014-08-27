@@ -1,0 +1,17 @@
+Title: Clean LED Energy Savings Infographic
+
+----
+
+Text: This infographic was designed to lead customers to understand the savings that can be made by switching from traditional fluorescent to led lighting tubes. The information came to me as a very confusing table that was hard to follow. This info graphic makes it very clear how the savings break down. 
+
+Tools: _Illustrator, inDesign_
+
+----
+
+Tags: graphic
+
+----
+
+Color: rgba(118,181,212,1)
+
+----
