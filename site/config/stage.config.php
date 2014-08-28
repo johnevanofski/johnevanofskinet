@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', 'http://stage.johnevanofski.net');
+c::set('url', '/');
 
 
 /* 
