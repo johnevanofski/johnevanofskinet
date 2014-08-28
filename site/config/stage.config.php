@@ -44,7 +44,7 @@ c::set('url', '/');
  
 */
 
-c::set('url', '/');
+c::set('url', 'http://stage.johnevanofski.net');
 
 
 /* 
@@ -71,7 +71,7 @@ RewriteBase /subfolder
  
 */
 
-//c::set('subfolder', '/');
+c::set('subfolder', 'http://johnevanofski.net/stage');
 
 
 /* 
