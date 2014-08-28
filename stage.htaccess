@@ -16,10 +16,10 @@ RewriteEngine on
 # 
 # RewriteBase /mysite
 # 
-RewriteBase /stage/
+
 
 # connect to stage subdomain
-#RewriteCond %{HTTP_HOST} ^stage\.johnevanofski\.net
+RewriteCond %{HTTP_HOST} ^stage\.johnevanofski\.net
 #RewriteRule ^(.*)$ /stage/$1 [L]
 
 # block text files in the content folder from being accessed directly
@@ -42,7 +42,7 @@ RewriteRule ^panel/(.*) panel/index.php [L]
 # make site links work
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*) index.php [L]
+RewriteRule ^(.*)$ /stage/index.php/$1 [L]
  
 </IfModule>
 
