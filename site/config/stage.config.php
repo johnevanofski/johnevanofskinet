@@ -71,7 +71,7 @@ RewriteBase /subfolder
  
 */
 
-c::set('subfolder', 'http://johnevanofski.net/stage');
+//c::set('subfolder', '');
 
 
 /* 
