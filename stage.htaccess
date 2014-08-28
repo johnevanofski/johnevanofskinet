@@ -19,8 +19,8 @@ RewriteEngine on
 RewriteBase /stage/
 
 # connect to stage subdomain
-#RewriteCond %{HTTP_HOST} ^stage\.johnevanofski\.net
-#RewriteRule ^(.*)$ /stage/$1 [L]
+RewriteCond %{HTTP_HOST} ^stage\.johnevanofski\.net
+RewriteRule ^(.*)$ /stage/$1 [L]
 
 # block text files in the content folder from being accessed directly
 RewriteRule ^content/(.*)\.(txt|md|mdown)$ error [R=301,L]
@@ -40,10 +40,10 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^panel/(.*) panel/index.php [L]
 
 # make site links work
-RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /stage/index.php/$1 [L]
+RewriteRule ^index\.php$ - [L]
+
  
 </IfModule>
 
