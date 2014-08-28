@@ -16,7 +16,7 @@ RewriteEngine on
 # 
 # RewriteBase /mysite
 # 
-RewriteBase /
+RewriteBase /stage/
 
 # connect to stage subdomain
 RewriteCond %{HTTP_HOST} ^stage\.johnevanofski\.net
