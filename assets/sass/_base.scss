@@ -179,14 +179,16 @@ header {
     .logoWrap {
     perspective: 1000;
     position: absolute;
-    width: 44px;
+    width: 45px;
     height: 52px;
     margin: 0 44%;
     top: 1em;
     
     &:hover .jelogo {
+        -webkit-transform-style: preserve-3d;
         transform-style: preserve-3d;
         @include transition(all 0.5s linear);
+        -webkit-transform: rotateY(360deg);
         transform: rotateY(360deg);
     }
     

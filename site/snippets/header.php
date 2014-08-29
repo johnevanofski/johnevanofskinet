@@ -18,8 +18,8 @@
     /*CSS FILES*/
     echo css('assets/styles/royalslider/royalslider.css');
     echo css('assets/styles/royalslider/skins/custom/rs-custom.css');
-    //echo css('assets/styles/styles.min.css'); //production css
-    echo css('assets/styles/styles.css'); //dev
+    echo css('assets/styles/styles.min.css'); //production css
+    //echo css('assets/styles/styles.css'); //dev
         
     //css files with template name will be added to template
     $cssURI  = 'assets/css/' . $page->template() . '.css';
@@ -43,7 +43,7 @@
     <header>
         <div class="abovenav">
             <div class="mobile-only uicon menu-light-empty menu-button"></div>     
-            <div class="logoWrap"><a href="<?php echo $site->url() ?>"><div style="width: 44px; height: 52px" class="jelogo"></div></a></div>
+            <div class="logoWrap"><a href="<?php echo $site->url() ?>"><div style="width: 45px; height: 52px" class="jelogo"></div></a></div>
             <a href="<?php echo $site->url() ?>/contact"><div class="uicon mail-empty contact"></div></a>  
         </div>
         
