@@ -555,7 +555,7 @@ ANIMATIONS
   25%, 75% {
     -webkit-transform: translateY(-5px);
             transform: translateY(-5px); } }
-.bounce, #home .top .navdown .arrow-down:hover, footer .socialNexus .uicon:hover, footer .navup:hover {
+.bounce, footer .socialNexus .uicon:hover, footer .navup:hover {
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-name: bounce;
@@ -566,6 +566,12 @@ ANIMATIONS
           animation-fill-mode: both;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-name: bounce;
+          animation-name: bounce; }
+
+.delay {
+  -webkit-animation-delay: 1.5s;
+  animation-delay: 1.5s;
   -webkit-animation-name: bounce;
           animation-name: bounce; }
 
@@ -1164,7 +1170,8 @@ POSTS & CONTENT STYLES
     #design .banner .gallery-d .caption {
       display: block;
       padding: 1em;
-      text-align: center; }
+      text-align: center;
+      line-height: 1em; }
   #design .banner.dummy {
     height: 1em;
     background-color: black; }
@@ -1223,7 +1230,7 @@ POSTS & CONTENT STYLES
   #home .content article {
     position: relative; }
     #home .content article .biopic {
-      padding: 2.5em 0; }
+      padding: 1.5em 0; }
       #home .content article .biopic img {
         display: block;
         margin: 0 auto; }
@@ -1235,7 +1242,7 @@ POSTS & CONTENT STYLES
     position: relative;
     margin: 0 0;
     width: 100%;
-    top: -80px;
+    top: 15px;
     text-align: center;
     text-transform: none;
     text-shadow: 1px 1px 0 #000; }
@@ -2009,6 +2016,8 @@ img.mfp-img {
   *********************/
   #home .content p {
     font-size: 1.2em; }
+  #home .hello .h2 {
+    top: 0; }
 
   #design .banner .title {
     width: 25%;

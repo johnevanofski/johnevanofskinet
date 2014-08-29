@@ -19,17 +19,14 @@
 
 </div> <!--close wrap-->
 
-<!--<div id="contact" class="zoom dark-popup mfp-hide"></div>-->
-
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script>window.jquery||documnet.write('<script src="assets/js/min/jquery-1.11.1.min.js"><\/script>')</script>
+<script>window.jquery||document.write('<script src="assets/js/min/jquery-1.11.1.min.js"><\/script>')</script>
 
 <?php 
     
     /*JS FILES*/
     //echo js('assets/js/jquery.stellar.js'); //production js
     echo js('assets/js/min/jquery.stellar.min.js'); //dev
-    echo js('assets/js/min/iscroll.min.js');
     echo js('assets/js/min/masonry.min.js');
     echo js('assets/js/min/jquery.royalslider.custom.min.js'); //production js
     //echo js('assets/js/dev/jquery.royalslider.js'); //dev

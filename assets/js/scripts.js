@@ -45,58 +45,7 @@ jQuery(document).ready(function($) {
     
     $('body').addClass('jsOK');
 
-/*PARALLAX*/
     
-    $.stellar({
-        horizontalScrolling: false,
-        verticalScrolling: true,
-        verticalOffset: 200
-    });
-
-    
-/*MAG POP
-    $('.popup-button').magnificPopup({
-        type: 'inline',
-        overflowY: 'auto',
-        mainClass: 'mfp-zoom-in',
-        removalDelay: 300,
-    });
-    
-    //$('#send-button').magnificPopup('open');
-    
-    $('.gallery').magnificPopup({
-        type: 'image',
-        delegate: 'a',
-        tLoading: '<i class="fa fa-spin fa-circle-o-notch"></i>',
-        navigateByImgClick: true,
-        
-        image: {
-			verticalFit: true
-		},
-		
-        zoom: {
-			enabled: true,
-			duration: 300 // don't foget to change the duration also in CSS
-		},
-
-        gallery: { 
-
-        enabled: true,
-        
-        
-        preload: [1,3], // read about this option in next Lazy-loading section
-
-          navigateByImgClick: true,
-
-          arrowMarkup: '<div title="%title%" type="button" class="nav-arrow %dir%-empty"></button>', // markup of an arrow button
-
-          tPrev: 'Previous', // title for left button
-          tNext: 'Next', // title for right button
-          tCounter: '' // markup of counter
-        }
-    });
-*/
-
 /*ROYAL SLIDER*/
 
 $('.royalSlider').royalSlider({
@@ -115,7 +64,7 @@ $('.royalSlider').royalSlider({
     		nativeFS: true
     	},
     
-});  
+}); 
 
     
 /*SMOOTH SCROLLING*/
@@ -142,7 +91,7 @@ $('.royalSlider').royalSlider({
            if($(window).scrollTop() < 150 ){
                  divs.fadeIn();
            } else {
-                 divs.removeClass('fadeInEach fadeInDown').fadeOut();
+                 divs.removeClass('fadeInEach fadeInDown bounce').fadeOut();
            }
     });
     
@@ -217,38 +166,8 @@ $('.royalSlider').royalSlider({
     function checkWidth(){
         var responsive_viewport = $(window).width();
 	
-        /* if is below 481px */
+        /* if is below 760px */
         if (responsive_viewport < 760) {
-            
-            /*iscroll*/    
-            (function(){
-                var ua = navigator.userAgent,
-            isMobileWebkit = /WebKit/.test(ua) && /Mobile/.test(ua);
-
-          if (isMobileWebkit) {
-            $('html').addClass('mobile');
-          }
-
-          $(function(){
-            var iScrollInstance;
-
-            if (isMobileWebkit) {
-              iScrollInstance = new iScroll('wrapper');
-
-              $('#scroller').stellar({
-                scrollProperty: 'transform',
-                positionProperty: 'transform',
-                horizontalScrolling: false,
-                verticalOffset: 150
-              });
-            } else {
-              $.stellar({
-                horizontalScrolling: false,
-                verticalOffset: 150
-              });
-            }
-          });
-    })(); //end iscroll
 
         } /* end smallest screen */
 
@@ -264,7 +183,13 @@ $('.royalSlider').royalSlider({
                 itemSelector: '.col',
                 columnWidth: '.col'
             });
-
+            
+            /*PARALLAX*/
+            $.stellar({
+                horizontalScrolling: false,
+                verticalScrolling: true,
+                verticalOffset: 0
+            });
             
             //console.log('width >= 720px');
 

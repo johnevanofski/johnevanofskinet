@@ -567,6 +567,7 @@ article {
                 display: block;
                 padding: 1em;
                 text-align: center;
+                line-height: 1em;
             }
         }
         
@@ -633,9 +634,7 @@ article {
             bottom: 0;
             width: 100%;
                 .arrow-down {                
-                    margin: 0 auto;              
-                    
-                       &:hover { @extend .bounce; }
+                    margin: 0 auto;
                     
                 }
         }
@@ -667,7 +666,7 @@ article {
         
            .biopic {
                
-               padding: 2.5em 0;
+               padding: 1.5em 0;
 
                 img {
                     display: block;
@@ -687,7 +686,7 @@ article {
                     position: relative;
                     margin: 0 0;
                     width: 100%;
-                    top: -80px;
+                    top: 15px;
                     text-align: center;
                     text-transform: none;
                     text-shadow: 1px 1px 0 #000;
