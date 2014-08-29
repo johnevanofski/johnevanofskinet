@@ -611,6 +611,9 @@ article {
         -o-background-size: cover;
         background-size: cover;
         min-height: 800px;
+        /*iphone*/
+        -webkit-background-size: auto 150%;
+        background-attachment: scroll;
         
         .nexus {
             display: block;
@@ -720,6 +723,9 @@ article {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        /*iphoneBackup*/
+        -webkit-background-size: auto 150%;
+        background-attachment: scroll;
     
     h1, h2, h3 {
         text-shadow: rgb(50, 50, 50) 1px 1px 0px;
@@ -823,6 +829,9 @@ article {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        /*iphone*/
+        -webkit-background-size: auto 150%;
+        background-attachment: scroll;
         
         text-align: center;
         

@@ -1193,7 +1193,10 @@ POSTS & CONTENT STYLES
 #home .top {
   background: url("../images/jellybg.png") no-repeat center center fixed;
   background-size: cover;
-  min-height: 800px; }
+  min-height: 800px;
+  /*iphone*/
+  -webkit-background-size: auto 150%;
+  background-attachment: scroll; }
   #home .top .nexus {
     display: block;
     position: absolute;
@@ -1256,7 +1259,10 @@ POSTS & CONTENT STYLES
 #resume {
   padding: 1em;
   background: url("../images/resume-bg.png") no-repeat center bottom fixed;
-  background-size: cover; }
+  background-size: cover;
+  /*iphoneBackup*/
+  -webkit-background-size: auto 150%;
+  background-attachment: scroll; }
   #resume h1, #resume h2, #resume h3 {
     text-shadow: #323232 1px 1px 0px; }
   #resume p {
@@ -1306,6 +1312,9 @@ POSTS & CONTENT STYLES
 #error article {
   background: url("../images/error.png") no-repeat center bottom fixed;
   background-size: cover;
+  /*iphone*/
+  -webkit-background-size: auto 150%;
+  background-attachment: scroll;
   text-align: center; }
   #error article h1 {
     text-shadow: #323232 1px 1px 0px;
