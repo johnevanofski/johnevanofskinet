@@ -610,10 +610,12 @@ article {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        min-height: 650px;
-        /*iphone*/
-        -webkit-background-size: auto 100%;
-        background-attachment: scroll;
+        min-height: 750px;
+        
+        @media only screen and (max-width: 568px) {
+            background-attachment: scroll;
+            -webkit-background-size: auto 100%;
+        }
         
         .nexus {
             display: block;
@@ -723,9 +725,11 @@ article {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        /*iphone*/
-        -webkit-background-size: auto 100%;
-        background-attachment: scroll;
+    
+        @media only screen and (max-width: 568px) {
+            background-attachment: scroll;
+            -webkit-background-size: auto 100%;
+        }
     
     h1, h2, h3 {
         text-shadow: rgb(50, 50, 50) 1px 1px 0px;
@@ -829,15 +833,17 @@ article {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-        /*iphone*/
-        -webkit-background-size: auto 100%;
-        background-attachment: scroll;
+        
+        @media only screen and (max-width: 568px) {
+            background-attachment: scroll;
+            -webkit-background-size: auto 100%;
+        }
         
         text-align: center;
         
         h1 {
             text-shadow: rgb(50, 50, 50) 1px 1px 0px;
-            font-size: 8em;
+            font-size: 7em;
         }
         
     }

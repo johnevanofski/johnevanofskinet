@@ -17,7 +17,7 @@
         <div id="scroller">
         <section class="content">
             
-            <div id="profiletop" class="hello fadeIn" data-stellar-offset-parent="true">
+            <div id="profiletop" class="hello" data-stellar-offset-parent="true">
                 <div class="h2" data-stellar-ratio="0.5">Hello, my name is <br/>John Evanofski</div>
             </div>
 
