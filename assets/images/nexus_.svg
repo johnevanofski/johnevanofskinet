@@ -57,23 +57,23 @@
 </g>
 <g id="design">
 	<polygon style="fill:#636464;" points="0,25.976 45,0 90,25.976 90,77.927 45,103.902 0,77.927 	"/>
-	<text transform="matrix(1 0 0 1 8.2534 58.9248)" style="fill:#FFFFFF; font-family:'Share Tech Mono, sans-serif'; font-size:22px">DESIGN</text>
+	<text transform="matrix(1 0 0 1 8.2534 58.9248)" style="fill:#FFFFFF; font-family:'Share Tech Mono'; font-size:22px">DESIGN</text>
 </g>
 <g id="photo">
 	<polygon style="fill:#636464;" points="270,25.975 315.002,-0.001 360,25.975 360,77.927 315.002,103.903 270,77.927 	"/>
 	
-		<text transform="matrix(1 0 0 1 284.3779 58.9268)" style="fill:#FFFFFF; font-family:'Share Tech Mono, sans-serif'; font-size:22px;">PHOTO</text>
+		<text transform="matrix(1 0 0 1 284.3779 58.9268)" style="fill:#FFFFFF; font-family:'Share Tech Mono'; font-size:22px;">PHOTO</text>
 </g>
 <g id="audio">
 	<polygon style="fill:#636464;" points="180,25.976 225,0 270,25.976 270,77.927 225,103.902 180,77.927 	"/>
 	
-		<text transform="matrix(1 0 0 1 194.3779 58.9248)" style="fill:#FFFFFF; font-family:'Share Tech Mono, sans-serif'; font-size:22px;">AUDIO</text>
+		<text transform="matrix(1 0 0 1 194.3779 58.9248)" style="fill:#FFFFFF; font-family:'Share Tech Mono'; font-size:22px;">AUDIO</text>
 </g>
 <g id="video">
 	<g id="blank_2_">
 		<polygon style="fill:#636464;" points="90,25.976 135,0 180,25.976 180,77.927 135,103.902 90,77.927 		"/>
 	</g>
 	
-		<text transform="matrix(1 0 0 1 104.3784 58.9258)" style="fill:#F1F2F2; font-family:'Share Tech Mono, sans-serif'; font-size:22px;">VIDEO</text>
+		<text transform="matrix(1 0 0 1 104.3784 58.9258)" style="fill:#F1F2F2; font-family:'Share Tech Mono'; font-size:22px;">VIDEO</text>
 </g>
 </svg>
