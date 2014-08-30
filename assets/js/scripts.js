@@ -132,7 +132,7 @@ $('.royalSlider').royalSlider({
         
         //scroll to top of frame
         
-        imagetop = $(this).find('.bannerimg').offset();
+        imagetop = $(this).offset();
         
         $('html,body').animate({
               scrollTop: imagetop.top
