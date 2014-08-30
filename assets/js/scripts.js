@@ -130,6 +130,14 @@ $('.royalSlider').royalSlider({
         
         $(this).find('.toggle').toggleClass('off');
         
+        //scroll to top of frame
+        
+        imagetop = $(this).find('.bannerimg').offset();
+        
+        $('html,body').animate({
+              scrollTop: imagetop.top
+        }, 500);
+        
         //e.preventDefault();
         
     });
