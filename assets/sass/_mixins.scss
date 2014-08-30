@@ -192,7 +192,7 @@ ANIMATIONS
 @-webkit-keyframes fadeInDown { 
     0% { 
         opacity: 0; 
-        -webkit-transform: translateY(-80px); 
+        -webkit-transform: translateY(-40px); 
     } 
     100% { 
         opacity: 1; 
@@ -203,7 +203,7 @@ ANIMATIONS
 @keyframes fadeInDown { 
     0% { 
         opacity: 0; 
-        transform: translateY(-80px); 
+        transform: translateY(-40px); 
     } 
     100% { 
         opacity: 1; 
