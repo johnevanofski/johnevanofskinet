@@ -1,4 +1,4 @@
-Title: Resume
+﻿Title: Resume
 
 ----
 
@@ -6,27 +6,24 @@ Name: John Evanofski
 
 ----
 
-Contact: 
-(link: http://johnevanofski.net/contact text: contact@johnevanofski.net)
+Contact: (link: http://johnevanofski.net/contact text: contact@johnevanofski.net)
 (link: http://tel:7209384999 text: 720 938 4999)
 Oakland & San Francisco, CA
 (link: http://johnevanofski.net text: johnevanofski.net)
 
 ----
 
-Bio:
-
-John Evanofski is a Bay Area web and graphic designer with a diverse technological skillset and a problem solving aptitude. He is also an adept communicator and an experienced technology educator. His goal is to use his creative intuition to design elegent work and continue the tradition of human ingenuity.
+Bio: John Evanofski is a Bay Area web developer and designer with a diverse technological skillset and a problem solving aptitude. He is also an adept communicator and an experienced technology educator. His goal is to use his skills to bridge the gap between the user and the designer in order to continue the tradition of good design.
 
 ----
 
-Skills: 
-###Web: 
+Skills: ###Web Dev: 
 
-- Responsive Web
 - HTML5 & CSS3
-- jQuery/JavaScript 
-- PHP 
+- JavaScript 
+- PHP
+- Ruby 
+- Responsive Web
 - WordPress CMS 
 
 ###Adobe Creative Suite:
@@ -45,8 +42,7 @@ Skills:
 
 ----
 
-Experience:
-###Web & Graphic Design Lead
+Experience: ###Web & Graphic Design Lead
 Clean LED Energy / Oakland CA / 2014-Present
 
 ###Web Designer and Video Tech Support Specialist
@@ -70,8 +66,7 @@ Service Source Inc / San Francisco CA / 2009 - 2013
 
 ----
 
-Education:
-**Liberal Arts Humanities (AA)**
+Education: **Liberal Arts Humanities (AA)**
 **Digital Art Certificate**
 City College San Francisco / 2013
 

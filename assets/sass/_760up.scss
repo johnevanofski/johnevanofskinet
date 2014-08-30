@@ -195,7 +195,10 @@ CONTENT & POSTS
         }
         
         .toggle {
-            //display: none;
+            
+            &.info {
+                display: block;
+            }
         }
         
         .bannertext{
