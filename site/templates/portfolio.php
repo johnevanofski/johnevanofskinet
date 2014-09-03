@@ -82,8 +82,11 @@
                     </ul>
                 </div>
                 <div class="bannerinfo" data-color="<?php echo $color ?>">
-                    <div class="bannerimg"><img src="<?php echo $banner->url(); ?>"></div>
-                    <div class="uicon info toggle"></div>
+                    <div class="bannerimg"><img src="<?php echo $banner->url(); ?>">
+                        <div class="bannerhover" style="background-color: <?php echo opacitychange($color, 0.5)?>">
+                            <div class="uicon info toggle"></div>
+                        </div>
+                    </div>
                     <div class="bannertext">
                     <div class="copy">    
                         <div class="close smallicon"></div>       

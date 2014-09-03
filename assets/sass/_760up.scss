@@ -137,6 +137,10 @@ CONTENT & POSTS
     
     .banner {
         
+        &:hover .bannerhover {
+                width: 75%;
+            }
+        
         .title {
             width: 25%;
             padding: 1%;
