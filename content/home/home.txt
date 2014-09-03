@@ -6,12 +6,12 @@ Text: **Location:** Bay Area, Oakland, California USA
 
 **Type:** Human / Wizard
 
-**Skills:** Web Development, Graphic and Print Design, Photography, Audio and Video. See more on my (link: resume text: resume).
+**Skills:** Web Development, Graphic and Print Design. See my (link: resume text: resume) and (link: portfolio text: portfolio)
 
 **About:**
 
 I’m a 27 year old living in the Bay Area. I started programming my computer when I was 13 using BASIC, I made music using MIDI generators and designed graphics with Gimp. Now I’m a web developer, designer and technology educator. I have very strong communication skills as well as an aptitude for new technology and languages.
 
-I like video games, puzzles, breakfast foods, synths, films, hiking, and sci-fi.
+**Interests:** 
 
-Jump to page: (link: design text: Design ), (link: audio text: Audio ), (link: video text: Video ), (link: photography text: Photography )
+I like (link: photography text: taking pictures), video games, puzzles, breakfast foods, (link: audio text: making electronic music), (link: video text: films), hiking, and sci-fi.

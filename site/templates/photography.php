@@ -11,7 +11,6 @@
                     ->find('photography')
                     ->children()
                     ->visible()
-                    ->flip()
                     ->paginate(4);
         
         $id = 0;

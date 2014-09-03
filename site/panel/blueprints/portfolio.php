@@ -2,9 +2,9 @@
 
 # Design blueprint
 
-title: Design Page
+title: Portfolio Page
 pages:
-  template: design
+  template: portfolio
 files: true
 fields:
   title: 

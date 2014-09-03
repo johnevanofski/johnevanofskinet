@@ -37,7 +37,6 @@ Skills: ###Web Dev:
 ###Other: 
 
 - Final Cut Pro 
-- Ableton Live 
 - Microsoft Office Suite
 
 ----

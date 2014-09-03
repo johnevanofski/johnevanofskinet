@@ -8,7 +8,7 @@
             
        <?php 
     
-        $all_articles = $pages->find('design');
+        $all_articles = $pages->find('portfolio');
         $tags = tagcloud($all_articles);
         $onPage = $site->uri;
         
@@ -16,7 +16,7 @@
 
         <div class="tagcloud">
             <ul>
-                <li <?php echo ( $onPage == 'design' ? 'class="active"' : null ); ?>><a href="<?php echo url('design'); ?>">all</a></li>
+                <li <?php echo ( $onPage == 'portfolio' ? 'class="active"' : null ); ?>><a href="<?php echo url('portfolio'); ?>">all</a></li>
               <?php foreach($tags as $tag): ?>
 
                 <li <?php if($tag->isActive()) echo 'class="active"' ?>><a href="<?php echo $tag->url() ?>"><?php echo $tag->name() ?></a></li>
@@ -43,14 +43,14 @@
 
         if (param('tag')){ 
             $articles = $pages
-                    ->find('design')
+                    ->find('portfolio')
                     ->children()
                     ->visible()
                     ->filterBy('tags',param('tag'),',')
                     ->flip();
         } else {
             $articles = $pages
-                    ->find('design')
+                    ->find('portfolio')
                     ->children()
                     ->visible()
                     ->flip();
@@ -77,7 +77,7 @@
                 <div class="taglist">
                     <ul class="tags">
                         <?php foreach(str::split($article->tags()) as $tag): ?>
-                            <li><a href="<?php echo url('design/tag:' . urlencode($tag)) ?>"><?php echo $tag; ?></a></li>
+                            <li><a href="<?php echo url('portfolio/tag:' . urlencode($tag)) ?>"><?php echo $tag; ?></a></li>
                         <?php endforeach ?>
                     </ul>
                 </div>

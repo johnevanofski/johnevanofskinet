@@ -475,15 +475,15 @@ SPRITES
 .nexicon {
     background: url('../images/nexus.png');
     background-image: url('../images/nexus.svg'), none;
-    background-size: 360px 208px;
-    width: 90px; height: 104px;
+    background-size: 540px 311.709px;
+    width: 135px; height: 155.854px;
     z-index: 8;
     
     span {
         background: url('../images/nexus.png');
         background-image: url('../images/nexus.svg'), none;
-        background-size: 360px 208px;
-        width: 90px; height: 104px;
+        background-size: 540px 311.709px;
+        width: 135px; height: 155.854px;
         z-index:9;
         opacity: 0;
         display: block;
@@ -491,7 +491,7 @@ SPRITES
     }
 
     &.design {
-        background-position: 0 -104px;    
+        background-position: 0 -155.854px;    
         span {
             background-position: 0 0;
             &:hover  {
@@ -501,9 +501,9 @@ SPRITES
     }
     
     &.video {
-        background-position: -90px -104px;    
+        background-position: -135px -155.854px;    
         span { 
-            background-position: -90px 0;
+            background-position: -135px 0;
             &:hover {                
                 opacity: 1;       
             }
@@ -511,9 +511,9 @@ SPRITES
     }
     
     &.audio {
-        background-position: -180px -104px;    
+        background-position: -270px -155.854px;    
         span {
-            background-position: -180px 0;
+            background-position: -270px 0;
             &:hover  {            
                 opacity: 1;
             }        
@@ -521,9 +521,9 @@ SPRITES
     }
     
     &.photo {
-        background-position: -270px -104px;    
+        background-position: -405px -155.854px;    
         span {
-            background-position: -270px 0;
+            background-position: -405px 0;
             &:hover  {            
                 opacity: 1;
             }        
