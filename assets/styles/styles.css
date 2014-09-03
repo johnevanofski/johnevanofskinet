@@ -1120,7 +1120,7 @@ img.mfp-img { width: auto; max-width: 100%; height: auto; display: block; line-h
   .col { border: 0px solid rgba(0, 0, 0, 0); float: left; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -moz-background-clip: padding-box !important; -webkit-background-clip: padding-box !important; background-clip: padding-box !important; }
   /* 2. 4 Column Grid 760px - Infinity  -----------------------------------------------------------------------------   Span 1:    25.0% Span 2:    50.0% Span 3:    75.0% Span 4:    100%  ----------------------------------------------------------------------------- */
   /*! 760 UP !!*/
-  /****************************************************************** Site Name: johnevanofski.net Author: John Evanofski  Stylesheet: 720px and Up Stylesheet  *****************************************************************/
+  /****************************************************************** Site Name: johnevanofski.net Author: John Evanofski  Stylesheet: 720px and UP  *****************************************************************/
   /********************** TWEAKS *********************/
   /*********************2 NAVIGATION STYLES ********************/
   /* line 16, ../sass/_760up.scss */
