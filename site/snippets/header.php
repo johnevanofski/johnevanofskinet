@@ -44,7 +44,7 @@
     <header>
         <div class="abovenav">
             <div class="mobile-only uicon menu-light-empty menu-button"></div>     
-            <div class="logoWrap"><a href="<?php echo u() ?>"><div style="width: 45px; height: 52px" class="jelogo"></div></a></div>
+            <div class="logoWrap"><a href=""><div style="width: 45px; height: 52px" class="jelogo"></div></a></div>
             <a href="<?php echo u('/contact') ?>"><div class="uicon mail-empty contact"></div></a> 
         </div>
         
