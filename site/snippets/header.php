@@ -45,7 +45,7 @@
         <div class="abovenav">
             <div class="mobile-only uicon menu-light-empty menu-button"></div>     
             <div class="logoWrap"><a href="<?php echo u(); ?>"><div style="width: 45px; height: 52px" class="jelogo"></div></a></div>
-            <a href="<?php echo url('/contact'); ?>"><div class="uicon mail-empty contact"></div></a>  
+            <a href="<?php echo u('/contact'); ?>"><div class="uicon mail-empty contact"></div></a> 
         </div>
         
         <nav class="menu off"><?php snippet('menu') ?></nav>

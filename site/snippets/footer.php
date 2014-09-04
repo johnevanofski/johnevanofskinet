@@ -9,7 +9,8 @@
         <a href="<?php echo $site->tumblr(); ?>" target="_blank"><div class="uicon blank tumblr"><i class="fa fa-tumblr"></i></div></a>        
     </div>
             
-      <a href="<?php echo url('/contact') ?>"><div class="contact uicon mail-empty"></div></a>
+
+      <a href="<?php echo u('/contact') ?>"><div class="contact uicon mail-empty"></div></a>
       
     <a href="#toTop"><div class="navup uicon arrow-up"></div></a>
     
