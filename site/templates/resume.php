@@ -17,6 +17,9 @@
         <div class="name col span_2"><h1><?php echo $name ?></h1></div>
 
         <div class="contact col span_2">
+            <div class="download">
+                <i class="fa fa-download"></i> <a href="<?php echo $page->documents()->first()->url();?>">Download Resume</a>
+            </div>
             <?php echo kirbytext($contact) ?>
         </div>
         
@@ -39,9 +42,7 @@
             <h2>Education</h2>
             <?php echo kirbytext($edu) ?>
         </div>
-        <div class="download col span_2">
-            <i class="fa fa-download"></i> <a href="<?php echo $page->documents()->first()->url();?>">Download Resume</a>
-        </div>
+        
 
     </article>
 

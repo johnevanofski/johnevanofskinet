@@ -13,7 +13,6 @@ module.exports = function(grunt) {
           my_target: {
               files: {
                 'assets/js/min/scripts.min.js': ['assets/js/scripts.js'],
-                'assets/js/min/iscroll.min.js': ['assets/js/iscroll.js']
               }
         }
     },

@@ -30,8 +30,8 @@
     echo js('assets/js/min/masonry.min.js');
     echo js('assets/js/min/jquery.royalslider.custom.min.js'); //production js
     //echo js('assets/js/dev/jquery.royalslider.js'); //dev
-    //echo js('assets/js/min/scripts.min.js'); //production js
-    echo js('assets/js/scripts.js'); //dev
+    echo js('assets/js/min/scripts.min.js'); //production js
+    //echo js('assets/js/scripts.js'); //dev
 
 ?>
 
