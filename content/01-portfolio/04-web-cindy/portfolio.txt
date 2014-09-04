@@ -12,7 +12,7 @@ Features:
 
 Tools: _(link: http://themble.com/bones/ text: Bones HTML5 Starter popup: yes), WordPress, HTML5, CSS3 animation, PHP, Javascript (jQuery), (link: http://dimsemenov.com/plugins/royal-slider/ text: Royal Slider popup: yes), Illustrator, Photoshop_
 
-Visit: (link: http://cindyclearyart.com text: cindyclearyart.com)
+Visit: (link: http://cindyclearyart.com text: cindyclearyart.com popup: yes)
 
 ----
 

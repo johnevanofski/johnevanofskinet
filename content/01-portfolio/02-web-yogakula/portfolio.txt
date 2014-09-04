@@ -11,9 +11,9 @@ Features:
 - live stream video casting portal
 - social network feed for facebook and twitter
 
-Tools: _WordPress, HTML & CSS3, PHP, Javascript (jquery), Time.ly event calendar_
+Tools: _WordPress, HTML & CSS3, PHP, Javascript (jquery)_
 
-Visit: (link: http://mcofest.org text: mcofest.org popup: yes)
+Visit: (link: http://yogakula.com text: yogakula.com popup: yes)
 
 ----
 
