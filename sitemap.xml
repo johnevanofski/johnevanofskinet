@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://johnevanofski.net/</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/contact</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/portfolio</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/photography</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/resume</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/audio</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/video</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/portfolio/tag:web</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/portfolio/tag:graphic</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/portfolio/tag:print</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/portfolio/tag:ux</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/photography/page:2</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/content/03-resume/john-evanofski-resume.pdf</loc>
+  <lastmod>2014-09-05T00:40:26+00:00</lastmod>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/photography/page:1</loc>
+  <changefreq>monthly</changefreq>
+</url>
+<url>
+  <loc>http://johnevanofski.net/photography/page:3</loc>
+  <changefreq>monthly</changefreq>
+</url>
+</urlset>
