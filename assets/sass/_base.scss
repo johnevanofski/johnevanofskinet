@@ -456,10 +456,6 @@ article {
             @include box-shadow(inset 0 5px 10px -5px rgba(0, 0, 0, 0.75)); 
         }
         
-        &:hover .bannerhover {
-                width: 100%;
-            }
-        
         position: relative;
         
         .logo, .title {
@@ -477,15 +473,8 @@ article {
         }
         
         .bannerhover {
-            position: absolute;
-            display: block;
-            right: 0; top: 0;
-            width: 0;
-            height: 100%;
-            z-index: 9;
-            @include transition(all, 0.5s);
-            
-        }
+            display: none;
+       }
         
         .toggle {
             position: absolute;

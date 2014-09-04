@@ -187,6 +187,17 @@ CONTENT & POSTS
             }
             
         }
+        .bannerhover {
+            
+            position: absolute;
+            display: block;
+            right: 0; top: 0;
+            width: 0;
+            height: 100%;
+            z-index: 9;
+            @include transition(all, 0.5s);
+        
+        }
         
         .bannerimg {
             
