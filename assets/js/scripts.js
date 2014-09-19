@@ -176,21 +176,34 @@ $('.royalSlider').royalSlider({
 	
         /* if is below 760px */
         if (responsive_viewport < 760) {
+            
+            $('.exp').css('top', '0');
 
         } /* end smallest screen */
 
         /* if is larger than 760px */
         if (responsive_viewport >= 760) {
+            
+            /*resume resize*/
+            bio_height = $('.bio').height();
+            skills_height = $('.skills').height();
+            
+            adj_height = skills_height - bio_height;
+            
+            $('.exp').css('top', adj_height * -1 + 'px');
+            
+            //end resume resize
 
             $('nav').addClass('off').removeClass('on');
             $('.menu-button').removeClass('active');
             
             
-            /*MASONRY*/
+            /*MASONRY
             $('.masonry').masonry({
                 itemSelector: '.col',
                 columnWidth: '.col'
             });
+            */
             
             /*PARALLAX*/
             $.stellar({

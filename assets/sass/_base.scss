@@ -351,23 +351,6 @@ POSTS & CONTENT STYLES
 
 article {
 }
-    
-
-
-.masonry {
-  overflow: hidden;
-  
-     ul {
-      width: 100%;
-     } li {
-      //float: left;
-      list-style: none;
-      width: 25%;
-      //margin-right: 20px;
-      //margin-bottom: 20px;
-      line-height: 0;
-    }
-}
 
 .gallery-d {
 
@@ -754,7 +737,7 @@ article {
         
         li {
             list-style: inside square none;
-            line-height: 1em;
+            line-height: 1.5em;
             width: 100%;
         }
     }
@@ -785,7 +768,10 @@ article {
         }
     }
     
-    .exp {}
+    .exp {
+        position: relative;
+        top: 0;
+    }
     
     .edu {}
     

@@ -16,7 +16,7 @@ Bio: John Evanofski is a Bay Area web developer and designer with a diverse tech
 
 ----
 
-Skills: ###Web: 
+Skills: ###Web
 
 - HTML5 & CSS3
 - JavaScript 
@@ -25,7 +25,7 @@ Skills: ###Web:
 - Responsive Web
 - WordPress CMS 
 
-###Adobe Creative Suite:
+###Adobe Creative Suite
 
 - Photoshop 
 - Illustrator 
@@ -33,7 +33,7 @@ Skills: ###Web:
 - Fireworks
 - Dreamweaver
 
-###Other: 
+###Other
 
 - Final Cut Pro 
 - Microsoft Office Suite
@@ -55,7 +55,7 @@ SJ Sallinger Designs / San Francisco CA / 2013
 ###Teaching
 HTML & CSS, General Computing / Tutor / Wyzant.com / 2014
 WordPress / AcademyX / San Francisco CA / 2013
-Excel ‘98 & 2010 / Service Source Inc / San Francisco CA / 2009 - 2013
+Excel ‘98 & 2010 / ServiceSource Inc / San Francisco CA / 2009 - 2013
 
 ----
 
