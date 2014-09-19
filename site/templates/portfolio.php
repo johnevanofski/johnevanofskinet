@@ -98,10 +98,10 @@
                         <ul>
                             <?php foreach ($article->images()->not('banner.png') as $pic): ?>
                                 <li>
-                                     <img src="<?php echo $pic->url(); ?>">
                                     <?php if ( strlen($pic->caption()) > 0 ): ?>
                                     <p class="caption" style="background-color: <?php echo $color ?>"><?php echo $pic->caption(); ?></p>
                                     <?php endif; ?>
+                                     <img src="<?php echo $pic->url(); ?>">                                    
                                 </li>
                                     
                             <?php endforeach ?>
