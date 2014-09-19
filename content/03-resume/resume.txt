@@ -16,7 +16,7 @@ Bio: John Evanofski is a Bay Area web developer and designer with a diverse tech
 
 ----
 
-Skills: ###Web Dev: 
+Skills: ###Web: 
 
 - HTML5 & CSS3
 - JavaScript 
@@ -41,26 +41,21 @@ Skills: ###Web Dev:
 ----
 
 Experience: ###Web & Graphic Design Lead
-Clean LED Energy / Oakland CA / 2014-Present
+Clean LED Energy / Oakland CA / 2014
 
-###Web Designer and Video Tech Support Specialist
+###Web Developer and General Tech Support
 YogaKula / Berkeley CA / 2012-2014
 
-###WordPress Teacher
-AcademyX / San Francisco CA / 2013-Present
-
-###SEO Consultant
-Branditecture / San Francisco CA / 2013-Present
-
 ###Independent Web & Graphic Design
-David Kerr Designs / Oakland CA / 2012-Present
+David Kerr Designs / Oakland CA / 2012-2014
 Cindy Cleary Art / 2014
 Mission Creek Oakland Festival / Oakland CA / 2013
 SJ Sallinger Designs / San Francisco CA / 2013
 
-###Excel ‘98 & 2010 Teacher & Technical Lead
-(Sales Support Coordinator)
-Service Source Inc / San Francisco CA / 2009 - 2013
+###Teaching
+HTML & CSS, General Computing / Tutor / Wyzant.com / 2014
+WordPress / AcademyX / San Francisco CA / 2013
+Excel ‘98 & 2010 / Service Source Inc / San Francisco CA / 2009 - 2013
 
 ----
 

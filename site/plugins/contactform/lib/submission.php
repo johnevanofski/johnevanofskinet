@@ -97,7 +97,7 @@ class Submission {
       'ajax'     => false,
       'required' => array(), 
       'keep'     => array(),
-	  'honeypot' => null,
+	  'honeypot' => true,
             
       // on request event
       'request'  => function($self) {
