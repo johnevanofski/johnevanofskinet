@@ -1166,9 +1166,9 @@ POSTS & CONTENT STYLES
     #design .banner .gallery-d .caption {
       display: block;
       padding: 1em;
+      margin: 0;
       text-align: center;
-      line-height: 1em;
-      margin: 0; }
+      line-height: 1em; }
   #design .banner.dummy {
     height: 1em;
     background-color: black; }

@@ -99,7 +99,7 @@
                             <?php foreach ($article->images()->not('banner.png') as $pic): ?>
                                 <li>
                                     <?php if ( strlen($pic->caption()) > 0 ): ?>
-                                    <p class="caption" style="background-color: <?php echo $color ?>"><?php echo $pic->caption(); ?></p>
+                                        <p class="caption" style="background-color: <?php echo $color ?>"><?php echo $pic->caption(); ?></p>
                                     <?php endif; ?>
                                      <img src="<?php echo $pic->url(); ?>">                                    
                                 </li>
