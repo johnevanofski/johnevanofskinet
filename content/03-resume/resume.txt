@@ -40,22 +40,24 @@ Skills: ###Web
 
 ----
 
-Experience: ###Web & Graphic Design Lead
-Clean LED Energy / Oakland CA / 2014
+Experience: ###Freelance Web Developer
+(link: http://davidkerrdesign.com text: David Kerr Design popup: yes) / Oakland CA / 2012-2014
 
-###Web Developer and General Tech Support
-YogaKula / Berkeley CA / 2012-2014
+###Web & Graphic Design Lead
+(link: http://cleanledenergy.com text: Clean LED Energy popup: yes) / Oakland CA / 2014
+
+###Web Developer and Tech Support
+(link: http://yogakula.com text:YogaKula popup:yes) / Berkeley CA / 2012-2014
 
 ###Independent Web & Graphic Design
-David Kerr Designs / Oakland CA / 2012-2014
-Cindy Cleary Art / 2014
-Mission Creek Oakland Festival / Oakland CA / 2013
-SJ Sallinger Designs / San Francisco CA / 2013
+(link: http://cindyclearyart.com text: Cindy Cleary Art popup: yes) / 2014
+(link: http://mcofest.org text: Mission Creek Oakland Festival popup: yes) / Oakland CA / 2013
+(link: http://sjsallinger.com text: SJ Sallinger Designs popup: yes) / San Francisco CA / 2013
 
 ###Teaching
-HTML & CSS, General Computing / Tutor / Wyzant.com / 2014
-WordPress / AcademyX / San Francisco CA / 2013
-Excel ‘98 & 2010 / ServiceSource Inc / San Francisco CA / 2009 - 2013
+HTML & CSS, General Computing / Tutor / (link: http://wyzant.com text: Wyzant.com popup: yes) / 2014
+WordPress / (link: http://www.academyx.com text: AcademyX popup: yes) / San Francisco CA / 2013
+Excel ‘98 & 2010 / (link: http://servicesourec.com text: ServiceSource Inc popup: yes) / San Francisco CA / 2009 - 2013
 
 ----
 
