@@ -1,4 +1,4 @@
-﻿Title: Resume
+Title: Resume
 
 ----
 
@@ -57,7 +57,7 @@ Experience: ###Freelance Web Developer
 ###Teaching
 HTML & CSS, General Computing / Tutor / (link: http://wyzant.com text: Wyzant.com popup: yes) / 2014
 WordPress / (link: http://www.academyx.com text: AcademyX popup: yes) / San Francisco CA / 2013
-Excel ‘98 & 2010 / (link: http://servicesourec.com text: ServiceSource Inc popup: yes) / San Francisco CA / 2009 - 2013
+Excel ‘98 & 2010 / (link: http://servicesource.com text: ServiceSource Inc popup: yes) / San Francisco CA / 2009 - 2013
 
 ----
 
