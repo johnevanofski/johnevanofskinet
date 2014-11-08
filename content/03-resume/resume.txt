@@ -12,26 +12,24 @@ Oakland, Bay Area CA
 
 ----
 
-Bio: John Evanofski is a Bay Area web developer and designer with a diverse technological skillset and a problem solving aptitude. He is also an adept communicator and an experienced technology educator. His goal is to use his skills to bridge the gap between the user and the designer in order to continue the tradition of good design.
+Bio: John Evanofski is a Bay Area web developer and designer with a diverse technological skillset and a problem solving aptitude. He is also an adept verbal and written communicator and an experienced technology educator. He wants to use his hybrid skillset to bridge the gap between the user and the designer in order to continue the tradition of good design.
 
 ----
 
 Skills: ###Web
 
 - HTML5 & CSS3
-- JavaScript 
-- PHP
-- Ruby 
 - Responsive Web
 - WordPress CMS 
+- JavaScript 
+- PHP
+- Ruby
 
 ###Adobe Creative Suite
 
 - Photoshop 
 - Illustrator 
 - InDesign 
-- Fireworks
-- Dreamweaver
 
 ###Other
 
