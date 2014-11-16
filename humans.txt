@@ -1,0 +1,23 @@
+....HELLO HUMANS....
+
+All content on this site was created by me, John Evanofski, in 2014
+
+@johnevanofski
+contact@johnevanofski.net
+
+....FRAMEWORX & UTILS....
+
+This site was created on the Kirby CMS Framework by Bastian Allgeier GmbH
+
+http://getkirby.com/
+@getkirby
+
+I utilized Royal Slider by Dmitry Semenov for the photography section  
+
+http://dimsemenov.com/plugins/royal-slider/
+@dimsemenov
+
+I used Stellar.js by Mark Dalgleish for Parallax help on the home page
+
+http://markdalgleish.com/projects/stellar.js/
+@markdalgleish
