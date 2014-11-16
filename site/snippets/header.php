@@ -12,7 +12,10 @@
 <link rel="icon" type="image/png" href="<?php echo u('assets/images/favicon.png') ?>">
     
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">    
-<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic|Share+Tech+Mono' rel='stylesheet' type='text/css'>   
+<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic|Share+Tech+Mono' rel='stylesheet' type='text/css'> 
+    
+    <!--for robots and humans -->
+    <link type="text/plain" rel="author" href="<?php echo u('humans.txt') ?>" />
     
   <?php 
     
