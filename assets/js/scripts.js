@@ -210,6 +210,12 @@ $('.royalSlider').royalSlider({
             });
             */
             
+            //paralax
+            $.stellar({
+                horizontalScrolling: false,
+                verticalScrolling: true,
+            });
+            
         } /* end larger than 760px */
 
         /* off the bat large screen actions */
@@ -218,12 +224,6 @@ $('.royalSlider').royalSlider({
         }
         
         //console.log('width checked: ' + $(window).width());
-        
-        //paralax
-            $.stellar({
-                horizontalScrolling: false,
-                verticalScrolling: true,
-            });
         
     } /*end checkWidth */
     
