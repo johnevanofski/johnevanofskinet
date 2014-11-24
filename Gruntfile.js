@@ -70,7 +70,7 @@ module.exports = function(grunt) {
             tasks: ['sass']
         },
         
-        scripts: {
+        /*scripts: {
             files: ['assets/js/*.js'],
             tasks: ['uglify']
         },
@@ -78,7 +78,7 @@ module.exports = function(grunt) {
         cssfixmin: {
             files: ['assets/styles/styles.css'],
             tasks: ['autoprefixer','cssmin']
-        }
+        }*/
     }, 
 
   });

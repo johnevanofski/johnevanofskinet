@@ -1189,8 +1189,7 @@ POSTS & CONTENT STYLES
 
 #home .top {
   background: url("../images/jellybg.png") no-repeat center center fixed;
-  background-size: cover;
-  min-height: 750px; }
+  background-size: cover; }
   @media only screen and (max-width: 568px) {
     #home .top {
       background-attachment: scroll;
@@ -1204,7 +1203,7 @@ POSTS & CONTENT STYLES
     bottom: 0;
     left: 0;
     width: 290px;
-    height: 20%; }
+    height: 0; }
     #home .top .nexus ul li {
       list-style: none;
       display: inline-block; }

@@ -1,11 +1,7 @@
 /*
-Bones Scripts File
-Author: Eddie Machado
+JS Script File
 
-This file should contain any js scripts you want to add to the site.
-Instead of calling it in the header or throwing it inside wp_head()
-this file will be called automatically in the footer so as not to
-slow the page load.
+John Evanofski
 
 */
 
@@ -84,8 +80,9 @@ $('.royalSlider').royalSlider({
       });
     });
     
-/*Animation triggers*/
-    //homepage fadeOuts
+/* homepage */
+    
+    //homepage fadouts
     var divs = $('.navdown, .nexus');
         $(window).scroll(function(){
            if($(window).scrollTop() < 150 ){
@@ -95,14 +92,31 @@ $('.royalSlider').royalSlider({
            }
     });
     
+    //adjust height of homepage image
+    var viewport_height = $(window).height();
     
-//sending 
+    $('section.top').css('height', viewport_height - 80)
+    console.log('viewport height = ' + viewport_height)
     
+/* nav */
+    $('.menu-button').click(function(e){
+        $(this).toggleClass('active');
+        $('nav').toggleClass('off on');
+        e.preventDefault();                
+    });
+
+    $('nav li').click(function(e){
+        $('nav').addClass('off'); 
+    }); 
+
+    
+    
+/* contact page */    
     $('#send-button').hover(function(){
         $('.ufo').toggleClass('sending');
     });
 
-/* design banners */
+/* portfolio page */
     
     //banner link color
     
@@ -117,6 +131,8 @@ $('.royalSlider').royalSlider({
             });
     
    });
+    
+    //banner info animation
     
     $('.bannerinfo').click(function(){
         
@@ -138,24 +154,13 @@ $('.royalSlider').royalSlider({
               scrollTop: imagetop.top
         }, 500);
         
-        //e.preventDefault();
-        
     });
     
-/* menu button functions */
-    $('.menu-button').click(function(e){
-        $(this).toggleClass('active');
-        $('nav').toggleClass('off on');
-        e.preventDefault();                
-    });
 
-    $('nav li').click(function(e){
-        $('nav').addClass('off'); 
-    }); //end menu button fucntions
 	
 	
     
-    /* getting viewport width */
+/* viewport adjustments */
     
     var waitForFinalEvent = (function () {
           var timers = {};
@@ -209,7 +214,6 @@ $('.royalSlider').royalSlider({
             $.stellar({
                 horizontalScrolling: false,
                 verticalScrolling: true,
-                verticalOffset: 0
             });
             
             //console.log('width >= 720px');

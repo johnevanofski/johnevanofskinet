@@ -14,11 +14,10 @@
         </section>
 
     <div id="wrapper">
-        <div id="scroller">
         <section class="content">
             
-            <div id="profiletop" class="hello fadeInDown" data-stellar-offset-parent="true">
-                <div class="h2" data-stellar-ratio="0.55">Hello, my name is <br/>John Evanofski</div>
+            <div id="profiletop" class="hello fadeInDown">
+                <div class="h2" data-stellar-ratio="0.2" data-stellar-vertical-offset="-25">Hello, my name is <br/>John Evanofski</div>
             </div>
 
             <article>
@@ -26,7 +25,6 @@
                 <?php echo kirbytext($page->text()) ?>
             </article>
         </section>
-        </div>
     </div>
 </div>    
 
