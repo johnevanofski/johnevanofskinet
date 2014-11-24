@@ -98,12 +98,6 @@ $('.royalSlider').royalSlider({
     $('section.top').css('height', viewport_height - 80)
     //console.log('viewport height = ' + viewport_height)
     
-    //paralax
-            $.stellar({
-                horizontalScrolling: false,
-                verticalScrolling: true,
-            });
-    
 /* nav */
     $('.menu-button').click(function(e){
         $(this).toggleClass('active');
@@ -224,6 +218,12 @@ $('.royalSlider').royalSlider({
         }
         
         //console.log('width checked: ' + $(window).width());
+        
+        //paralax
+            $.stellar({
+                horizontalScrolling: false,
+                verticalScrolling: true,
+            });
         
     } /*end checkWidth */
     
