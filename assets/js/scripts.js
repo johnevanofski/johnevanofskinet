@@ -96,7 +96,13 @@ $('.royalSlider').royalSlider({
     var viewport_height = $(window).height();
     
     $('section.top').css('height', viewport_height - 80)
-    console.log('viewport height = ' + viewport_height)
+    //console.log('viewport height = ' + viewport_height)
+    
+    //paralax
+            $.stellar({
+                horizontalScrolling: false,
+                verticalScrolling: true,
+            });
     
 /* nav */
     $('.menu-button').click(function(e){
@@ -210,14 +216,6 @@ $('.royalSlider').royalSlider({
             });
             */
             
-            /*PARALLAX*/
-            $.stellar({
-                horizontalScrolling: false,
-                verticalScrolling: true,
-            });
-            
-            //console.log('width >= 720px');
-
         } /* end larger than 760px */
 
         /* off the bat large screen actions */

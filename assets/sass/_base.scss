@@ -600,6 +600,8 @@ article {
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+        height: 650px;
+        
         
         @media only screen and (max-width: 568px) {
             background-attachment: scroll;

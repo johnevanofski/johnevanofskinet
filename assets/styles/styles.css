@@ -1189,7 +1189,8 @@ POSTS & CONTENT STYLES
 
 #home .top {
   background: url("../images/jellybg.png") no-repeat center center fixed;
-  background-size: cover; }
+  background-size: cover;
+  height: 650px; }
   @media only screen and (max-width: 568px) {
     #home .top {
       background-attachment: scroll;
