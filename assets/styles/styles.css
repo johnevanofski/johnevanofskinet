@@ -965,10 +965,10 @@ and more scalable.
 nav {
   position: relative;
   z-index: 8;
-  -webkit-transition: opacity 0.5s ease-in-out;
-  -transition: opacity 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out;
-          transition: opacity 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
   position: absolute;
   z-index: 9;
   text-align: center;
@@ -978,11 +978,15 @@ nav {
   /* highlight current page */
   /* end current highlighters */ }
   nav.off {
-    visibility: hidden;
+    top: 60px;
     opacity: 0; }
   nav.on {
-    visibility: visible;
+    top: 80px;
     opacity: 1; }
+  nav.hidden {
+    visibility: hidden; }
+  nav.visible {
+    visibility: visible; }
   nav li {
     list-style: none;
     /*

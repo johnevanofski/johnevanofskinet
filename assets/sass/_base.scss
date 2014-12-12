@@ -219,16 +219,24 @@ nav {
     
     position: relative;
     z-index: 8;
-    @include transition(opacity 0.5s ease-in-out);
+    @include transition(all 0.5s ease-in-out);
     
     &.off {
-        visibility: hidden; 
+        top: 60px;
         opacity: 0;
     }
     
     &.on {
-        visibility: visible;
+        top: 80px;
         opacity: 1;
+    }
+    
+    &.hidden {
+        visibility: hidden;
+    }
+    
+    &.visible {
+        visibility: visible;
     }
     
     position: absolute;

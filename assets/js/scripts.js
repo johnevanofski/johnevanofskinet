@@ -99,17 +99,30 @@ $('.royalSlider').royalSlider({
     //console.log('viewport height = ' + viewport_height)
     
 /* nav */
+    //animation end state varible
+    var transitionEnd = 'webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend',
+        nav = $('nav');
+    
     $('.menu-button').click(function(e){
+        
         $(this).toggleClass('active');
-        $('nav').toggleClass('off on');
+        
+        nav.toggleClass('on off visible')
+
+            nav.bind(transitionEnd, function(e){
+                if($(this).hasClass('on')){
+                    $(this).addClass('visible')
+                    .removeClass('hidden')
+                }
+                else if ($(this).hasClass('off')){
+                    $(this).addClass('hidden')
+                    .removeClass('visible')
+                }
+            });
+       
+        
         e.preventDefault();                
     });
-
-    $('nav li').click(function(e){
-        $('nav').addClass('off'); 
-    }); 
-
-    
     
 /* contact page */    
     $('#send-button').hover(function(){

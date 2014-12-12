@@ -51,6 +51,6 @@
             <a href="<?php echo u('/contact') ?>"><div class="uicon mail-empty contact"></div></a> 
         </div>
         
-        <nav class="menu off"><?php snippet('menu') ?></nav>
+        <nav class="menu off hidden"><?php snippet('menu') ?></nav>
         
     </header>    
