@@ -2000,7 +2000,8 @@ img.mfp-img {
       height: auto;
       visibility: visible;
       opacity: 1;
-      display: inline-block; }
+      display: inline-block;
+      top: 0; }
     nav.menu {
       position: absolute;
       z-index: 9;
