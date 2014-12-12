@@ -43,7 +43,7 @@ nav {
         visibility: visible;
         opacity: 1;
         display: inline-block;
-        top: 0;
+        top: 0 !important;
     }
 
 	/* .menu is clearfixed inside mixins.scss */

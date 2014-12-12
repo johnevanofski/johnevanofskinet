@@ -2001,7 +2001,7 @@ img.mfp-img {
       visibility: visible;
       opacity: 1;
       display: inline-block;
-      top: 0; }
+      top: 0 !important; }
     nav.menu {
       position: absolute;
       z-index: 9;
