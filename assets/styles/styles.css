@@ -1062,6 +1062,8 @@ POSTS & CONTENT STYLES
     -webkit-box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.75);
     -moz-box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.75);
     box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.75); }
+  #design .banner .title {
+    padding: 0.5rem; }
   #design .banner .logo, #design .banner .title {
     float: left; }
     #design .banner .logo img, #design .banner .title img {
