@@ -146,28 +146,37 @@ $('.royalSlider').royalSlider({
    });
     
     //banner info animation
-    
-    $('.bannerinfo').click(function(){
+	
+		function showBanner(el) {
+			//turn on
         
-        //turn on
+        el.toggleClass('active');
         
-        $(this).toggleClass('active');
+        el.find('.bannertext').toggleClass('active');
         
-        $(this).find('.bannertext').toggleClass('active');
+        el.find('.bannerimg').toggleClass('off');
         
-        $(this).find('.bannerimg').toggleClass('off');
-        
-        $(this).find('.toggle').toggleClass('off');
+        el.find('.toggle').toggleClass('off');
         
         //scroll to top of frame
         
-        imagetop = $(this).offset();
+        var imagetop = el.offset();
         
         $('html,body').animate({
               scrollTop: imagetop.top
         }, 500);
-        
+		}
+	
+    
+    $('.bannerinfo').click(function(){
+      $el = $(this);  
+			showBanner($el);
     });
+	
+		$('.banner .title').click(function(){
+			$el = $(this).closest('.banner').find('.bannerinfo');
+			showBanner($el);
+		});
     
 
 	

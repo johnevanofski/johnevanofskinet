@@ -84,7 +84,7 @@
                 <div class="bannerinfo" data-color="<?php echo $color ?>">
                     <div class="bannerimg"><img src="<?php echo $banner->url(); ?>">
                         <div class="bannerhover" style="background-color: <?php echo opacitychange($color, 0.5)?>">
-                            <div class="uicon info toggle"></div>
+                            <div class="toggle"></div>
                         </div>
                     </div>
                     <div class="bannertext">
@@ -92,7 +92,7 @@
                         <div class="close smallicon"></div>       
                         <?php echo kirbytext($text); ?>         
                     </div>
-                        <div class="close-message"><p>click or tap anywhere to close</p></div>
+                        <div class="close-message"><p>tap anywhere to close</p></div>
                         
                     <div id="gallery-<?php echo $id; ?>" class="clearfix gallery-d">
                         <ul>

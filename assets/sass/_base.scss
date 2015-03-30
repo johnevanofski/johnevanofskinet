@@ -22,10 +22,14 @@ DEBUG CSS
 GENERAL STYLES
 *********************/
 
+html {
+	font-size: 16px;
+}
+
 body {
 	font-family: $sans-serif;
 	font-size: 100%;
-	line-height: 1.5;
+	line-height: 1.5rem;
 	color: white;
     background-color: black;
     height: 100%;
@@ -73,10 +77,12 @@ a, a:visited {
 	color: $link-color;
     @include transition(color 0.4s ease-in-out);
     text-decoration: none;
+		outline: none;
     
 	/* on hover */
 	&:hover, &:focus {
 		color: $link-hover;
+		outline: none;
 	}
 
 	/* on click */
@@ -116,27 +122,27 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 }
 
 h1, .h1 {
-	font-size: 2.5em;
+	font-size: 2.5rem;
 	line-height: 1.333em;
 }
 
 h2, .h2 {
-	font-size: 1.75em;
-	line-height: 1.4em;
-	margin-bottom: 0.375em;
+	font-size: 1.75rem;
+	line-height: 2rem;
+	margin-bottom: 0.375rem;
 }
 
 h3, .h3 {
-	font-size: 1.25em;
+	font-size: 1.25rem;
 }
 
 h4, .h4 {
-	font-size: 1.5em;
+	font-size: 1.5rem;
 }
 
 h5, .h5 {
-	font-size: 0.846em;
-	line-height: 2.09em;
+	font-size: 0.846rem;
+	line-height: 2.09rem;
 	letter-spacing: 2px;
 }
 
@@ -408,7 +414,7 @@ article {
         
         display: block;
         position: relative;
-        bottom: -21px;
+        bottom: -1.5rem;
         padding-left: 0.5em;
         
         ul {
@@ -425,7 +431,7 @@ article {
                 }
                 
                 &:hover {
-                    top: 2px;
+                    top: 0.1rem;
                 }
                 
                 a {
@@ -469,7 +475,7 @@ article {
         
         .toggle {
             position: absolute;
-            display: none;
+            display: block;
             opacity: 0.8;
             z-index: 999;
             left: 45%;
@@ -485,10 +491,11 @@ article {
             
             &.off {
                 opacity: 0;
+								display: none;
             }
             
             i {
-                font-size: 2em;
+                font-size: 2rem;
                 line-height: 52px;
                 text-align: center;
                 width: 46px;
@@ -578,7 +585,7 @@ article {
             background-color: white;
             color: $dark-grey;
             text-align: center;
-            font-size: 0.8em;
+            font-size: 0.8rem;
         }
     } //end .banner
     
@@ -845,7 +852,7 @@ article {
         
         h1 {
             text-shadow: rgb(50, 50, 50) 1px 1px 0px;
-            font-size: 7em;
+            font-size: 7rem;
         }
         
     }
@@ -934,7 +941,7 @@ footer {
     
     i {
         width: $width;
-        font-size: 1.4em;
+        font-size: 1.4rem;
         line-height: 52px;
     }
     

@@ -126,6 +126,7 @@ dfn {
  * Address differences between Firefox and other browsers.
  */
 hr {
+  -moz-box-sizing: content-box;
   box-sizing: content-box;
   height: 0; }
 
@@ -301,6 +302,8 @@ input[type="radio"] {
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
   /* 2 */
   box-sizing: content-box; }
 
@@ -350,8 +353,7 @@ p {
   -webkit-hyphens: auto;
   -epub-hyphens: auto;
   -moz-hyphens: auto;
-  -ms-hyphens: auto;
-      hyphens: auto; }
+  hyphens: auto; }
 
 ul {
   clear: both; }
@@ -388,6 +390,8 @@ CLEARFIXIN'
 TOOLS
 *********************/
 * {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .image-replacement {
@@ -408,9 +412,6 @@ http://sachagreif.com/sass-color-variables/
 /********************
 HIGHTLIGHTS
 *********************/
-::-moz-selection {
-  background: GoldenRod;
-  /* WebKit/Blink Browsers */ }
 ::selection {
   background: GoldenRod;
   /* WebKit/Blink Browsers */ }
@@ -524,13 +525,11 @@ ANIMATIONS
 @keyframes fadeInDown {
   0% {
     opacity: 0;
-    -webkit-transform: translateY(-20px);
-            transform: translateY(-20px); }
+    transform: translateY(-20px); }
 
   100% {
     opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0); } }
+    transform: translateY(0); } }
 .fadeInDown {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -541,82 +540,62 @@ ANIMATIONS
 
 @-webkit-keyframes bounce {
   0%, 50%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
+    transform: translateY(0); }
 
   25%, 75% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px); } }
+    transform: translateY(-5px); } }
 @keyframes bounce {
   0%, 50%, 100% {
-    -webkit-transform: translateY(0);
-            transform: translateY(0); }
+    transform: translateY(0); }
 
   25%, 75% {
-    -webkit-transform: translateY(-5px);
-            transform: translateY(-5px); } }
+    transform: translateY(-5px); } }
 .bounce, footer .socialNexus .uicon:hover, footer .navup:hover {
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-name: bounce;
   -webkit-animation-fill-mode: both;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: bounce;
-          animation-name: bounce; }
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+  animation-name: bounce; }
 
 .delay {
   -webkit-animation-delay: 1.5s;
   animation-delay: 1.5s;
-  -webkit-animation-name: bounce;
-          animation-name: bounce; }
+  animation-name: bounce; }
 
 @-webkit-keyframes bounceRight {
   0%, 50%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
 
   25%, 75% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px); } }
+    transform: translateX(-5px); } }
 @keyframes bounceRight {
   0%, 50%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
 
   25%, 75% {
-    -webkit-transform: translateX(-5px);
-            transform: translateX(-5px); } }
+    transform: translateX(-5px); } }
 @-webkit-keyframes bounceLeft {
   0%, 50%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
 
   25%, 75% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px); } }
+    transform: translateX(5px); } }
 @keyframes bounceLeft {
   0%, 50%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
 
   25%, 75% {
-    -webkit-transform: translateX(5px);
-            transform: translateX(5px); } }
+    transform: translateX(5px); } }
 .bounceRight, .nav-arrow.right-empty:hover, .bounceLeft, .nav-arrow.left-empty:hover {
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-fill-mode: both;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite; }
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite; }
 
 .bounceLeft, .nav-arrow.left-empty:hover {
   -webkit-animation-name: bounceLeft;
@@ -637,16 +616,13 @@ ANIMATIONS
     -webkit-transform: translateX(10px); } }
 @keyframes shake {
   0%, 100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); }
+    transform: translateX(0); }
 
   10%, 30%, 50%, 70%, 90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px); }
+    transform: translateX(-10px); }
 
   20%, 40%, 60%, 80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px); } }
+    transform: translateX(10px); } }
 .shake, #contactform .error {
   -webkit-animation-name: shake;
   animation-name: shake; }
@@ -767,8 +743,7 @@ SPRITES
     display: block;
     -webkit-transition: opacity 0.3s;
     -transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-            transition: opacity 0.3s; }
+    transition: opacity 0.3s; }
   .nexicon.design {
     background-position: 0 -155.854px; }
     .nexicon.design span {
@@ -817,10 +792,13 @@ DEBUG CSS
 /*********************
 GENERAL STYLES
 *********************/
+html {
+  font-size: 16px; }
+
 body {
   font-family: "Ubuntu Mono", Courier New, sans-serif;
   font-size: 100%;
-  line-height: 1.5;
+  line-height: 1.5rem;
   color: white;
   background-color: black;
   height: 100%; }
@@ -856,14 +834,15 @@ a, a:visited {
   color: white;
   -webkit-transition: color 0.4s ease-in-out;
   -transition: color 0.4s ease-in-out;
-  -webkit-transition: color 0.4s ease-in-out;
-          transition: color 0.4s ease-in-out;
+  transition: color 0.4s ease-in-out;
   text-decoration: none;
+  outline: none;
   /* on hover */
   /* on click */
   /* mobile tap color */ }
   a:hover, a:focus, a:visited:hover, a:visited:focus {
-    color: lightseagreen; }
+    color: lightseagreen;
+    outline: none; }
   a:link, a:visited:link {
     /*
     this highlights links on iPhones/iPads.
@@ -889,23 +868,23 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
     text-decoration: none; }
 
 h1, .h1 {
-  font-size: 2.5em;
+  font-size: 2.5rem;
   line-height: 1.333em; }
 
 h2, .h2 {
-  font-size: 1.75em;
-  line-height: 1.4em;
-  margin-bottom: 0.375em; }
+  font-size: 1.75rem;
+  line-height: 2rem;
+  margin-bottom: 0.375rem; }
 
 h3, .h3 {
-  font-size: 1.25em; }
+  font-size: 1.25rem; }
 
 h4, .h4 {
-  font-size: 1.5em; }
+  font-size: 1.5rem; }
 
 h5, .h5 {
-  font-size: 0.846em;
-  line-height: 2.09em;
+  font-size: 0.846rem;
+  line-height: 2.09rem;
   letter-spacing: 2px; }
 
 /*********************
@@ -932,8 +911,7 @@ header {
     header .menu-button:hover {
       cursor: pointer; }
   header .logoWrap {
-    -webkit-perspective: 1000;
-            perspective: 1000;
+    perspective: 1000;
     position: absolute;
     width: 45px;
     height: 52px;
@@ -944,8 +922,7 @@ header {
       transform-style: preserve-3d;
       -webkit-transition: all 0.5s linear;
       -transition: all 0.5s linear;
-      -webkit-transition: all 0.5s linear;
-              transition: all 0.5s linear;
+      transition: all 0.5s linear;
       -webkit-transform: rotateY(360deg);
       transform: rotateY(360deg); }
     header .logoWrap .jelogo {
@@ -967,8 +944,7 @@ nav {
   z-index: 8;
   -webkit-transition: all 0.5s ease-in-out;
   -transition: all 0.5s ease-in-out;
-  -webkit-transition: all 0.5s ease-in-out;
-          transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   position: absolute;
   z-index: 9;
   text-align: center;
@@ -1052,18 +1028,16 @@ POSTS & CONTENT STYLES
     opacity: 0.7;
     -webkit-transition: opacity 0.3s;
     -transition: opacity 0.3s;
-    -webkit-transition: opacity 0.3s;
-            transition: opacity 0.3s; }
+    transition: opacity 0.3s; }
     #design .filters .uicon:hover, #design .filters .uicon.active {
       opacity: 1;
       -webkit-transition: opacity 0.3s;
       -transition: opacity 0.3s;
-      -webkit-transition: opacity 0.3s;
-              transition: opacity 0.3s; }
+      transition: opacity 0.3s; }
 #design .tagcloud {
   display: block;
   position: relative;
-  bottom: -21px;
+  bottom: -1.5rem;
   padding-left: 0.5em; }
   #design .tagcloud ul li {
     list-style: none;
@@ -1074,7 +1048,7 @@ POSTS & CONTENT STYLES
     #design .tagcloud ul li.active {
       background-color: white; }
     #design .tagcloud ul li:hover {
-      top: 2px; }
+      top: 0.1rem; }
     #design .tagcloud ul li a {
       text-decoration: none;
       color: #2d2d2d; }
@@ -1085,6 +1059,8 @@ POSTS & CONTENT STYLES
     width: 100%;
     height: 10px;
     content: '';
+    -webkit-box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.75);
     box-shadow: inset 0 5px 10px -5px rgba(0, 0, 0, 0.75); }
   #design .banner .logo, #design .banner .title {
     float: left; }
@@ -1096,26 +1072,25 @@ POSTS & CONTENT STYLES
     display: none; }
   #design .banner .toggle {
     position: absolute;
-    display: none;
+    display: block;
     opacity: 0.8;
     z-index: 999;
     left: 45%;
     top: 40%;
     -webkit-transition: opacity 0.5s;
     -transition: opacity 0.5s;
-    -webkit-transition: opacity 0.5s;
-            transition: opacity 0.5s; }
+    transition: opacity 0.5s; }
     #design .banner .toggle:hover {
       opacity: 1;
       cursor: pointer;
       -webkit-transition: opacity 0.5s;
       -transition: opacity 0.5s;
-      -webkit-transition: opacity 0.5s;
-              transition: opacity 0.5s; }
+      transition: opacity 0.5s; }
     #design .banner .toggle.off {
-      opacity: 0; }
+      opacity: 0;
+      display: none; }
     #design .banner .toggle i {
-      font-size: 2em;
+      font-size: 2rem;
       line-height: 52px;
       text-align: center;
       width: 46px; }
@@ -1143,8 +1118,7 @@ POSTS & CONTENT STYLES
     z-index: 0;
     -webkit-transition: top 0.4s;
     -transition: top 0.4s;
-    -webkit-transition: top 0.4s;
-            transition: top 0.4s; }
+    transition: top 0.4s; }
     #design .banner .bannertext.active {
       top: 0;
       height: auto;
@@ -1155,8 +1129,7 @@ POSTS & CONTENT STYLES
     #design .banner .bannertext a {
       -webkit-transition: all 0.5s;
       -transition: all 0.5s;
-      -webkit-transition: all 0.5s;
-              transition: all 0.5s;
+      transition: all 0.5s;
       border-bottom: 1px solid white;
       padding: 3px;
       color: white; }
@@ -1180,7 +1153,7 @@ POSTS & CONTENT STYLES
     background-color: white;
     color: #2d2d2d;
     text-align: center;
-    font-size: 0.8em; }
+    font-size: 0.8rem; }
 
 .jsOK .bannertext {
   height: 0;
@@ -1193,6 +1166,9 @@ POSTS & CONTENT STYLES
 
 #home .top {
   background: url("../images/jellybg.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   height: 650px; }
   @media only screen and (max-width: 568px) {
@@ -1224,8 +1200,7 @@ POSTS & CONTENT STYLES
   #home .content a {
     -webkit-transition: all 0.5s;
     -transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-            transition: all 0.5s;
+    transition: all 0.5s;
     border-bottom: 1px solid white;
     padding: 3px;
     color: white; }
@@ -1261,6 +1236,9 @@ POSTS & CONTENT STYLES
 #resume {
   padding: 1em;
   background: url("../images/resume-bg.png") no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover; }
   @media only screen and (max-width: 568px) {
     #resume {
@@ -1272,8 +1250,7 @@ POSTS & CONTENT STYLES
     margin-bottom: 1em;
     -moz-hyphens: none;
     -webkit-hyphens: none;
-    -ms-hyphens: none;
-        hyphens: none; }
+    hyphens: none; }
   #resume ul {
     margin-bottom: 1em; }
     #resume ul li {
@@ -1317,6 +1294,9 @@ POSTS & CONTENT STYLES
 
 #error article {
   background: url("../images/error.png") no-repeat center bottom fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   text-align: center; }
   @media only screen and (max-width: 568px) {
@@ -1325,7 +1305,7 @@ POSTS & CONTENT STYLES
       -webkit-background-size: auto 100%; } }
   #error article h1 {
     text-shadow: #323232 1px 1px 0px;
-    font-size: 7em; }
+    font-size: 7rem; }
 
 /******************************************************************
 PAGE NAVI STYLES
@@ -1379,7 +1359,7 @@ footer {
       display: inline-block; }
     footer .socialNexus i {
       width: 47px;
-      font-size: 1.4em;
+      font-size: 1.4rem;
       line-height: 52px; }
   footer .contact {
     margin: 0 auto 2em; }
@@ -1397,13 +1377,11 @@ footer {
   #contactform .ufo {
     -webkit-transition: all 0.8s ease-in-out;
     -transition: all 0.8s ease-in-out;
-    -webkit-transition: all 0.8s ease-in-out;
-            transition: all 0.8s ease-in-out;
+    transition: all 0.8s ease-in-out;
     float: left;
     margin-right: 1em; }
     #contactform .ufo.sending {
-      -webkit-transform: rotate(360deg);
-              transform: rotate(360deg); }
+      transform: rotate(360deg); }
   #contactform h1 {
     display: inline-block;
     margin: 0; }
@@ -1458,19 +1436,30 @@ footer {
 .mfp-zoom-in .zoom {
   opacity: 0;
   -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
   transform: scale(0.8); }
 
 /* animate in */
 .mfp-zoom-in.mfp-ready .zoom {
   opacity: 1;
   -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
   transform: scale(1); }
 
 /* animate out */
 .mfp-zoom-in.mfp-removing .zoom {
   -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
   transform: scale(0.8);
   opacity: 0; }
 
@@ -1479,6 +1468,8 @@ footer {
   opacity: 0.001;
   /* Chrome opacity transition bug */
   -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out; }
 
 /* animate in */
@@ -1496,26 +1487,39 @@ footer {
 .mfp-slide-bottom .zoom {
   opacity: 0;
   -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out;
   -webkit-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+  -moz-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+  -ms-transform: translateY(-20px) perspective(600px) rotateX(10deg);
+  -o-transform: translateY(-20px) perspective(600px) rotateX(10deg);
   transform: translateY(-20px) perspective(600px) rotateX(10deg); }
 
 /* animate in */
 .mfp-slide-bottom.mfp-ready .zoom {
   opacity: 1;
   -webkit-transform: translateY(0) perspective(600px) rotateX(0);
+  -moz-transform: translateY(0) perspective(600px) rotateX(0);
+  -ms-transform: translateY(0) perspective(600px) rotateX(0);
+  -o-transform: translateY(0) perspective(600px) rotateX(0);
   transform: translateY(0) perspective(600px) rotateX(0); }
 
 /* animate out */
 .mfp-slide-bottom.mfp-removing .zoom {
   opacity: 0;
   -webkit-transform: translateY(-10px) perspective(600px) rotateX(10deg);
+  -moz-transform: translateY(-10px) perspective(600px) rotateX(10deg);
+  -ms-transform: translateY(-10px) perspective(600px) rotateX(10deg);
+  -o-transform: translateY(-10px) perspective(600px) rotateX(10deg);
   transform: translateY(-10px) perspective(600px) rotateX(10deg); }
 
 /* Dark overlay, start state */
 .mfp-slide-bottom.mfp-bg {
   opacity: 0.01;
   -webkit-transition: opacity 0.3s ease-out;
+  -moz-transition: opacity 0.3s ease-out;
+  -o-transition: opacity 0.3s ease-out;
   transition: opacity 0.3s ease-out; }
 
 /* animate in */
@@ -1556,6 +1560,8 @@ footer {
   left: 0;
   top: 0;
   padding: 0 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 .mfp-container:before {
@@ -1584,12 +1590,14 @@ footer {
   cursor: progress; }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+  cursor: -moz-zoom-out;
   cursor: -webkit-zoom-out;
   cursor: zoom-out; }
 
 .mfp-zoom {
   cursor: pointer;
   cursor: -webkit-zoom-in;
+  cursor: -moz-zoom-in;
   cursor: zoom-in; }
 
 .mfp-auto-cursor .mfp-content {
@@ -1601,8 +1609,7 @@ footer {
 .mfp-counter {
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-      user-select: none; }
+  user-select: none; }
 
 .mfp-loading.mfp-figure {
   display: none; }
@@ -1641,6 +1648,7 @@ button.mfp-close, button.mfp-arrow {
   outline: none;
   padding: 0;
   z-index: 1046;
+  -webkit-box-shadow: none;
   box-shadow: none; }
 button::-moz-focus-inner {
   padding: 0;
@@ -1780,6 +1788,8 @@ img.mfp-img {
   height: auto;
   display: block;
   line-height: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   padding: 40px 0 40px;
   margin: 0 auto; }
@@ -1852,6 +1862,8 @@ img.mfp-img {
     top: auto;
     padding: 3px 5px;
     position: fixed;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box; }
     .mfp-img-mobile .mfp-bottom-bar:empty {
       padding: 0; }
@@ -1914,7 +1926,11 @@ img.mfp-img {
   .col {
     border: 0px solid transparent;
     float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
+    -moz-background-clip: padding-box !important;
+    -webkit-background-clip: padding-box !important;
     background-clip: padding-box !important; }
 
   /* 2. 4 Column Grid 760px - Infinity 
@@ -1974,6 +1990,9 @@ img.mfp-img {
   /**********************
   TWEAKS
   **********************/
+  html {
+    font-size: 18px; }
+
   /*********************2
   NAVIGATION STYLES
   *********************/
@@ -1991,8 +2010,7 @@ img.mfp-img {
   nav {
     -webkit-transition: none;
     -transition: none;
-    -webkit-transition: none;
-            transition: none;
+    transition: none;
     top: 0;
     /* .menu is clearfixed inside mixins.scss */
     /* end .menu */ }
@@ -2025,7 +2043,7 @@ img.mfp-img {
             nav.menu ul li.active a {
               color: white; }
           nav.menu ul li a {
-            font-size: 1.5em;
+            font-size: 1.5rem;
             /*
             you can use hover styles here even though this size
             has the possibility of being a mobile device.
@@ -2035,13 +2053,18 @@ img.mfp-img {
   CONTENT & POSTS
   *********************/
   #home .content p {
-    font-size: 1.2em; }
+    font-size: 1.2rem; }
 
+  #design .tagcloud {
+    bottom: -1rem; }
   #design .banner:hover .bannerhover {
-    width: 75%; }
+    width: 75%;
+    cursor: s-resize; }
   #design .banner .title {
     width: 25%;
     padding: 1%; }
+    #design .banner .title:hover {
+      cursor: pointer; }
   #design .banner .logo {
     background-color: white;
     width: 25%;
@@ -2078,21 +2101,26 @@ img.mfp-img {
     z-index: 9;
     -webkit-transition: all, 0.5s;
     -transition: all, 0.5s;
-    -webkit-transition: all, 0.5s;
-            transition: all, 0.5s; }
+    transition: all, 0.5s; }
   #design .banner .bannerimg {
     float: left;
     width: 75%; }
     #design .banner .bannerimg img {
       width: 100%; }
-  #design .banner .toggle.info {
-    display: block; }
+  #design .banner .toggle {
+    color: white; }
+    #design .banner .toggle.info {
+      display: block; }
   #design .banner .bannertext {
     left: 25%;
     width: 75%; }
     #design .banner .bannertext.active .copy {
       padding: 2em 0 0 0; }
+    #design .banner .bannertext.active:hover {
+      cursor: n-resize; }
     #design .banner .bannertext h2.inner-title {
+      display: none; }
+    #design .banner .bannertext .close-message {
       display: none; }
 
   #resume .col:not(:last-child) {
@@ -2110,8 +2138,7 @@ img.mfp-img {
   #photo .photo-gallery {
     width: 100%; }
     #photo .photo-gallery:hover .info {
-      -webkit-transition-delay: 3s;
-              transition-delay: 3s;
+      transition-delay: 3s;
       opacity: 0; }
   #photo .rsArrow {
     z-index: 3; }
@@ -2125,8 +2152,7 @@ img.mfp-img {
     text-shadow: 1px 1px 0 #000;
     -webkit-transition: all 1s ease-in-out;
     -transition: all 1s ease-in-out;
-    -webkit-transition: all 1s ease-in-out;
-            transition: all 1s ease-in-out; }
+    transition: all 1s ease-in-out; }
     #photo .info p, #photo .info h4 {
       position: relative; }
 

@@ -9,6 +9,10 @@ Stylesheet: 720px and Up
 TWEAKS
 **********************/
 
+html {
+	font-size: 18px;
+}
+
 
 /*********************2
 NAVIGATION STYLES
@@ -70,7 +74,7 @@ nav {
                 
 				a {
 					
-                    font-size: 1.5em;
+                    font-size: 1.5rem;
                     
 					/*
 					you can use hover styles here even though this size
@@ -121,7 +125,7 @@ CONTENT & POSTS
     .content {
         
         p {
-            font-size: 1.2em;
+            font-size: 1.2rem;
         }
         
         .nexus {
@@ -134,15 +138,23 @@ CONTENT & POSTS
     //.hello .h2 { top: 0; }
 }
 #design {
+	
+		.tagcloud {
+			bottom: -1rem;
+		}
 
     
     .banner {
         
         &:hover .bannerhover {
                 width: 75%;
+								cursor: s-resize;
             }
         
         .title {
+						&:hover {
+							cursor: pointer;
+						}
             width: 25%;
             padding: 1%;
         }        
@@ -211,24 +223,33 @@ CONTENT & POSTS
         }
         
         .toggle {
+					color: white;
             
             &.info {
                 display: block;
             }
         }
         
-        .bannertext{
+        .bannertext {
             
             left: 25%;
             width: 75%;
             
             &.active {
                 .copy { padding: 2em 0 0 0; }
+							
+							&:hover {
+								cursor: n-resize;
+							}
             }
             
             h2.inner-title {
                 display: none;
             }
+					
+					.close-message {
+						display: none;
+					}
         
         }
     }
