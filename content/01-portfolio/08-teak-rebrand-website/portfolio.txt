@@ -1,0 +1,25 @@
+﻿Title: Teak Rebrand Website
+
+----
+
+Text: For this project I worked with an awesome crew of creatives at Teak, a branding and content studio based in San Francisco. Lead by a very strong designer, we took this site through many iterations and came through with an amazing site to show off Teak's diverse portfolio and new brand image.  
+
+Features:
+
+- Responsive views for phone, tablet and desktop
+- Custom HTML5 video backgrounds
+- Custom WordPress plugins (small scale)
+- Integrated page builder tool for easy page layouts
+- 1,000 iterations
+ 
+Tools: _(link: http://wordpress.org text: WordPress CMS popup:yes), (link: http://roots.io text:Roots popup:yes), PHP, JavaScript (jQuery), CSS3 animations, (link:http://sass-lang.com text: Sass popup: yes), (link: http://gruntjs.com/ text: grunt.js popup: yes), (link: http://dimsemenov.com/plugins/royal-slider/ text: Royal Slider popup: yes), (link: http://dimsemenov.com/plugins/magnific-popup/ text:Magnific Popup popup: yes), (link: http://vc.wpbakery.com/ text:Visual Composer popup:yes), Photoshop, Illustrator, (link: http://git-scm.com/ text:Git popup:yes)_
+
+Visit: (link: http://teaksf.com text: teaksf.com popup: yes)
+
+----
+
+Tags: web, graphic, ux
+
+----
+
+Color: rgba(273,102,82,1)

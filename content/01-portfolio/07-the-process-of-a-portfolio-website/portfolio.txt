@@ -1,4 +1,4 @@
-﻿Title: The Process of a Portfolio Website
+Title: The Process of a Portfolio Website
 
 ----
 
@@ -9,7 +9,7 @@ Features:
 - Completely responsive
 - Custom made user interface 
 
-Tools: _(link: http://getkirby.com text:Kirby CMS popup: yes), HTML5 Boilerplate (partial), CSS3 animations, (link:http://sass-lang.com text: Sass popup: yes), PHP, Javascript (jQuery), (link: http://gruntjs.com/ text: grunt.js popup: yes), (link: http://masonry.desandro.com/ text:masonry.js popup: yes), (link: http://markdalgleish.com/projects/stellar.js/ text: stellar.js popup: yes), Photoshop, Illustrator_
+Tools: _(link: http://getkirby.com text:Kirby CMS popup: yes), HTML5 Boilerplate (partial), CSS3 animations, (link:http://sass-lang.com text: Sass popup: yes), PHP, Javascript (jQuery), (link: http://gruntjs.com/ text: grunt.js popup: yes), (link: http://masonry.desandro.com/ text:masonry.js popup: yes), (link: http://markdalgleish.com/projects/stellar.js/ text: stellar.js popup: yes), Photoshop, Illustrator, (link: http://git-scm.com/ text:Git popup:yes)_
 
 ----
 

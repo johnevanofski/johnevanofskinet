@@ -1,4 +1,4 @@
-Title: Resume
+﻿Title: Resume
 
 ----
 
@@ -12,7 +12,7 @@ Oakland, Bay Area CA
 
 ----
 
-Bio: John Evanofski is a Bay Area web developer and designer with a diverse technological skillset and a problem solving aptitude. He is also an adept verbal and written communicator and an experienced technology educator. He wants to use his hybrid skillset to bridge the gap between the user and the designer in order to continue the tradition of good design.
+Bio: John Evanofski is a Bay Area web developer and designer with a diverse technological skillset and a problem solving aptitude. He is also an adept verbal and written communicator and an experienced technology educator. Please enjoy responsibly!
 
 ----
 
@@ -29,7 +29,8 @@ Skills: ###Web
 
 - Photoshop 
 - Illustrator 
-- InDesign 
+- InDesign
+- AfterEffects 
 
 ###Other
 
@@ -38,7 +39,10 @@ Skills: ###Web
 
 ----
 
-Experience: ###Freelance Web Developer
+Experience: ###Web Developer and Creative Technologist
+(link: http://teaksf.com text: Teak popup: yes) / San Francisco CA / 2014-Now
+
+###Freelance Web Developer
 (link: http://davidkerrdesign.com text: David Kerr Design popup: yes) / Oakland CA / 2012-2014
 
 ###Web & Graphic Design Lead
@@ -50,7 +54,6 @@ Experience: ###Freelance Web Developer
 ###Independent Web & Graphic Design
 (link: http://cindyclearyart.com text: Cindy Cleary Art popup: yes) / 2014
 (link: http://mcofest.org text: Mission Creek Oakland Festival popup: yes) / Oakland CA / 2013
-(link: http://sjsallinger.com text: SJ Sallinger Designs popup: yes) / San Francisco CA / 2013
 
 ###Teaching
 HTML & CSS, General Computing / Tutor / (link: http://wyzant.com text: Wyzant.com popup: yes) / 2014
